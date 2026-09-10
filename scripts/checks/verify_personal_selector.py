@@ -26,9 +26,12 @@ def fixture():
          "real_usd_per_mtok": 0.00231, "aa_intelligence_index__score": 34.5},
     ]}
     policy = {"models": {
-        "deepseek-v4-flash": {"context_tokens": 1_000_000, "served_version_date": "2026-07-31"},
-        "glm-5.3-flash": {"context_tokens": 1_000_000, "served_version_date": "2026-09-09"},
-        "mimo-v2.5": {"context_tokens": 1_000_000, "served_version_date": "2026-05-28"},
+        "deepseek-v4-flash": {"context_tokens": 1_000_000, "served_version_date": "2026-07-31",
+                              "use_cases": {"compression": {"approved": True}}},
+        "glm-5.3-flash": {"context_tokens": 1_000_000, "served_version_date": "2026-09-09",
+                          "use_cases": {"compression": {"approved": True}}},
+        "mimo-v2.5": {"context_tokens": 1_000_000, "served_version_date": "2026-05-28",
+                      "use_cases": {"compression": {"approved": False}}},
     }}
     profile = {
         "as_of": "2026-09-09", "use_case": "compression",
@@ -62,7 +65,9 @@ def main() -> None:
     assert report["selected"]["id"] == "opencode_go::deepseek-v4-flash"
     assert {row["model"] for row in report["frontier"]} == {"deepseek-v4-flash", "glm-5.3-flash"}
     by_id = {row["id"]: row for row in report["candidates"]}
-    assert set(by_id["opencode_go::mimo-v2.5"]["reasons"]) >= {"model_too_old", "quality_below_floor"}
+    assert set(by_id["opencode_go::mimo-v2.5"]["reasons"]) >= {
+        "use_case_not_reviewed", "model_too_old", "quality_below_floor"
+    }
     assert by_id["command_code_goat::deepseek-v4-flash"]["reasons"] == [
         "plan_identity_unverified", "zdr_capacity_unknown"
     ]

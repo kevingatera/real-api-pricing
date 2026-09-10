@@ -6,28 +6,35 @@
       "served_version_date": "2026-07-31",
       "freshness_source": "https://api-docs.deepseek.com/updates/",
       "context_source": "https://api-docs.deepseek.com/quick_start/pricing/",
-      "note": "The stable model name currently serves DeepSeek-V4-Flash-0731."
+      "note": "The stable model name currently serves DeepSeek-V4-Flash-0731.",
+      "provider_names": {"opencode_go": "DeepSeek V4 Flash"},
+      "use_cases": {"hermes_context_compression": {"approved": true}}
     },
     "glm-5.3-flash": {
       "context_tokens": 1000000,
       "served_version_date": "2026-09-09",
       "freshness_source": "https://autoclaw.z.ai/blog/model/glm-5.3-flash/",
       "context_source": "https://commandcode.ai/docs/plans/goat",
-      "note": "Official GLM-5.3-Flash announcement and current 1M-context catalog entry."
+      "note": "Official GLM-5.3-Flash announcement and current 1M-context catalog entry.",
+      "provider_names": {"opencode_go": "GLM-5.3-Flash"},
+      "use_cases": {"hermes_context_compression": {"approved": true}}
     },
     "mimo-v2.5": {
       "context_tokens": 1000000,
       "served_version_date": "2026-05-28",
       "freshness_source": "https://platform.xiaomimimo.com/docs/en-US/news/v2.5-tts-release",
       "context_source": "https://platform.xiaomimimo.com/docs/en-US/news/v2.5-tts-release",
-      "note": "Uses the latest first-party launch or update date found, which is conservative for an age gate."
+      "note": "Uses the latest first-party launch or update date found, which is conservative for an age gate.",
+      "provider_names": {"opencode_go": "MiMo V2.5"},
+      "use_cases": {"hermes_context_compression": {"approved": false}}
     },
     "mimo-v2.5-pro": {
       "context_tokens": 1000000,
       "served_version_date": "2026-05-28",
       "freshness_source": "https://platform.xiaomimimo.com/docs/en-US/news/v2.5-tts-release",
       "context_source": "https://commandcode.ai/docs/plans/goat",
-      "note": "Uses the latest first-party launch or update date found, which is conservative for an age gate."
+      "note": "Uses the latest first-party launch or update date found, which is conservative for an age gate.",
+      "use_cases": {"hermes_context_compression": {"approved": false}}
     }
   }
 }

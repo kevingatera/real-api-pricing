@@ -65,6 +65,9 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
             age_days = None
         else:
             age_days = (as_of - parse_day(metadata["served_version_date"])).days
+            use_case_policy = metadata.get("use_cases", {}).get(profile.get("use_case"), {})
+            if not use_case_policy.get("approved", False):
+                reasons.append("use_case_not_reviewed")
             if age_days < 0:
                 reasons.append("served_version_date_in_future")
             elif age_days > constraints["max_model_age_days"]:
@@ -114,7 +117,7 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
         "as_of": as_of_value, "use_case": profile.get("use_case"),
         "policy": {
             "hard_gates": [
-                "configured plan and live route", f"context >= {constraints['min_context_tokens']}",
+                "configured plan and live route", "model reviewed for this use case",
                 f"served model age <= {constraints['max_model_age_days']} days",
                 "current ZDR evidence" if constraints.get("require_zdr") else "ZDR not required",
                 f"{board} score >= {constraints['min_quality_score']}", "comparable capacity evidence",

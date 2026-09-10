@@ -39,7 +39,7 @@ Snapshot: 2026-09-09. Each row is one **plan × actual served model**; allowance
 
 The public charts answer which plans look efficient in general. The personal selector answers a narrower question: which model should run a specific job on subscriptions you already have?
 
-It filters before it ranks. A candidate must have a currently observed route, enough context, a recently served model version, current ZDR evidence, a minimum quality score, and comparable capacity evidence. Only survivors enter the capacity and quality Pareto frontier. This prevents a cheap but old or weak model from winning on token volume alone.
+It filters before it ranks. A candidate must be reviewed for the use case, have a currently observed route, enough context, a recently served model version, current ZDR evidence, a minimum quality score, and comparable capacity evidence. Only survivors enter the capacity and quality Pareto frontier. This prevents a cheap but old or weak model from winning on token volume alone.
 
 The example profile is tuned for long-context Hermes compression. It includes OpenCode Go and Command Code GOAT, requires 1M context and ZDR, rejects served versions older than 90 days, and applies an AA Intelligence quality floor. Local subscription and probe evidence belongs in ignored files so credentials and private account details are never committed.
 
