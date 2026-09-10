@@ -18,6 +18,7 @@ python scripts/publish_charts.py
 python scripts/checks/verify_svg.py
 python scripts/checks/verify_four_boards.py
 python scripts/checks/verify_publication.py
+python scripts/checks/verify_personal_selector.py
 ```
 
 On Windows, set `PYTHONIOENCODING=utf-8` if the console cannot print Chinese filenames. `plot_static.py` is a compatibility entry point for `plot_svg.py`.

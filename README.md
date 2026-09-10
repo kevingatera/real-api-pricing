@@ -35,6 +35,24 @@ Snapshot: 2026-09-09. Each row is one **plan × actual served model**; allowance
 
 **Download the data:** [adopted values (CSV)](data/adopted.csv) · [computed points (CSV)](derived/points.csv) · [computed points (JSON)](derived/points.json) · [data notes and score coverage](data/README.md) · [dated evidence](data/research/)
 
+## Personal subscription selector
+
+The public charts answer which plans look efficient in general. The personal selector answers a narrower question: which model should run a specific job on subscriptions you already have?
+
+It filters before it ranks. A candidate must have a currently observed route, enough context, a recently served model version, current ZDR evidence, a minimum quality score, and comparable capacity evidence. Only survivors enter the capacity and quality Pareto frontier. This prevents a cheap but old or weak model from winning on token volume alone.
+
+The example profile is tuned for long-context Hermes compression. It includes OpenCode Go and Command Code GOAT, requires 1M context and ZDR, rejects served versions older than 90 days, and applies an AA Intelligence quality floor. Local subscription and probe evidence belongs in ignored files so credentials and private account details are never committed.
+
+```bash
+cp config/personal-selector.example.json config/personal-selector.json
+cp data/runtime-evidence.example.json data/runtime-evidence.json
+python scripts/select_personal_pareto.py \
+  --profile config/personal-selector.json \
+  --runtime data/runtime-evidence.json
+```
+
+Command Code strict ZDR is deliberately fail-closed for capacity ranking. Provider API access does not identify the account's exact plan. Its documentation also says ZDR uses the plan's default allowance and variable pass-through upstream pricing. The normal GOAT row is not treated as comparable until the tier is verified and runtime usage evidence establishes the effective rate.
+
 ## Monthly allowance overview
 
 The 177 subscription plan × model points are split by adopted USD monthly fee so GitHub can show them without packing every bar into one chart: **$0–30 inclusive**, **>$30 and ≤$100**, **>$100–$300**. Each band ranks monthly usable tokens independently. The undivided chart and hybrid-scale view stay in the [chart index](charts/README.md).

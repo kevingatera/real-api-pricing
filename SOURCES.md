@@ -35,4 +35,14 @@ The project's original software is licensed under [MIT](LICENSE). This does not 
 - [Artificial Analysis Intelligence Index](https://artificialanalysis.ai/leaderboards/models) and [Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents): separate score snapshots; coding-agent configuration names are retained.
 - Official pricing and quota documents, community reports and aggregate local usage measurements: individual sources and adoption rationale are recorded in the data and adoption script.
 
+## Personal selector policy
+
+- [OpenCode Go](https://dev.opencode.ai/docs/go/): current model catalog, quota estimates, model-training policy, retention policy, and dated ZDR agreement details.
+- [Command Code ZDR](https://commandcode.ai/docs/resources/zdr): strict request header, fail-closed routing behavior, default plan allowance, and pass-through upstream pricing.
+- [DeepSeek changelog](https://api-docs.deepseek.com/updates/): current stable DeepSeek V4 Flash served-version date.
+- [GLM-5.3-Flash announcement](https://autoclaw.z.ai/blog/model/glm-5.3-flash/): first-party release date and model description.
+- [Xiaomi MiMo platform news](https://platform.xiaomimimo.com/docs/en-US/news/v2.5-tts-release): first-party MiMo V2.5 launch and update evidence.
+
+These sources populate public policy metadata only. Live entitlement probes and personal subscription records stay in ignored local files.
+
 Source links are attribution and provenance, not a claim that third-party datasets are MIT-licensed. The public edition removes the contributor's account email, machine-specific directories and duplicate verbatim Caijing excerpts. Relevant numeric observations, source URLs, dates and analytical notes remain. Required public author attribution above is intentionally retained. See [PUBLICATION.md](PUBLICATION.md).

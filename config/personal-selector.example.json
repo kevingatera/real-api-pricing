@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-09-09",
+  "use_case": "hermes_context_compression",
+  "plans": ["opencode_go", "command_code_goat"],
+  "constraints": {
+    "min_context_tokens": 1000000,
+    "max_model_age_days": 90,
+    "require_zdr": true,
+    "max_zdr_evidence_age_days": 35,
+    "require_known_capacity": true,
+    "quality_board": "aa_intelligence_index",
+    "min_quality_score": 30
+  },
+  "selection": {"strategy": "capacity_after_quality_floor"}
+}

@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-09-09",
+  "routes": [
+    {
+      "plan_id": "opencode_go",
+      "provider": "opencode-go",
+      "model": "deepseek-v4-flash",
+      "provider_model": "deepseek-v4-flash",
+      "plan_verified": true,
+      "live": true,
+      "zdr": true,
+      "zdr_verified_at": "2026-09-09",
+      "zdr_valid_through": "2026-09-30",
+      "capacity_known": true,
+      "evidence_source": "https://dev.opencode.ai/docs/go/"
+    },
+    {
+      "plan_id": "opencode_go",
+      "provider": "opencode-go",
+      "model": "glm-5.3-flash",
+      "provider_model": "glm-5.3-flash",
+      "plan_verified": true,
+      "live": true,
+      "zdr": true,
+      "zdr_verified_at": "2026-09-09",
+      "capacity_known": true,
+      "evidence_source": "https://dev.opencode.ai/docs/go/"
+    },
+    {
+      "plan_id": "opencode_go",
+      "provider": "opencode-go",
+      "model": "mimo-v2.5",
+      "provider_model": "mimo-v2.5",
+      "plan_verified": true,
+      "live": true,
+      "zdr": true,
+      "zdr_verified_at": "2026-09-09",
+      "capacity_known": true,
+      "evidence_source": "https://dev.opencode.ai/docs/go/"
+    },
+    {
+      "plan_id": "command_code_goat",
+      "provider": "commandcode-zdr",
+      "model": "deepseek-v4-flash",
+      "provider_model": "deepseek/deepseek-v4-flash",
+      "plan_verified": false,
+      "live": true,
+      "zdr": true,
+      "zdr_verified_at": "2026-09-09",
+      "capacity_known": false,
+      "evidence_source": "https://commandcode.ai/docs/resources/zdr",
+      "note": "Provider API access proves the route, but not the exact subscription tier. Strict ZDR also uses the default allowance and pass-through upstream pricing."
+    }
+  ]
+}
