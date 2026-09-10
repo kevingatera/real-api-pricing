@@ -42,6 +42,8 @@ The project's original software is licensed under [MIT](LICENSE). This does not 
 - [DeepSeek changelog](https://api-docs.deepseek.com/updates/): current stable DeepSeek V4 Flash served-version date.
 - [GLM-5.3-Flash announcement](https://autoclaw.z.ai/blog/model/glm-5.3-flash/): first-party release date and model description.
 - [Xiaomi MiMo platform news](https://platform.xiaomimimo.com/docs/en-US/news/v2.5-tts-release): first-party MiMo V2.5 launch and update evidence.
+- [DeepSeek API changelog](https://api-docs.deepseek.com/updates/): V4.1 Flash release date, canonical `deepseek-flash` model ID, benchmark results, multimodal support, and temporary routing of retired V4 Flash aliases.
+- `data/research/deepseek-v41-flash-round1-2026-09-10.json`: live OpenCode Go route, privacy and quota evidence plus the reproducible Hermes checkpoint comparison. The local comparison is role-specific and is not presented as a public leaderboard result.
 
 These sources populate public policy metadata only. Live entitlement probes and personal subscription records stay in ignored local files.
 

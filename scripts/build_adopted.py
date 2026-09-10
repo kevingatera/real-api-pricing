@@ -66,7 +66,8 @@ def kimi_k27_199_monthly_yi() -> float:
 
 # OpenCode Go 官方给的是共享美元池、每模型月 Usage 和三段价格；按项目统一标准负载折 token。
 # 元组：(model, per-model Usage USD, cached read, input, output, 采用价档说明)
-# 证据全量快照：data/research/opencode-go-round5-2026-09-06.json（官网价格/Endpoints 共 28 个模型）。
+# 证据全量快照：data/research/opencode-go-round5-2026-09-06.json；新模型补充见
+# data/research/deepseek-v41-flash-round1-2026-09-10.json。
 OPENCODE_GO_MODELS = (
     ("grok-4.6", 15, 0.5, 2.0, 6.0, "≤200K 标价；>200K 价翻倍，保留在 research variants"),
     ("gpt-5.6-luna", 15, 0.02, 0.2, 1.2, "≤272K 标价；>272K 档保留在 research variants"),
@@ -90,6 +91,7 @@ OPENCODE_GO_MODELS = (
     ("qwen3.7-max", 30, 0.5, 2.5, 7.5, "官网单档"),
     ("qwen3.7-plus", 60, 0.04, 0.4, 1.6, "≤256K 标价；>256K 档保留在 research variants"),
     ("qwen3.6-plus", 60, 0.05, 0.5, 3.0, "≤256K 标价；>256K 档保留在 research variants"),
+    ("deepseek-v4.1-flash", 15, 0.003, 0.15, 0.60, "Off-Peak；canonical deepseek-flash endpoint；Peak 额度为其一半"),
     ("deepseek-v4-pro", 15, 0.022, 0.66, 1.98, "Off-Peak；Peak 额度为其一半，保留在 research variants"),
     ("deepseek-v4-flash", 30, 0.007, 0.22, 0.66, "Off-Peak；Peak 额度为其一半，保留在 research variants"),
     ("deepseek-v4-flash-vision-exp", 15, 0.007, 0.22, 0.66, "Off-Peak；图像另折 input token，不另编图像负载标准"),
@@ -112,9 +114,12 @@ def opencode_go_rows() -> list[tuple]:
         yi = round(effective_usage / blended(cached, inp, out) / 100, 3)
         old = OPENCODE_GO_OLD_YI.get(model)
         change = f"旧{old:g}亿（请求估算）→{yi:g}亿" if old is not None else f"新增{yi:g}亿"
+        evidence = "opencode-go-round5-2026-09-06.json"
+        if model == "deepseek-v4.1-flash":
+            evidence = "deepseek-v41-flash-round1-2026-09-10.json"
         rows.append((
             "opencode_go", "OpenCode Go", 10, "USD", model, yi, "medium",
-            "https://opencode.ai/docs/go/ 官方每模型 Usage 与三段价格；opencode-go-round5-2026-09-06.json",
+            f"https://opencode.ai/docs/go/ 官方每模型 Usage 与三段价格；{evidence}",
             f"{change}：min(共享月池$60, 模型Usage ${usage:g}) ÷ 统一标准负载加权价；{variant_note}。"
             "官方请求数仅作交叉检查，不再作为额度主值；同套餐各模型额度不可相加",
         ))
@@ -353,7 +358,7 @@ METERED = [
 MAIN_PLANS = {"chatgpt_plus", "chatgpt_pro_20x", "claude_pro", "claude_max_20x", "cursor_ultra", "cursor_ultra_fast", "cursor_pro",
               "supergrok_heavy", "supergrok", "kimi_allegretto_cn", "glm_coding_pro_cn_new_peak", "glm_coding_pro_cn_new_mid", "glm_coding_pro_cn_new_offpeak", "glm_coding_pro_cn_old_peak", "glm_coding_pro_cn_old_mid", "glm_coding_pro_cn_old_offpeak",
               "minimax_token_plus_cn", "minimax_token_plus_global", "aliyun_coding_pro_cn"}
-MAIN_EXTRA = {("opencode_go", "deepseek-v4-flash"), ("opencode_go", "glm-5.3-flash")}
+MAIN_EXTRA = {("opencode_go", "deepseek-v4.1-flash"), ("opencode_go", "glm-5.3-flash")}
 
 
 def is_main(pid: str, model: str) -> bool:

@@ -1,0 +1,72 @@
+{
+  "capturedAt": "2026-09-10",
+  "model": "deepseek-v4.1-flash",
+  "canonicalApiModel": "deepseek-flash",
+  "sources": {
+    "release": "https://api-docs.deepseek.com/updates/",
+    "subscription": "https://dev.opencode.ai/docs/go/",
+    "glmComparison": "https://autoclaw.z.ai/blog/model/glm-5.3-flash/",
+    "userEvidence": "User-supplied DeepSeek comparison image, reviewed 2026-09-10"
+  },
+  "releaseEvidence": {
+    "servedVersionDate": "2026-09-10",
+    "contextTokens": 1000000,
+    "nativeMultimodal": true,
+    "retiredAliasesTemporarilyRoutedToCanonical": [
+      "deepseek-v4-flash",
+      "deepseek-v4-flash-vision-exp"
+    ]
+  },
+  "openCodeGo": {
+    "display": "DeepSeek V4.1 Flash",
+    "modelId": "deepseek-flash",
+    "monthlyLimitUsd": 15,
+    "offPeakUsdPerMillion": {
+      "input": 0.15,
+      "output": 0.6,
+      "cachedRead": 0.003
+    },
+    "estimatedRequests": {
+      "fiveHour": 6500,
+      "week": 16250,
+      "month": 32500
+    },
+    "modelTraining": "Not used",
+    "dataRetention": "0 days*",
+    "zdrValidThrough": "2026-09-30"
+  },
+  "hermesCheckpointV1": {
+    "runner": "scripts/benchmark_compression_models.py",
+    "provider": "opencode-go",
+    "models": {
+      "deepseek-flash": {
+        "factsFound": 24,
+        "factsTotal": 25,
+        "redactionViolations": 0,
+        "lengthStops": 0,
+        "structureFound": 8,
+        "structureTotal": 12,
+        "meanLatencySeconds": 6.18,
+        "selectionScore": 87.2
+      },
+      "glm-5.3-flash": {
+        "factsFound": 24,
+        "factsTotal": 25,
+        "redactionViolations": 1,
+        "lengthStops": 0,
+        "structureFound": 7,
+        "structureTotal": 12,
+        "meanLatencySeconds": 11.784,
+        "selectionScore": 59.7
+      }
+    },
+    "scoreFormula": "0.7 * fact retention percent + 0.3 * structure percent - 25 per redaction violation - 10 per length stop",
+    "limits": "Three deterministic cases and one run per model. Treat as provisional role-specific evidence, not a general model leaderboard."
+  },
+  "commandCode": {
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "catalogExposed": true,
+    "strictZdrProbe": "cmd_zdr_no_providers",
+    "selectableForPrivateCompression": false
+  }
+}

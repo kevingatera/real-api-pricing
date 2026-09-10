@@ -88,7 +88,18 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
                 reasons.append("zdr_agreement_expired")
         if constraints.get("require_known_capacity") and route is not None and not route.get("capacity_known"):
             reasons.append("zdr_capacity_unknown")
-        quality = point.get(f"{board}__score")
+        # Newly released models often need days or weeks to appear on the configured
+        # public board. A use-case-specific score may bridge that gap, but only when
+        # it comes from an explicit reviewed policy entry on the requested scale.
+        expected_scale = constraints.get("use_case_quality_scale")
+        policy_scale = use_case_policy.get("selection_score_scale") if metadata else None
+        policy_score = use_case_policy.get("selection_score") if metadata else None
+        if expected_scale and policy_scale == expected_scale and policy_score is not None:
+            quality = policy_score
+            quality_source = f"use_case_policy:{policy_scale}"
+        else:
+            quality = point.get(f"{board}__score")
+            quality_source = board
         if quality is None:
             reasons.append("quality_unscored")
         elif quality < constraints["min_quality_score"]:
@@ -101,7 +112,7 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
             "provider": route.get("provider") if route else None,
             "model": model, "provider_model": route.get("provider_model") if route else None,
             "monthly_yi": monthly_yi, "real_usd_per_mtok": point.get("real_usd_per_mtok"),
-            "quality_board": board, "quality_score": quality,
+            "quality_board": board, "quality_score": quality, "quality_source": quality_source,
             "context_tokens": metadata.get("context_tokens") if metadata else None,
             "served_version_date": metadata.get("served_version_date") if metadata else None,
             "model_age_days": age_days, "eligible": not reasons, "reasons": reasons,
@@ -113,6 +124,7 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
     if strategy != "capacity_after_quality_floor":
         raise ValueError(f"unsupported selection strategy: {strategy}")
     selected = max(eligible, key=lambda row: (row["monthly_yi"], row["quality_score"]), default=None)
+    quality_label = constraints.get("use_case_quality_scale") or board
     return {
         "as_of": as_of_value, "use_case": profile.get("use_case"),
         "policy": {
@@ -120,7 +132,7 @@ def evaluate(points_payload: dict[str, Any], model_policy: dict[str, Any], profi
                 "configured plan and live route", "model reviewed for this use case",
                 f"served model age <= {constraints['max_model_age_days']} days",
                 "current ZDR evidence" if constraints.get("require_zdr") else "ZDR not required",
-                f"{board} score >= {constraints['min_quality_score']}", "comparable capacity evidence",
+                f"{quality_label} score >= {constraints['min_quality_score']}", "comparable capacity evidence",
             ],
             "selection": strategy,
         },

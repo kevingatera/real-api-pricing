@@ -1,14 +1,38 @@
 {
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "models": {
-    "deepseek-v4-flash": {
+    "deepseek-v4.1-flash": {
       "context_tokens": 1000000,
-      "served_version_date": "2026-07-31",
+      "served_version_date": "2026-09-10",
       "freshness_source": "https://api-docs.deepseek.com/updates/",
       "context_source": "https://api-docs.deepseek.com/quick_start/pricing/",
-      "note": "The stable model name currently serves DeepSeek-V4-Flash-0731.",
+      "note": "The canonical API model ID is deepseek-flash. OpenCode Go exposes that canonical ID and lists 1M-context typical traffic assumptions.",
+      "provider_names": {"opencode_go": "DeepSeek V4.1 Flash"},
+      "provider_model_ids": {"opencode_go": "deepseek-flash", "command_code_goat": "deepseek/deepseek-v4.1-flash"},
+      "use_cases": {
+        "hermes_context_compression": {
+          "approved": true,
+          "selection_score": 87.2,
+          "selection_score_scale": "hermes_checkpoint_v1",
+          "validation": {
+            "checked_at": "2026-09-10",
+            "fact_retention_percent": 96.0,
+            "redaction_violations": 0,
+            "length_stops": 0,
+            "mean_latency_seconds": 6.18,
+            "runner": "scripts/benchmark_compression_models.py"
+          }
+        }
+      }
+    },
+    "deepseek-v4-flash": {
+      "context_tokens": 1000000,
+      "served_version_date": "2026-09-10",
+      "freshness_source": "https://api-docs.deepseek.com/updates/",
+      "context_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "note": "Retired model name temporarily routed to V4.1 Flash for compatibility. It is not a distinct Pareto candidate and may disappear.",
       "provider_names": {"opencode_go": "DeepSeek V4 Flash"},
-      "use_cases": {"hermes_context_compression": {"approved": true}}
+      "use_cases": {"hermes_context_compression": {"approved": false}}
     },
     "glm-5.3-flash": {
       "context_tokens": 1000000,
@@ -17,7 +41,21 @@
       "context_source": "https://commandcode.ai/docs/plans/goat",
       "note": "Official GLM-5.3-Flash announcement and current 1M-context catalog entry.",
       "provider_names": {"opencode_go": "GLM-5.3-Flash"},
-      "use_cases": {"hermes_context_compression": {"approved": true}}
+      "use_cases": {
+        "hermes_context_compression": {
+          "approved": true,
+          "selection_score": 59.7,
+          "selection_score_scale": "hermes_checkpoint_v1",
+          "validation": {
+            "checked_at": "2026-09-10",
+            "fact_retention_percent": 96.0,
+            "redaction_violations": 1,
+            "length_stops": 0,
+            "mean_latency_seconds": 11.784,
+            "runner": "scripts/benchmark_compression_models.py"
+          }
+        }
+      }
     },
     "mimo-v2.5": {
       "context_tokens": 1000000,

@@ -1,6 +1,19 @@
 {
-  "checked_at": "2026-09-09",
+  "checked_at": "2026-09-10",
   "routes": [
+    {
+      "plan_id": "opencode_go",
+      "provider": "opencode-go",
+      "model": "deepseek-v4.1-flash",
+      "provider_model": "deepseek-flash",
+      "plan_verified": true,
+      "live": true,
+      "zdr": true,
+      "zdr_verified_at": "2026-09-10",
+      "zdr_valid_through": "2026-09-30",
+      "capacity_known": true,
+      "evidence_source": "https://dev.opencode.ai/docs/go/"
+    },
     {
       "plan_id": "opencode_go",
       "provider": "opencode-go",

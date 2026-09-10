@@ -41,7 +41,9 @@ The public charts answer which plans look efficient in general. The personal sel
 
 It filters before it ranks. A candidate must be reviewed for the use case, have a currently observed route, enough context, a recently served model version, current ZDR evidence, a minimum quality score, and comparable capacity evidence. Only survivors enter the capacity and quality Pareto frontier. This prevents a cheap but old or weak model from winning on token volume alone.
 
-The example profile is tuned for long-context Hermes compression. It includes OpenCode Go and Command Code GOAT, requires 1M context and ZDR, rejects served versions older than 90 days, and applies an AA Intelligence quality floor. Local subscription and probe evidence belongs in ignored files so credentials and private account details are never committed.
+Brand-new models can use a short-lived, use-case-specific score while public leaderboards catch up. The score must name its scale, keep the raw measurements, and point to a repeatable runner. It never becomes a general leaderboard score. `scripts/benchmark_compression_models.py` checks checkpoint fact retention, structure, secret redaction, truncation, and latency through the same provider route Hermes will use.
+
+The example profile is tuned for long-context Hermes compression. It includes OpenCode Go and Command Code GOAT, requires 1M context and ZDR, rejects served versions older than 90 days, and applies a role-specific checkpoint quality floor with AA Intelligence as the fallback board. Local subscription and probe evidence belongs in ignored files so credentials and private account details are never committed.
 
 ```bash
 cp config/personal-selector.example.json config/personal-selector.json
@@ -49,6 +51,16 @@ cp data/runtime-evidence.example.json data/runtime-evidence.json
 python scripts/select_personal_pareto.py \
   --profile config/personal-selector.json \
   --runtime data/runtime-evidence.json
+```
+
+For a newly exposed OpenCode Go model, run the checkpoint comparison with the API key supplied only through the environment:
+
+```sh
+python scripts/benchmark_compression_models.py \
+  --base-url https://opencode.ai/zen/go/v1 \
+  --api-key-env OPENCODE_GO_API_KEY \
+  --model deepseek-flash \
+  --model glm-5.3-flash
 ```
 
 Command Code strict ZDR is deliberately fail-closed for capacity ranking. Provider API access does not identify the account's exact plan. Its documentation also says ZDR uses the plan's default allowance and variable pass-through upstream pricing. The normal GOAT row is not treated as comparable until the tier is verified and runtime usage evidence establishes the effective rate.

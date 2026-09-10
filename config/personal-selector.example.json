@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-09",
+  "as_of": "2026-09-10",
   "use_case": "hermes_context_compression",
   "plans": ["opencode_go", "command_code_goat"],
   "constraints": {
@@ -8,6 +8,7 @@
     "require_zdr": true,
     "max_zdr_evidence_age_days": 35,
     "require_known_capacity": true,
+    "use_case_quality_scale": "hermes_checkpoint_v1",
     "quality_board": "aa_intelligence_index",
     "min_quality_score": 30
   },
