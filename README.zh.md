@@ -22,16 +22,16 @@ GLM Coding Plan 现已改用智谱官方周积分和缓存/输入/输出三段�
 
 AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Coding Agent 仍为 **v1.4**。智力榜按新版整榜替换，不能把跨版本分数降低解释为模型能力退步。保留选定快照内的全部配置，并明确标注 AA 估计值；历史证据继续保存在 `data/research/`。
 
-快照日期：2026-09-09。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
+快照日期：2026-09-25（AA 智力榜于 2026-09-25 重读；Code Arena、Agent Arena 与 AA 编程 Agent 榜分别沿用 2026-09-05 / 2026-09-01 / 2026-09-09 快照）。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
 
 | 覆盖范围 | 行数 |
 |---|---:|
-| 全部采用的套餐 × 模型点 | 188 |
-| 有月额度的订阅点 | 177 |
+| 全部采用的套餐 × 模型点 | 200 |
+| 有月额度的订阅点 | 189 |
 | 按量 API 基准点 | 11 |
-| OpenCode Go / Command Code GOAT / Ollama 模型 | 28 / 38 / 20 |
+| OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 45 / 20 |
 | Code Arena / Agent Arena 有分点 | 138 / 142 |
-| AA 智力榜 / AA 编程 Agent 榜有分点 | 169 / 73 |
+| AA 智力榜 / AA 编程 Agent 榜有分点 | 178 / 73 |
 
 **下载数据：** [采用值 CSV](data/adopted.csv) · [完整计算结果 CSV](derived/points.csv) · [完整计算结果 JSON](derived/points.json) · [数据说明及缺分清单](data/README.md) · [分日期原始证据](data/research/)
 

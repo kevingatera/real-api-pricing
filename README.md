@@ -20,18 +20,18 @@ Each chart uses scores from its named leaderboard only. Code Arena here specific
 
 ## Data snapshot
 
-AA Intelligence now uses **Intelligence Index v4.3** (announced September 7, 2026); AA Coding Agent remains **v1.4**. The new intelligence methodology replaces the old snapshot as a whole: lower numerical scores are not evidence of model regression across index versions. All configurations within the selected snapshot are retained, including explicitly marked AA estimates. Historical evidence stays in `data/research/`.
+AA Intelligence now uses **Intelligence Index v4.3.2** (the v4.3 methodology, announced September 7, 2026, re-read from the public payload on 2026-09-25; the page label is v4.3.2 rather than v4.3); AA Coding Agent remains **v1.4**. The new intelligence methodology replaces the old snapshot as a whole: lower numerical scores are not evidence of model regression across index versions. All configurations within the selected snapshot are retained, including explicitly marked AA estimates. Historical evidence stays in `data/research/`.
 
-Snapshot: 2026-09-09. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
+Snapshot: 2026-09-25 (the AA Intelligence board was re-read on 2026-09-25; Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots). Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
 
 | Coverage | Rows |
 |---|---:|
-| All adopted plan × model points | 188 |
-| Subscription points with monthly allowance | 177 |
+| All adopted plan × model points | 200 |
+| Subscription points with monthly allowance | 189 |
 | Metered API baselines | 11 |
-| OpenCode Go / Command Code GOAT / Ollama models | 28 / 38 / 20 |
+| OpenCode Go / Command Code GOAT / Ollama models | 33 / 45 / 20 |
 | Code Arena / Agent Arena scored points | 138 / 142 |
-| AA Intelligence / AA Coding Agent scored points | 169 / 73 |
+| AA Intelligence / AA Coding Agent scored points | 178 / 73 |
 
 **Download the data:** [adopted values (CSV)](data/adopted.csv) · [computed points (CSV)](derived/points.csv) · [computed points (JSON)](derived/points.json) · [data notes and score coverage](data/README.md) · [dated evidence](data/research/)
 
