@@ -1,7 +1,7 @@
 {
  "collectedAt": "2026-09-25",
  "revises": "scores-aa-round3-2026-09-09.json",
- "revisionNote": "Complete Artificial Analysis board refresh from the payload read 2026-09-25 (673 configurations). The intelligence board is replaced as a whole: 136 configurations carry revised scores, 5 new configuration(s) were added, and 4 slug(s) the payload no longer reports were dropped from this board. The coding-agent board is carried forward from round3 unchanged (its payload lives on the coding-agents page and was not re-read in this round).",
+ "revisionNote": "Complete Artificial Analysis board refresh from the payload read 2026-09-25 (673 configurations). The intelligence board is replaced as a whole: 136 configurations carry revised scores, 6 new configuration(s) were added, and 4 slug(s) the payload no longer reports were dropped from this board. The coding-agent board is carried forward from round3 unchanged (its payload lives on the coding-agents page and was not re-read in this round).",
  "extraction": {
   "method": "read the model payload embedded in artificialanalysis.ai/leaderboards/models",
   "readAt": "2026-09-25",
@@ -5648,6 +5648,354 @@
     "effort": "preview"
    },
    "source": "https://artificialanalysis.ai/leaderboards/models",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "qwen3.8-max-0902",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "Qwen3.8 Max (0902)",
+   "score": 45.4152084980521,
+   "secondary": {
+    "costPerTaskUsd": null,
+    "scoreRoundedDisplay": 45,
+    "intelligenceIndexIsEstimated": false,
+    "slug": "qwen3-8-max",
+    "shortName": "Qwen3.8 Max (0902)",
+    "releaseDate": null,
+    "isReasoning": true,
+    "deprecated": false,
+    "modelCreatorName": "Alibaba",
+    "effort": "0902 snapshot"
+   },
+   "source": "https://artificialanalysis.ai/leaderboards/models",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "glm-5.3-flashx",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "glm-5.3-flashx [proxy]",
+   "score": 41.807466113455,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 42,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:glm-5.3-flashx",
+    "shortName": "glm-5.3-flashx [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from glm-5-3-flash",
+     "basis": [
+      "https://open-ocr.com/engines/openrouter-z-ai-glm-5.3-flashx",
+      "https://llmbase.ai/models/z-ai/glm-5.3-flashx/"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "glm-5-3-flash"
+     ],
+     "note": "Z.ai/OpenRouter describe FlashX as the high-speed variant of GLM-5.3-Flash; same weights, faster serving.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "muse-spark-1.3-contributor",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "muse-spark-1.3-contributor [proxy]",
+   "score": 48.0923107719685,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 48,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:muse-spark-1.3-contributor",
+    "shortName": "muse-spark-1.3-contributor [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from muse-spark-1-3",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "muse-spark-1-3"
+     ],
+     "note": "Contributor tier of the same Muse Spark 1.3 model; the provider prices it as the same capability at a lower rate.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "muse-spark-1.2-contributor",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "muse-spark-1.2-contributor [proxy]",
+   "score": 39.5758607970943,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 40,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:muse-spark-1.2-contributor",
+    "shortName": "muse-spark-1.2-contributor [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from muse-spark-1-2",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "muse-spark-1-2"
+     ],
+     "note": "Contributor tier of the same Muse Spark 1.2 model.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "deepseek-v4-flash-fast",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "deepseek-v4-flash-fast [proxy]",
+   "score": 34.3305129347816,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 34,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:deepseek-v4-flash-fast",
+    "shortName": "deepseek-v4-flash-fast [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from deepseek-v4-flash",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "deepseek-v4-flash"
+     ],
+     "note": "Fast serving variant of DeepSeek V4 Flash; the provider lists it as the same model with different allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "kimi-k2.7-code-highspeed",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "kimi-k2.7-code-highspeed [proxy]",
+   "score": 25.8121062401836,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 26,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:kimi-k2.7-code-highspeed",
+    "shortName": "kimi-k2.7-code-highspeed [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from kimi-k2-7-code",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "kimi-k2-7-code"
+     ],
+     "note": "HighSpeed serving variant of Kimi K2.7 Code; the provider lists it as the same model with an independent allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "glm-5.2-fast",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "glm-5.2-fast [proxy]",
+   "score": 33.7054572377545,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 34,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:glm-5.2-fast",
+    "shortName": "glm-5.2-fast [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from glm-5-2",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "glm-5-2"
+     ],
+     "note": "Fast serving variant of GLM-5.2; the provider lists it as the same model with an independent allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "mimo-v2.6-flash",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "mimo-v2.6-flash [proxy]",
+   "score": 44.3,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 44,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:mimo-v2.6-flash",
+    "shortName": "mimo-v2.6-flash [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "Two independent within-family readings, averaged: (1) the vendor's own DeepSWE v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its non-Pro sibling, giving 44.88. Midpoint adopted.",
+     "basis": [
+      "https://yfarmx.com/ai/llms/mimo-v2-6/",
+      "https://cheapestinference.com/blog/mimo-v2-6/",
+      "https://rankllms.com/models/mimo-v2-6-flash/"
+     ],
+     "band": 2.5,
+     "anchor_slugs": "mimo-v2-6-pro",
+     "note": "Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the same tier. AA has not scored the Flash configuration.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "qwen3.8-flash",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "qwen3.8-flash [proxy]",
+   "score": 39.7,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 40,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:qwen3.8-flash",
+    "shortName": "qwen3.8-flash [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "Within-family calibration on AA's own GPQA for two Qwen 3.8 points (27B: 33.6962 at GPQA 90.51; Max: 45.4152 at GPQA 92.83) gives a local slope of 5.05 AA points per GPQA point. Vendor GPQA for Qwen3.8-Flash is 91.7.",
+     "basis": [
+      "https://www.together.ai/models/qwen3-8-flash",
+      "https://www.datacamp.com/blog/qwen3-8-max"
+     ],
+     "band": 5.0,
+     "anchor_slugs": "qwen3-8-27b + qwen3-8-max",
+     "note": "Vendor GPQA and AA GPQA agree within ~1 point on this family, which is what makes the anchor usable; the slope is steep, hence the +-5 band.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "qwen3.8-omni-flash",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "qwen3.8-omni-flash [proxy]",
+   "score": 36.2,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 36,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:qwen3.8-omni-flash",
+    "shortName": "qwen3.8-omni-flash [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "Same within-family calibration as Qwen3.8-Flash (5.05 AA points per GPQA point), applied to the vendor's GPQA Diamond of 91.0 for the omni-modal Flash.",
+     "basis": [
+      "https://qwenlm.github.io/blog/qwen3.8-omni-flash/",
+      "https://arxiv.org/html/2609.25611"
+     ],
+     "band": 5.0,
+     "anchor_slugs": "qwen3-8-27b + qwen3-8-max",
+     "note": "Arrow/paper report GPQA 91.0; AA has no scored configuration for this model.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
+   "checkedAt": "2026-09-25"
+  },
+  {
+   "model": "hy4-preview",
+   "boardId": "aa_intelligence_index",
+   "variantLabel": "hy4-preview [proxy]",
+   "score": 27.5,
+   "estimated": true,
+   "secondary": {
+    "scoreRoundedDisplay": 28,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "slug": "proxy:hy4-preview",
+    "shortName": "hy4-preview [proxy]",
+    "releaseDate": null,
+    "isReasoning": null,
+    "deprecated": false,
+    "modelCreatorName": null,
+    "effort": null,
+    "estimate": {
+     "method": "Within-family calibration on AA's GPQA for Hy3 (25.2973 at GPQA 89.70) and Hy3-preview (22.7362 at GPQA 86.67) gives a local slope of 0.85 AA points per GPQA point. Tencent's table puts Hy4-preview at GPQA 92.3 against Hy3's 90.4.",
+     "basis": [
+      "https://emergent.sh/learn/hy3-preview-vs-hy4-preview",
+      "https://aitoolsreview.co.uk/insights/tencent-hy4-preview"
+     ],
+     "band": 3.0,
+     "anchor_slugs": "hy3 + hy3-preview",
+     "note": "Shallow slope: this family barely moves on GPQA, so the estimate stays close to Hy3.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "source": "proxy: see estimate.basis",
    "checkedAt": "2026-09-25"
   }
  ],
@@ -50534,6 +50882,11 @@
    "model": "step-5-preview",
    "slug": "step-5",
    "score": 43.7343049141614
+  },
+  {
+   "model": "qwen3.8-max-0902",
+   "slug": "qwen3-8-max",
+   "score": 45.4152084980521
   }
  ],
  "droppedFromPayload": [
@@ -50562,6 +50915,230 @@
   {
    "model": "deepseek-v4-flash",
    "slug": "deepseek-v4-flash-non-reasoning"
+  }
+ ],
+ "estimatedRecords": {
+  "aa_intelligence_index": {
+   "proxy:glm-5.3-flashx": {
+    "slug": "proxy:glm-5.3-flashx",
+    "name": "glm-5.3-flashx",
+    "shortName": "glm-5.3-flashx [proxy]",
+    "intelligenceIndex": 41.807466113455,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from glm-5-3-flash",
+     "basis": [
+      "https://open-ocr.com/engines/openrouter-z-ai-glm-5.3-flashx",
+      "https://llmbase.ai/models/z-ai/glm-5.3-flashx/"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "glm-5-3-flash"
+     ],
+     "note": "Z.ai/OpenRouter describe FlashX as the high-speed variant of GLM-5.3-Flash; same weights, faster serving.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:muse-spark-1.3-contributor": {
+    "slug": "proxy:muse-spark-1.3-contributor",
+    "name": "muse-spark-1.3-contributor",
+    "shortName": "muse-spark-1.3-contributor [proxy]",
+    "intelligenceIndex": 48.0923107719685,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from muse-spark-1-3",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "muse-spark-1-3"
+     ],
+     "note": "Contributor tier of the same Muse Spark 1.3 model; the provider prices it as the same capability at a lower rate.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:muse-spark-1.2-contributor": {
+    "slug": "proxy:muse-spark-1.2-contributor",
+    "name": "muse-spark-1.2-contributor",
+    "shortName": "muse-spark-1.2-contributor [proxy]",
+    "intelligenceIndex": 39.5758607970943,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from muse-spark-1-2",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "muse-spark-1-2"
+     ],
+     "note": "Contributor tier of the same Muse Spark 1.2 model.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:deepseek-v4-flash-fast": {
+    "slug": "proxy:deepseek-v4-flash-fast",
+    "name": "deepseek-v4-flash-fast",
+    "shortName": "deepseek-v4-flash-fast [proxy]",
+    "intelligenceIndex": 34.3305129347816,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from deepseek-v4-flash",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "deepseek-v4-flash"
+     ],
+     "note": "Fast serving variant of DeepSeek V4 Flash; the provider lists it as the same model with different allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:kimi-k2.7-code-highspeed": {
+    "slug": "proxy:kimi-k2.7-code-highspeed",
+    "name": "kimi-k2.7-code-highspeed",
+    "shortName": "kimi-k2.7-code-highspeed [proxy]",
+    "intelligenceIndex": 25.8121062401836,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from kimi-k2-7-code",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "kimi-k2-7-code"
+     ],
+     "note": "HighSpeed serving variant of Kimi K2.7 Code; the provider lists it as the same model with an independent allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:glm-5.2-fast": {
+    "slug": "proxy:glm-5.2-fast",
+    "name": "glm-5.2-fast",
+    "shortName": "glm-5.2-fast [proxy]",
+    "intelligenceIndex": 33.7054572377545,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "same-weights serving variant: AA score inherited from glm-5-2",
+     "basis": [
+      "https://commandcode.ai/docs/plans/goat"
+     ],
+     "band": 1.5,
+     "anchor_slugs": [
+      "glm-5-2"
+     ],
+     "note": "Fast serving variant of GLM-5.2; the provider lists it as the same model with an independent allowance.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:mimo-v2.6-flash": {
+    "slug": "proxy:mimo-v2.6-flash",
+    "name": "mimo-v2.6-flash",
+    "shortName": "mimo-v2.6-flash [proxy]",
+    "intelligenceIndex": 44.3,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "Two independent within-family readings, averaged: (1) the vendor's own DeepSWE v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its non-Pro sibling, giving 44.88. Midpoint adopted.",
+     "basis": [
+      "https://yfarmx.com/ai/llms/mimo-v2-6/",
+      "https://cheapestinference.com/blog/mimo-v2-6/",
+      "https://rankllms.com/models/mimo-v2-6-flash/"
+     ],
+     "band": 2.5,
+     "anchor_slugs": "mimo-v2-6-pro",
+     "note": "Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the same tier. AA has not scored the Flash configuration.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:qwen3.8-flash": {
+    "slug": "proxy:qwen3.8-flash",
+    "name": "qwen3.8-flash",
+    "shortName": "qwen3.8-flash [proxy]",
+    "intelligenceIndex": 39.7,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "Within-family calibration on AA's own GPQA for two Qwen 3.8 points (27B: 33.6962 at GPQA 90.51; Max: 45.4152 at GPQA 92.83) gives a local slope of 5.05 AA points per GPQA point. Vendor GPQA for Qwen3.8-Flash is 91.7.",
+     "basis": [
+      "https://www.together.ai/models/qwen3-8-flash",
+      "https://www.datacamp.com/blog/qwen3-8-max"
+     ],
+     "band": 5.0,
+     "anchor_slugs": "qwen3-8-27b + qwen3-8-max",
+     "note": "Vendor GPQA and AA GPQA agree within ~1 point on this family, which is what makes the anchor usable; the slope is steep, hence the +-5 band.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:qwen3.8-omni-flash": {
+    "slug": "proxy:qwen3.8-omni-flash",
+    "name": "qwen3.8-omni-flash",
+    "shortName": "qwen3.8-omni-flash [proxy]",
+    "intelligenceIndex": 36.2,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "Same within-family calibration as Qwen3.8-Flash (5.05 AA points per GPQA point), applied to the vendor's GPQA Diamond of 91.0 for the omni-modal Flash.",
+     "basis": [
+      "https://qwenlm.github.io/blog/qwen3.8-omni-flash/",
+      "https://arxiv.org/html/2609.25611"
+     ],
+     "band": 5.0,
+     "anchor_slugs": "qwen3-8-27b + qwen3-8-max",
+     "note": "Arrow/paper report GPQA 91.0; AA has no scored configuration for this model.",
+     "estimated_at": "2026-09-25"
+    }
+   },
+   "proxy:hy4-preview": {
+    "slug": "proxy:hy4-preview",
+    "name": "hy4-preview",
+    "shortName": "hy4-preview [proxy]",
+    "intelligenceIndex": 27.5,
+    "intelligenceIndexIsEstimated": true,
+    "proxy": true,
+    "estimate": {
+     "method": "Within-family calibration on AA's GPQA for Hy3 (25.2973 at GPQA 89.70) and Hy3-preview (22.7362 at GPQA 86.67) gives a local slope of 0.85 AA points per GPQA point. Tencent's table puts Hy4-preview at GPQA 92.3 against Hy3's 90.4.",
+     "basis": [
+      "https://emergent.sh/learn/hy3-preview-vs-hy4-preview",
+      "https://aitoolsreview.co.uk/insights/tencent-hy4-preview"
+     ],
+     "band": 3.0,
+     "anchor_slugs": "hy3 + hy3-preview",
+     "note": "Shallow slope: this family barely moves on GPQA, so the estimate stays close to Hy3.",
+     "estimated_at": "2026-09-25"
+    }
+   }
+  }
+ },
+ "estimatedRows": [
+  "glm-5.3-flashx",
+  "muse-spark-1.3-contributor",
+  "muse-spark-1.2-contributor",
+  "deepseek-v4-flash-fast",
+  "kimi-k2.7-code-highspeed",
+  "glm-5.2-fast",
+  "mimo-v2.6-flash",
+  "qwen3.8-flash",
+  "qwen3.8-omni-flash",
+  "hy4-preview"
+ ],
+ "notEstimated": [
+  {
+   "model": "omen-alpha",
+   "reason": "No vendor table, no AA configuration and no family anchor; nothing to calibrate against. Listed as unscored rather than guessed."
+  },
+  {
+   "model": "composer-2.5",
+   "reason": "Cursor does not publish an AA Intelligence Index for it; the fork already scores it on the AA Coding Agent board (38.3008), which is a different metric."
   }
  ],
  "carriedForward": {

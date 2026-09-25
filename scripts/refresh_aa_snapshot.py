@@ -17,6 +17,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from proxy_estimates import SAME_WEIGHTS, VENDOR_ANCHORED, UNSCORED  # noqa: E402
+
 ROOT = Path("/tmp/rap")
 RESEARCH = ROOT / "data" / "research"
 PREV = RESEARCH / "scores-aa-round3-2026-09-09.json"
@@ -85,6 +88,9 @@ ADDITIONS = {
     "grok-4-7": ("grok-4.7", "xhigh"),
     "gpt-6-luna": ("gpt-6-luna", "max"),
     "step-5": ("step-5-preview", "preview"),
+    # Mapping GAP, not a proxy: AA carries Qwen3.8 Max (0902) under slug qwen3-8-max at
+    # 45.4152, while the plan row qwen3.8-max-0902 had no mapping at all.
+    "qwen3-8-max": ("qwen3.8-max-0902", "0902 snapshot"),
 }
 existing = {(s["model"], s["secondary"].get("slug")) for s in scores}
 added = []
@@ -114,6 +120,79 @@ for slug, (model_id, effort) in ADDITIONS.items():
         "checkedAt": COLLECTED,
     })
     added.append({"model": model_id, "slug": slug, "score": raw["intelligenceIndex"]})
+
+# --- 5. proxy-estimate lane (AA has not scored these configurations) ----------------
+proxy_rows, estimated_records, not_estimated = [], {}, []
+for e in SAME_WEIGHTS:
+    anchor = payload_by_slug.get(e["anchor"])
+    assert anchor is not None, f"anchor slug missing for {e['model']}: {e['anchor']}"
+    pseudo = "proxy:" + e["model"]
+    record = {
+        "slug": pseudo,
+        "name": e["model"],
+        "shortName": e["model"] + " [proxy]",
+        "intelligenceIndex": anchor["intelligenceIndex"],
+        "intelligenceIndexIsEstimated": True,
+        "proxy": True,
+        "estimate": {
+            "method": "same-weights serving variant: AA score inherited from " + e["anchor"],
+            "basis": e["basis"],
+            "band": e["band"],
+            "anchor_slugs": [e["anchor"]],
+            "note": e["note"],
+            "estimated_at": COLLECTED,
+        },
+    }
+    estimated_records[pseudo] = record
+    proxy_rows.append((e["model"], pseudo, record))
+
+for e in VENDOR_ANCHORED:
+    pseudo = "proxy:" + e["model"]
+    record = {
+        "slug": pseudo,
+        "name": e["model"],
+        "shortName": e["model"] + " [proxy]",
+        "intelligenceIndex": e["value"],
+        "intelligenceIndexIsEstimated": True,
+        "proxy": True,
+        "estimate": {
+            "method": e["method"],
+            "basis": e["basis"],
+            "band": e["band"],
+            "anchor_slugs": e["anchor"],
+            "note": e["note"],
+            "estimated_at": COLLECTED,
+        },
+    }
+    estimated_records[pseudo] = record
+    proxy_rows.append((e["model"], pseudo, record))
+
+for e in UNSCORED:
+    not_estimated.append({"model": e["model"], "reason": e["reason"]})
+
+for model, pseudo, record in proxy_rows:
+    scores.append({
+        "model": model,
+        "boardId": "aa_intelligence_index",
+        "variantLabel": record["name"] + " [proxy]",
+        "score": record["intelligenceIndex"],
+        "estimated": True,
+        "secondary": {
+            "scoreRoundedDisplay": round(record["intelligenceIndex"]),
+            "intelligenceIndexIsEstimated": True,
+            "proxy": True,
+            "slug": pseudo,
+            "shortName": record["name"] + " [proxy]",
+            "releaseDate": None,
+            "isReasoning": None,
+            "deprecated": False,
+            "modelCreatorName": None,
+            "effort": None,
+            "estimate": record["estimate"],
+        },
+        "source": "proxy: see estimate.basis",
+        "checkedAt": COLLECTED,
+    })
 
 out = {
     "collectedAt": COLLECTED,
@@ -173,6 +252,9 @@ out = {
     "additions": added,
     "droppedFromPayload": dropped,
     "scoreMappingsWithoutRaw": missing_raw,
+    "estimatedRecords": {"aa_intelligence_index": estimated_records},
+    "estimatedRows": [m for m, _, _ in proxy_rows],
+    "notEstimated": not_estimated,
     "carriedForward": {"aa_coding_agent_index": PREV.name},
 }
 
@@ -183,6 +265,8 @@ print(f"  revised scores: {len(updated)}")
 print(f"  new score mappings added: {len(added)} -> {added}")
 print(f"  dropped (not in payload): {len(dropped)} -> {[d['slug'] for d in dropped][:10]}")
 print(f"  mappings whose slug vanished: {len(missing_raw)} -> {missing_raw[:5]}")
+print(f"  proxy estimates written: {len(proxy_rows)} -> {[m for m, _, _ in proxy_rows]}")
+print(f"  deliberately unscored: {[e['model'] for e in not_estimated]}")
 print("  sample revisions:")
 for u in updated[:8]:
     print(f"    {u['slug']}: {u['was']:.4f} -> {u['now']:.4f}")

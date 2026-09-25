@@ -1,6 +1,6 @@
 # Data / 数据
 
-Current snapshot: 2026-09-25 for the AA Intelligence board (Code Arena, Agent Arena and AA Coding Agent keep their earlier snapshots). The adopted dataset contains 200 plan × model rows: 189 subscription rows and 11 metered API rows. This covers the project's adopted sample, not every plan or model on the market.
+Ten AA Intelligence values are marked proxy estimates (see the README section "Proxy estimates"); estimates live in the snapshot's estimatedRecords lane with their method, source basis and band, and the charts label them [proxy]. Current snapshot: 2026-09-25 for the AA Intelligence board (Code Arena, Agent Arena and AA Coding Agent keep their earlier snapshots). The adopted dataset contains 200 plan × model rows: 189 subscription rows and 11 metered API rows. This covers the project's adopted sample, not every plan or model on the market.
 
 These files are the public redacted edition. Original local evidence is backed up outside Git; see [PUBLICATION.md](../PUBLICATION.md). 本目录为公开脱敏版，保留数值、来源与取舍记录，原件仅存于 Git 忽略的本地备份。
 
@@ -12,7 +12,7 @@ These files are the public redacted edition. Original local evidence is backed u
 |---|---:|---:|
 | Code Arena | 138 / 200 | 62 |
 | Agent Arena | 142 / 200 | 58 |
-| AA Intelligence | 178 / 200 | 22 |
+| AA Intelligence | 193 / 200 | 7 |
 | AA Coding Agent | 73 / 200 | 127 |
 
 具体缺分模型以 [`points.csv`](../derived/points.csv) / [`points.json`](../derived/points.json) 的空分数字段为准；不为缺失模型补造分数。

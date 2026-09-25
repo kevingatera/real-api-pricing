@@ -92,7 +92,9 @@ def label_lines(p, language, board=None):
         plans = ["Max 5x / 20x · " + ("from Sep 14" if language == "en" else "9/14+")]
     models = list(dict.fromkeys(q["model_display"] for q in p["members"]))
     name = " / ".join(models)
-    if board and any(q.get(board + "__score_is_estimated") for q in p["members"]):
+    if board and any(q.get(board + "__score_is_proxy") for q in p["members"]):
+        name += " [proxy]" if language == "en" else " [代理]"
+    elif board and any(q.get(board + "__score_is_estimated") for q in p["members"]):
         name += " [AA estimate]" if language == "en" else " [AA估计]"
     if board:
         effort = p.get(board + "__reasoning_effort")

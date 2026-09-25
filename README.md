@@ -31,7 +31,33 @@ Snapshot: 2026-09-25 (the AA Intelligence board was re-read on 2026-09-25; Code 
 | Metered API baselines | 11 |
 | OpenCode Go / Command Code GOAT / Ollama models | 33 / 45 / 20 |
 | Code Arena / Agent Arena scored points | 138 / 142 |
-| AA Intelligence / AA Coding Agent scored points | 178 / 73 |
+| AA Intelligence / AA Coding Agent scored points | 178 / 73 (193 / 73 including 10 marked proxy estimates) |
+
+### Proxy estimates (marked, never silent)
+
+Ten plan rows are served by configurations AA has not scored. They are not left blank and they
+are not presented as measurements: `scripts/proxy_estimates.py` carries the calibration for each
+one, the snapshot stores it in an `estimatedRecords` lane, and the charts label the rows
+`[proxy]` (zh `[代理]`) so a proxy can never be confused with an AA measurement or with AA's own
+published estimates (`[AA estimate]`).
+
+Two methods are used, in descending confidence:
+
+- **Same-weights serving variant (±1.5)** — six rows (GLM-5.3-FlashX, the Muse Spark contributor
+  tiers, DeepSeek V4 Flash Fast, Kimi K2.7 Code HighSpeed, GLM-5.2 Fast). The provider describes
+  them as the same model served faster or priced as a tier; the base configuration's AA score is
+  inherited unchanged.
+- **Same-vendor anchor (±2.5 to ±5)** — four rows (MiMo-V2.6-Flash, Qwen3.8-Flash,
+  Qwen3.8-Omni-Flash, Hy4-preview). The vendor's own table contains both the missing model and a
+  sibling AA has scored; the family slope calibrated on AA's own GPQA carries the new model.
+  Bands are wide because GPQA saturates in this range.
+
+A single global benchmark-to-index regression was measured and rejected: fitted on the modern
+records it explains under half the variance (R² 0.44) with a p90 residual near 10 AA points,
+wider than the gaps that decide the frontier. `omen-alpha` and `composer-2.5` are deliberately
+unscored on this board (no vendor table, no family anchor; Composer 2.5 is scored on the coding
+agent board instead). `scripts/checks/verify_aa_snapshot.py` fails the build if a proxy row loses
+its estimate flags, its method, its source basis or its band.
 
 **Download the data:** [adopted values (CSV)](data/adopted.csv) · [computed points (CSV)](derived/points.csv) · [computed points (JSON)](derived/points.json) · [data notes and score coverage](data/README.md) · [dated evidence](data/research/)
 

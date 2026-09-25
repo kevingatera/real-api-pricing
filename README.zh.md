@@ -31,7 +31,28 @@ AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Codin
 | 按量 API 基准点 | 11 |
 | OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 45 / 20 |
 | Code Arena / Agent Arena 有分点 | 138 / 142 |
-| AA 智力榜 / AA 编程 Agent 榜有分点 | 178 / 73 |
+| AA 智力榜 / AA 编程 Agent 榜有分点 | 178 / 73（含10条标注代理估计后为 193 / 73） |
+
+### 代理估计值（明确标注，绝不隐式）
+
+有十个套餐点是 AA 尚未评测的配置。它们既不留空，也不冒充实测值：标定过程写在
+`scripts/proxy_estimates.py`，快照存入 `estimatedRecords` 字段，图表在图例上标注
+`[代理]`（英文 `[proxy]`），因此代理值不会与 AA 实测值或 AA 自己发布的估计值
+（`[AA estimate]`）混淆。
+
+按可信度分两类：
+
+- **同权重服务变体（±1.5）**——六行（GLM-5.3-FlashX、Muse Spark contributor 档、DeepSeek V4
+  Flash Fast、Kimi K2.7 Code HighSpeed、GLM-5.2 Fast）。服务商说明它们是同一模型的高速或分档
+  服务，直接继承基础配置的 AA 分。
+- **同厂商锚点（±2.5 至 ±5）**——四行（MiMo-V2.6-Flash、Qwen3.8-Flash、Qwen3.8-Omni-Flash、
+  Hy4-preview）。厂商表中同时含缺失模型与 AA 已评测的同族模型，用 AA 自己的 GPQA 标定族内斜率
+  后推算。该区间内 GPQA 已饱和，故带宽较大。
+
+全局“基准→指数”回归经过实测后弃用：在现代模型上 R² 仅 0.44，p90 残差约 10 分，宽于决定前沿的
+差距。`omen-alpha` 与 `composer-2.5` 在本榜故意留空（无厂商表、无同族锚点；Composer 2.5 在编程
+Agent 榜已有分）。若某条代理行丢失估计标记、方法、来源依据或带宽，
+`scripts/checks/verify_aa_snapshot.py` 会直接让构建失败。
 
 **下载数据：** [采用值 CSV](data/adopted.csv) · [完整计算结果 CSV](derived/points.csv) · [完整计算结果 JSON](derived/points.json) · [数据说明及缺分清单](data/README.md) · [分日期原始证据](data/research/)
 

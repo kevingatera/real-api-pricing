@@ -11,6 +11,9 @@ def configuration(record, archive):
     secondary = record.get("secondary", {})
     label = record["variantLabel"]
     estimated = secondary.get("intelligenceIndexIsEstimated", record.get("scoreIsEstimated"))
+    # A proxy is estimated too, but it is OUR calibration, not an AA-published estimate:
+    # label it separately so the two can never be confused.
+    proxy = bool(secondary.get("proxy"))
     identity = [record["boardId"], record["model"], label, record.get("checkedAt"), archive]
     cid = record["boardId"] + ":" + hashlib.sha256(json.dumps(identity).encode()).hexdigest()[:16]
     effort = EFFORT.search(label)
@@ -20,8 +23,10 @@ def configuration(record, archive):
     minus, plus = secondary.get("ciMinus"), secondary.get("ciPlus")
     return dict(
         configuration_id=cid, board=record["boardId"], model=record["model"],
-        variant=label + (" [AA estimate]" if estimated else ""),
+        variant=label + ("" if label.endswith("[proxy]") else
+                         (" [proxy]" if proxy else (" [AA estimate]" if estimated else ""))),
         score_is_estimated=estimated,
+        score_is_proxy=proxy,
         agent_harness=harness, reasoning_effort=effort.group(1).lower() if effort else None,
         service_mode={"cursor cli - composer 2.5 fast": "fast", "cursor cli - composer 2.5": "standard"}.get(label.lower())
                      if record["model"] == "composer-2.5" else None,
@@ -55,7 +60,7 @@ def mapping(record):
 
 
 def score_fields(record):
-    keys = ("configuration_id", "variant", "score", "score_is_estimated", "agent_harness", "reasoning_effort", "service_mode",
+    keys = ("configuration_id", "variant", "score", "score_is_estimated", "score_is_proxy", "agent_harness", "reasoning_effort", "service_mode",
             "score_low", "score_high", "mean_cost_usd_per_task", "median_cost_usd_per_task", "source")
     fields = {k: record[k] if record else None for k in keys}
     fields.update(mapping(record) if record else {k: None for k in
