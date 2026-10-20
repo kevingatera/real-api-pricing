@@ -1,4 +1,4 @@
-Artificial Analysis Intelligence Index v4.3.2 | Intelligence Index | 2026-09-25
+Artificial Analysis Intelligence Index v4.3.2 | Intelligence Index | 2026-10-20
 Selected by price and score across all subscriptions/APIs, not by allowance. Equivalent plans retained; unscored models excluded; uncertainty not modeled.
 Effective token price | Subscriptions and APIs compared
 Dollar/credit and API rates use 97.5% cache / 2.15% input / 0.35% output; direct total-token measurements are not normalized

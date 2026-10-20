@@ -1,4 +1,4 @@
-Artificial Analysis Intelligence Index v4.3.2 | Intelligence Index | 2026-09-25
+Artificial Analysis Intelligence Index v4.3.2 | Intelligence Index | 2026-10-20
 Selected by price and score across all subscriptions/APIs, not by allowance. Equivalent plans retained; unscored models excluded; uncertainty not modeled.
 Monthly token allowance | Subscription plan x served model
 Default month = 4 weeks; Kimi monthly pool = 5× weekly; full utilization, all token types; APIs have no allowance
