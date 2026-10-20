@@ -48,11 +48,15 @@ DISPLAY = {
     "qwen3.8-27b": "Qwen3.8 27B", "qwen3.8-max-0902": "Qwen3.8 Max 0902",
     "step-3.5-flash": "Step 3.5 Flash", "step-3.7-flash": "Step 3.7 Flash",
     "hy3": "Hy3", "hy4-preview": "Hy4 Preview", "omen-alpha": "Omen Alpha", "composer-2.5": "Composer 2.5",
+    "step-5-preview": "Step 5 Preview", "gpt-6-luna": "GPT 6 Luna",
+    "qwen3.8-max-prime": "Qwen3.8 Max Prime", "qwen3.8-omni-flash": "Qwen3.8 Omni Flash",
+    "minimax-m3.1-flash": "MiniMax M3.1 Flash", "ornith-1.5-122b": "Ornith 1.5 122B",
+    "muse-spark-open": "Muse Spark Open", "nemotron-3.5-super-vl": "Nemotron 3.5 Super VL",
 }
 VENDOR = {
     "gpt": "OpenAI", "claude": "Anthropic", "grok": "xAI", "kimi": "Kimi", "glm": "Zhipu", "minimax": "MiniMax",
     "qwen": "Alibaba", "deepseek": "DeepSeek", "gemini": "Google", "mimo": "Xiaomi", "hy": "Tencent", "composer": "Cursor",
-    "longcat": "Meituan", "muse": "Muse", "omen": "OpenCode", "step": "StepFun",
+    "longcat": "Meituan", "muse": "Muse", "omen": "OpenCode", "step": "StepFun", "nemotron": "NVIDIA",
 }
 
 

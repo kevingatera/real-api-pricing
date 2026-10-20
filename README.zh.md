@@ -26,12 +26,12 @@ AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Codin
 
 | 覆盖范围 | 行数 |
 |---|---:|
-| 全部采用的套餐 × 模型点 | 200 |
-| 有月额度的订阅点 | 189 |
+| 全部采用的套餐 × 模型点 | 206 |
+| 有月额度的订阅点 | 195 |
 | 按量 API 基准点 | 11 |
-| OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 45 / 20 |
+| OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 51 / 20 |
 | Code Arena / Agent Arena 有分点 | 138 / 142 |
-| AA 智力榜 / AA 编程 Agent 榜有分点 | 178 / 73（含10条标注代理估计后为 193 / 73） |
+| AA 智力榜 / AA 编程 Agent 榜有分点 | 179 / 73（含10条标注代理估计后为 194 / 73） |
 
 ### 代理估计值（明确标注，绝不隐式）
 
@@ -58,7 +58,7 @@ Agent 榜已有分）。若某条代理行丢失估计标记、方法、来源�
 
 ## 月额度总览
 
-177 个订阅套餐 × 模型点按采用数据里的美元月费拆成三档，避免 GitHub 首页一张图挤满：**$0–30（含 $30）**、**>$30 且 ≤$100**、**>$100–$300**。各档内部按月可用 token 排序。未拆档的全量图和混合比例图仍在 [图表目录](charts/README.md)。
+195 个订阅套餐 × 模型点按采用数据里的美元月费拆成三档，避免 GitHub 首页一张图挤满：**$0–30（含 $30）**、**>$30 且 ≤$100**、**>$100–$300**。各档内部按月可用 token 排序。未拆档的全量图和混合比例图仍在 [图表目录](charts/README.md)。
 
 ### $0–30
 
@@ -86,7 +86,7 @@ Agent 榜已有分）。若某条代理行丢失估计标记、方法、来源�
 
 ## 真实单价总览
 
-把全部 188 个订阅和 API 点放在同一套 $/MTok 口径下比较。
+把全部 206 个订阅和 API 点放在同一套 $/MTok 口径下比较。
 
 [English SVG](charts/en/overview/real-price-overview.svg) · [中文 SVG](charts/zh/overview/单价总览.svg) · [English PNG](charts/en/overview/real-price-overview.png) · [中文 PNG](charts/zh/overview/单价总览.png)
 

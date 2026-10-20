@@ -26,12 +26,12 @@ Snapshot: 2026-09-25 (the AA Intelligence board was re-read on 2026-09-25; Code 
 
 | Coverage | Rows |
 |---|---:|
-| All adopted plan × model points | 200 |
-| Subscription points with monthly allowance | 189 |
+| All adopted plan × model points | 206 |
+| Subscription points with monthly allowance | 195 |
 | Metered API baselines | 11 |
-| OpenCode Go / Command Code GOAT / Ollama models | 33 / 45 / 20 |
+| OpenCode Go / Command Code GOAT / Ollama models | 33 / 51 / 20 |
 | Code Arena / Agent Arena scored points | 138 / 142 |
-| AA Intelligence / AA Coding Agent scored points | 178 / 73 (193 / 73 including 10 marked proxy estimates) |
+| AA Intelligence / AA Coding Agent scored points | 179 / 73 (194 / 73 including 10 marked proxy estimates) |
 
 ### Proxy estimates (marked, never silent)
 
@@ -93,7 +93,7 @@ Command Code strict ZDR is deliberately fail-closed for capacity ranking. Provid
 
 ## Monthly allowance overview
 
-The 177 subscription plan × model points are split by adopted USD monthly fee so GitHub can show them without packing every bar into one chart: **$0–30 inclusive**, **>$30 and ≤$100**, **>$100–$300**. Each band ranks monthly usable tokens independently. The undivided chart and hybrid-scale view stay in the [chart index](charts/README.md).
+The 195 subscription plan × model points are split by adopted USD monthly fee so GitHub can show them without packing every bar into one chart: **$0–30 inclusive**, **>$30 and ≤$100**, **>$100–$300**. Each band ranks monthly usable tokens independently. The undivided chart and hybrid-scale view stay in the [chart index](charts/README.md).
 
 ### $0–30
 
@@ -121,7 +121,7 @@ The 177 subscription plan × model points are split by adopted USD monthly fee s
 
 ## Real unit price overview
 
-All 188 subscription and API points on one comparable $/MTok scale.
+All 206 subscription and API points on one comparable $/MTok scale.
 
 [English SVG](charts/en/overview/real-price-overview.svg) · [中文 SVG](charts/zh/overview/单价总览.svg) · [English PNG](charts/en/overview/real-price-overview.png) · [中文 PNG](charts/zh/overview/单价总览.png)
 

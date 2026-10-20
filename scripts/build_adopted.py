@@ -187,6 +187,13 @@ COMMAND_CODE_GOAT_MODELS = (
     ("step-3.7-flash", 20, 0.04, 0.2, 1.15, "官网三段价；New models 默认$20"),
     ("step-3.5-flash", 20, 0.02, 0.1, 0.3, "官网三段价；New models 默认$20"),
     ("nemotron-3-ultra", 20, 0.12, 0.6, 2.4, "官网三段价；New models 默认$20"),
+    # 2026-10-20 补充：官网 GOAT 页 New models 表中此前未入表的模型（三段价取自该表；默认$20）。
+    ("qwen3.8-max-prime", 20, 0.5, 4.0, 12.0, "官网三段价（cache write $5 不进统一标准负载）；New models 默认$20"),
+    ("qwen3.8-omni-flash", 20, 0.016, 0.15, 0.47, "官网三段价；New models 默认$20"),
+    ("minimax-m3.1-flash", 20, 0.015, 0.15, 0.60, "官网三段价；New models 默认$20"),
+    ("ornith-1.5-122b", 20, 0.02, 0.16, 0.64, "官网三段价；New models 默认$20"),
+    ("muse-spark-open", 20, 0.15, 1.25, 4.25, "官网三段价；New models 默认$20"),
+    ("nemotron-3.5-super-vl", 20, 0.04, 0.2, 0.5, "官网三段价；New models 默认$20"),
 )
 
 

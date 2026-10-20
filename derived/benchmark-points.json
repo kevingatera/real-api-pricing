@@ -11802,6 +11802,27 @@
     "quota_effort_matched": null
   },
   {
+    "point_id": "command_code_goat::qwen3.8-omni-flash",
+    "board": "aa_intelligence_index",
+    "configuration_id": "aa_intelligence_index:6f9460fc6b028c5c",
+    "variant": "qwen3.8-omni-flash [proxy]",
+    "score": 36.2,
+    "score_is_estimated": true,
+    "score_is_proxy": true,
+    "agent_harness": null,
+    "reasoning_effort": null,
+    "service_mode": null,
+    "score_low": null,
+    "score_high": null,
+    "mean_cost_usd_per_task": null,
+    "median_cost_usd_per_task": null,
+    "source": "proxy: see estimate.basis",
+    "mapping_kind": "model_configuration_reference",
+    "mapping_confidence": "medium",
+    "mapping_note": "Exact served-model reference; quota-measurement effort is unverified.",
+    "quota_effort_matched": null
+  },
+  {
     "point_id": "ollama_pro::deepseek-v4-flash",
     "board": "arena_code",
     "configuration_id": "arena_code:65e190c745838084",
