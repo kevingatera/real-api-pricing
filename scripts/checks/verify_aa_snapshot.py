@@ -50,7 +50,9 @@ for name, row in current_score_records(archives):
         assert secondary["agentHarness"] == source["agentName"]
         assert row["variantLabel"] == source["displayLabel"]
     assert abs(row["score"] - expected) <= 0.000051, (row, expected)
-    assert row["checkedAt"] == raw_archives[name]["collectedAt"]
+    # Additive revisions mix two observation dates: the revision date and the carried-forward date.
+    allowed_dates = {raw_archives[name]["collectedAt"], *raw_archives[name].get("carriedDates", [])}
+    assert row["checkedAt"] in allowed_dates, (row["model"], row["checkedAt"], allowed_dates)
     assert row["source"].startswith("https://artificialanalysis.ai/")
     count += 1
 assert count, "No current AA raw snapshot checked"

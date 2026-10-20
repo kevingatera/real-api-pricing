@@ -1987,7 +1987,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:6ec63e1e8178a9aa",
+    "configuration_id": "aa_coding_agent_index:73a355b52f181738",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (xhigh)",
@@ -2003,7 +2003,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -2065,7 +2065,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:91c7979480262fba",
+    "configuration_id": "aa_coding_agent_index:86ee0238c5f65e71",
     "board": "aa_coding_agent_index",
     "model": "muse-spark-1.3",
     "variant": "Muse Code - Muse Spark 1.3 (max)",
@@ -2081,7 +2081,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.3",
       "boardId": "aa_coding_agent_index",
@@ -2143,7 +2143,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:0417017cf877bf9a",
+    "configuration_id": "aa_coding_agent_index:33c61125860735e7",
     "board": "aa_coding_agent_index",
     "model": "claude-fable-5",
     "variant": "Claude Code - Fable 5 (max) (with fallback)",
@@ -2159,7 +2159,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_coding_agent_index",
@@ -2221,7 +2221,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:08b348f1dc75ef11",
+    "configuration_id": "aa_coding_agent_index:a0c1036f50d59dfe",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (max)",
@@ -2237,7 +2237,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -2299,7 +2299,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:acd51c291da23d41",
+    "configuration_id": "aa_coding_agent_index:e5c73bfd1bb0e7e4",
     "board": "aa_coding_agent_index",
     "model": "claude-fable-5",
     "variant": "Claude Code - Fable 5 (xhigh) (with fallback)",
@@ -2315,7 +2315,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_coding_agent_index",
@@ -2377,7 +2377,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:3bac2ae07a972ea7",
+    "configuration_id": "aa_coding_agent_index:3da1f1ef3b18bec6",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (high)",
@@ -2393,7 +2393,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -2455,7 +2455,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:f6f9e1dd2778d3f0",
+    "configuration_id": "aa_coding_agent_index:7097d7a89612c07a",
     "board": "aa_coding_agent_index",
     "model": "claude-fable-5",
     "variant": "Claude Code - Fable 5 (high) (with fallback)",
@@ -2471,7 +2471,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_coding_agent_index",
@@ -2533,7 +2533,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:92b97ac579bbdb52",
+    "configuration_id": "aa_coding_agent_index:c10cfbc3ec9b62e7",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (max)",
@@ -2549,7 +2549,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -2611,7 +2611,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:b165e8c6c49087f6",
+    "configuration_id": "aa_coding_agent_index:e4e7de0d78eef1fd",
     "board": "aa_coding_agent_index",
     "model": "muse-spark-1.3",
     "variant": "Muse Code - Muse Spark 1.3 (xhigh)",
@@ -2627,7 +2627,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.3",
       "boardId": "aa_coding_agent_index",
@@ -2689,7 +2689,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:83b8f2e3e5162fe5",
+    "configuration_id": "aa_coding_agent_index:c9108d5790fb3358",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (high)",
@@ -2705,7 +2705,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -2767,7 +2767,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:91650cb82f49ed5f",
+    "configuration_id": "aa_coding_agent_index:d22019f9bebe0dac",
     "board": "aa_coding_agent_index",
     "model": "grok-4.5",
     "variant": "Grok Build - Grok 4.5 (high)",
@@ -2783,7 +2783,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.5",
       "boardId": "aa_coding_agent_index",
@@ -2845,7 +2845,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:8895f1e0cfd6c73e",
+    "configuration_id": "aa_coding_agent_index:a784f136f89bb78c",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (medium)",
@@ -2861,7 +2861,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -2923,7 +2923,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:480f518938c8a38c",
+    "configuration_id": "aa_coding_agent_index:6911aae4208a2b11",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (xhigh)",
@@ -2939,7 +2939,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -3001,7 +3001,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:bfeb552ca16179e5",
+    "configuration_id": "aa_coding_agent_index:e590c3515a45f0d1",
     "board": "aa_coding_agent_index",
     "model": "claude-fable-5",
     "variant": "Claude Code - Fable 5 (medium) (with fallback)",
@@ -3017,7 +3017,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_coding_agent_index",
@@ -3079,7 +3079,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:7c6d220051f25552",
+    "configuration_id": "aa_coding_agent_index:74c68f6a2c583a11",
     "board": "aa_coding_agent_index",
     "model": "kimi-k3",
     "variant": "Kimi Code CLI - Kimi K3",
@@ -3095,7 +3095,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k3",
       "boardId": "aa_coding_agent_index",
@@ -3157,7 +3157,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:e3eee5a8506c1fe3",
+    "configuration_id": "aa_coding_agent_index:a7a188979f4ed9ef",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Code - Opus 4.8 (max)",
@@ -3173,7 +3173,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_coding_agent_index",
@@ -3235,7 +3235,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:0ad2e726db9ef559",
+    "configuration_id": "aa_coding_agent_index:33b4f490cd2508a9",
     "board": "aa_coding_agent_index",
     "model": "muse-spark-1.2",
     "variant": "Muse Code - Muse Spark 1.2 (xhigh)",
@@ -3251,7 +3251,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.2",
       "boardId": "aa_coding_agent_index",
@@ -3313,7 +3313,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:97f2087b7b53d86b",
+    "configuration_id": "aa_coding_agent_index:8c6bac9335d5c41a",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (medium)",
@@ -3329,7 +3329,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -3391,7 +3391,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:a82cd872667f2b55",
+    "configuration_id": "aa_coding_agent_index:5c81047eb9ac1ac4",
     "board": "aa_coding_agent_index",
     "model": "qwen3.8-max",
     "variant": "Claude Code - Qwen3.8 Max",
@@ -3407,7 +3407,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-max",
       "boardId": "aa_coding_agent_index",
@@ -3469,7 +3469,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:d6440acb03db42c7",
+    "configuration_id": "aa_coding_agent_index:d2ae673ccb10ce27",
     "board": "aa_coding_agent_index",
     "model": "gemini-3.8-flash",
     "variant": "Opencode - Gemini 3.8 Flash (high)",
@@ -3485,7 +3485,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.8-flash",
       "boardId": "aa_coding_agent_index",
@@ -3547,7 +3547,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:82bfb5d8e05ecb7f",
+    "configuration_id": "aa_coding_agent_index:4a862ec7c51b3561",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.5",
     "variant": "Codex - GPT-5.5 (xhigh)",
@@ -3563,7 +3563,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_coding_agent_index",
@@ -3625,7 +3625,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:bdbd433a1a490db6",
+    "configuration_id": "aa_coding_agent_index:aa838257bf4ac7a8",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (max)",
@@ -3641,7 +3641,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -3703,7 +3703,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:cb763ffba8e6e6c3",
+    "configuration_id": "aa_coding_agent_index:b20e25b4571301d6",
     "board": "aa_coding_agent_index",
     "model": "gemini-3.7-flash",
     "variant": "Opencode - Gemini 3.7 Flash (high)",
@@ -3719,7 +3719,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.7-flash",
       "boardId": "aa_coding_agent_index",
@@ -3781,7 +3781,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:0f8878311879ee55",
+    "configuration_id": "aa_coding_agent_index:3d051dcc2ba2f37d",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (low)",
@@ -3797,7 +3797,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -3859,7 +3859,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:1d30d23ffaf4f33a",
+    "configuration_id": "aa_coding_agent_index:4ca426cd02b35ceb",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-5",
     "variant": "Claude Code - Opus 5 (none)",
@@ -3875,7 +3875,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_coding_agent_index",
@@ -3937,7 +3937,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:86bfd3d07bfcee7e",
+    "configuration_id": "aa_coding_agent_index:a90d41024db2f445",
     "board": "aa_coding_agent_index",
     "model": "gemini-3.8-flash",
     "variant": "Antigravity SDK - Gemini 3.8 Flash (high)",
@@ -3953,7 +3953,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.8-flash",
       "boardId": "aa_coding_agent_index",
@@ -4015,7 +4015,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:45b5a2158d685fec",
+    "configuration_id": "aa_coding_agent_index:921f6bc97836af28",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Code - Opus 4.8 (xhigh)",
@@ -4031,7 +4031,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_coding_agent_index",
@@ -4093,7 +4093,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:00e8dd4cdc7d8306",
+    "configuration_id": "aa_coding_agent_index:e3db389a50093c84",
     "board": "aa_coding_agent_index",
     "model": "muse-spark-1.2",
     "variant": "Opencode - Muse Spark 1.2 (xhigh)",
@@ -4109,7 +4109,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.2",
       "boardId": "aa_coding_agent_index",
@@ -4171,7 +4171,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:34a26644dac83abc",
+    "configuration_id": "aa_coding_agent_index:00a69365f796e37b",
     "board": "aa_coding_agent_index",
     "model": "claude-fable-5",
     "variant": "Claude Code - Fable 5 (low) (with fallback)",
@@ -4187,7 +4187,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_coding_agent_index",
@@ -4249,7 +4249,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:4053167e7ed99965",
+    "configuration_id": "aa_coding_agent_index:0684b6aeb4f0d531",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Code - Opus 4.8 (high)",
@@ -4265,7 +4265,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_coding_agent_index",
@@ -4327,7 +4327,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:0e50e87b7e7588ea",
+    "configuration_id": "aa_coding_agent_index:90de7b1ec4102d52",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (max)",
@@ -4343,7 +4343,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -4405,7 +4405,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:450fac47402eb532",
+    "configuration_id": "aa_coding_agent_index:fe1af07393008824",
     "board": "aa_coding_agent_index",
     "model": "gemini-3.7-flash",
     "variant": "Antigravity SDK - Gemini 3.7 Flash (high)",
@@ -4421,7 +4421,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.7-flash",
       "boardId": "aa_coding_agent_index",
@@ -4483,7 +4483,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:fa7922cd168fd9ea",
+    "configuration_id": "aa_coding_agent_index:28a7206e5c932278",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (xhigh)",
@@ -4499,7 +4499,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -4561,7 +4561,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:7394f3b065cef931",
+    "configuration_id": "aa_coding_agent_index:2e6dbc053ad660c0",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Code - Opus 4.8 (medium)",
@@ -4577,7 +4577,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_coding_agent_index",
@@ -4639,7 +4639,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:f298aeed6e6bd916",
+    "configuration_id": "aa_coding_agent_index:233d11e7c12f70d2",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.5",
     "variant": "Codex - GPT-5.5 (medium)",
@@ -4655,7 +4655,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_coding_agent_index",
@@ -4717,7 +4717,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:6daff5c67bb0080d",
+    "configuration_id": "aa_coding_agent_index:22e63b459178c44b",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (low)",
@@ -4733,7 +4733,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -4795,7 +4795,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:223c91bf135ce6ed",
+    "configuration_id": "aa_coding_agent_index:60c4249193653696",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (high)",
@@ -4811,7 +4811,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -4873,7 +4873,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:ee60817ffdd041e0",
+    "configuration_id": "aa_coding_agent_index:21f1aac41e8114e5",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (xhigh)",
@@ -4889,7 +4889,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -4951,7 +4951,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:6061706a8e5d5cf3",
+    "configuration_id": "aa_coding_agent_index:16572b12e7822435",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (high)",
@@ -4967,7 +4967,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -5029,7 +5029,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:e682eb213d127264",
+    "configuration_id": "aa_coding_agent_index:e430531ccd2018a0",
     "board": "aa_coding_agent_index",
     "model": "deepseek-v4-flash",
     "variant": "Codex - DeepSeek V4 Flash 0731 (max)",
@@ -5045,7 +5045,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash",
       "boardId": "aa_coding_agent_index",
@@ -5107,7 +5107,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:20f6600c263cf327",
+    "configuration_id": "aa_coding_agent_index:bcef941d7555d2c0",
     "board": "aa_coding_agent_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Code - Opus 4.8 (low)",
@@ -5123,7 +5123,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_coding_agent_index",
@@ -5185,7 +5185,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:c61888e831ce4719",
+    "configuration_id": "aa_coding_agent_index:9ba7ca0205de2a46",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (medium)",
@@ -5201,7 +5201,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -5263,7 +5263,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:a4ce684d9bfcaeba",
+    "configuration_id": "aa_coding_agent_index:fc1e15a2d59f7a29",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.5",
     "variant": "Cursor CLI - GPT-5.5 (medium)",
@@ -5279,7 +5279,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_coding_agent_index",
@@ -5341,7 +5341,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:32c8b473a2d3b794",
+    "configuration_id": "aa_coding_agent_index:992323b03d747ff1",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-sol",
     "variant": "Codex - GPT-5.6 Sol (none)",
@@ -5357,7 +5357,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_coding_agent_index",
@@ -5419,7 +5419,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:16d11d7f6864c842",
+    "configuration_id": "aa_coding_agent_index:293c0bf2a91b9ce6",
     "board": "aa_coding_agent_index",
     "model": "glm-5.2",
     "variant": "Claude Code - GLM-5.2",
@@ -5435,7 +5435,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.2",
       "boardId": "aa_coding_agent_index",
@@ -5497,7 +5497,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:44b4f114338fffec",
+    "configuration_id": "aa_coding_agent_index:5cc3213e20b85904",
     "board": "aa_coding_agent_index",
     "model": "deepseek-v4-pro",
     "variant": "Codex - DeepSeek V4 Pro 0813 (max)",
@@ -5513,7 +5513,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_coding_agent_index",
@@ -5575,7 +5575,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:c0787a06422b6d93",
+    "configuration_id": "aa_coding_agent_index:1debd4698cec2ba6",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (medium)",
@@ -5591,7 +5591,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -5653,7 +5653,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:1fcd14a13de7c035",
+    "configuration_id": "aa_coding_agent_index:175c908137df5ffb",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (low)",
@@ -5669,7 +5669,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -5731,7 +5731,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:2988b6c78bb28b1a",
+    "configuration_id": "aa_coding_agent_index:a347ac38639b0108",
     "board": "aa_coding_agent_index",
     "model": "composer-2.5",
     "variant": "Cursor CLI - Composer 2.5 Fast",
@@ -5747,7 +5747,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "composer-2.5",
       "boardId": "aa_coding_agent_index",
@@ -5809,7 +5809,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:9e7b89fca43af90c",
+    "configuration_id": "aa_coding_agent_index:63ac4191ab08898a",
     "board": "aa_coding_agent_index",
     "model": "composer-2.5",
     "variant": "Cursor CLI - Composer 2.5",
@@ -5825,7 +5825,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "composer-2.5",
       "boardId": "aa_coding_agent_index",
@@ -5887,7 +5887,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:097a6a30e4b04a6d",
+    "configuration_id": "aa_coding_agent_index:501096b55ec57d16",
     "board": "aa_coding_agent_index",
     "model": "qwen3.7-plus",
     "variant": "Claude Code - Qwen3.7 Plus (thinking)",
@@ -5903,7 +5903,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.7-plus",
       "boardId": "aa_coding_agent_index",
@@ -5965,7 +5965,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:9bd1ad8bcd9a7678",
+    "configuration_id": "aa_coding_agent_index:8899a318b314d1b5",
     "board": "aa_coding_agent_index",
     "model": "glm-5.1",
     "variant": "Claude Code - GLM-5.1",
@@ -5981,7 +5981,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.1",
       "boardId": "aa_coding_agent_index",
@@ -6043,7 +6043,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:b008d55661a7db45",
+    "configuration_id": "aa_coding_agent_index:424cca546f670bc7",
     "board": "aa_coding_agent_index",
     "model": "kimi-k2.6",
     "variant": "Claude Code - Kimi K2.6",
@@ -6059,7 +6059,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k2.6",
       "boardId": "aa_coding_agent_index",
@@ -6121,7 +6121,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:272607a8b00865bf",
+    "configuration_id": "aa_coding_agent_index:172a6e25672c042f",
     "board": "aa_coding_agent_index",
     "model": "gemini-3.1-pro",
     "variant": "Gemini CLI - Gemini 3.1 Pro (high)",
@@ -6137,7 +6137,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.1-pro",
       "boardId": "aa_coding_agent_index",
@@ -6199,7 +6199,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:970c022a3a265b48",
+    "configuration_id": "aa_coding_agent_index:e5673ba95f1efaf0",
     "board": "aa_coding_agent_index",
     "model": "deepseek-v4-pro",
     "variant": "Claude Code - DeepSeek V4 Pro (high)",
@@ -6215,7 +6215,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_coding_agent_index",
@@ -6277,7 +6277,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:f6419ef4875e5555",
+    "configuration_id": "aa_coding_agent_index:7ec20167e0f66d4e",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (low)",
@@ -6293,7 +6293,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -6355,7 +6355,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:41a12bcf0d7b4ee1",
+    "configuration_id": "aa_coding_agent_index:7fc296c0ffaa7655",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-terra",
     "variant": "Codex - GPT-5.6 Terra (none)",
@@ -6371,7 +6371,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_coding_agent_index",
@@ -6433,7 +6433,7 @@
     }
   },
   {
-    "configuration_id": "aa_coding_agent_index:9c9c52701b876d92",
+    "configuration_id": "aa_coding_agent_index:cb1f12a3f6ceb954",
     "board": "aa_coding_agent_index",
     "model": "gpt-5.6-luna",
     "variant": "Codex - GPT-5.6 Luna (none)",
@@ -6449,7 +6449,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/agents/coding-agents",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_coding_agent_index",
@@ -6511,7 +6511,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:5552907134f53f2c",
+    "configuration_id": "aa_intelligence_index:25421d22b5c20f8f",
     "board": "aa_intelligence_index",
     "model": "claude-opus-5",
     "variant": "Claude Opus 5 (max)",
@@ -6527,7 +6527,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_intelligence_index",
@@ -6553,7 +6553,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:cbeac4155207c3fa",
+    "configuration_id": "aa_intelligence_index:74c2ac4719eb9221",
     "board": "aa_intelligence_index",
     "model": "claude-fable-5",
     "variant": "Claude Fable 5 (with fallback)",
@@ -6569,7 +6569,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-fable-5",
       "boardId": "aa_intelligence_index",
@@ -6595,7 +6595,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a41c6e08c27ddee8",
+    "configuration_id": "aa_intelligence_index:49fc027ebb497a23",
     "board": "aa_intelligence_index",
     "model": "claude-opus-5",
     "variant": "Claude Opus 5 (xhigh)",
@@ -6611,7 +6611,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_intelligence_index",
@@ -6637,7 +6637,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:4298701c46a83541",
+    "configuration_id": "aa_intelligence_index:4b259b2a2462411d",
     "board": "aa_intelligence_index",
     "model": "claude-opus-5",
     "variant": "Claude Opus 5 (high)",
@@ -6653,7 +6653,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_intelligence_index",
@@ -6679,7 +6679,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:e0c03c18388d4663",
+    "configuration_id": "aa_intelligence_index:f9c8a6fafb0243d3",
     "board": "aa_intelligence_index",
     "model": "muse-spark-1.3",
     "variant": "Muse Spark 1.3 (max)",
@@ -6695,7 +6695,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.3",
       "boardId": "aa_intelligence_index",
@@ -6721,7 +6721,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:bc7c822d4ea579b6",
+    "configuration_id": "aa_intelligence_index:4dc68ce7b971a09c",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (max)",
@@ -6737,7 +6737,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -6763,7 +6763,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:7decd80d88340722",
+    "configuration_id": "aa_intelligence_index:8e75e8cbba626e02",
     "board": "aa_intelligence_index",
     "model": "muse-spark-1.3",
     "variant": "Muse Spark 1.3 (xhigh)",
@@ -6779,7 +6779,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.3",
       "boardId": "aa_intelligence_index",
@@ -6805,7 +6805,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1ead844e331fe9bb",
+    "configuration_id": "aa_intelligence_index:f47648f0d1ccc37c",
     "board": "aa_intelligence_index",
     "model": "claude-opus-5",
     "variant": "Claude Opus 5 (medium)",
@@ -6821,7 +6821,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_intelligence_index",
@@ -6847,7 +6847,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a18e602997ccace4",
+    "configuration_id": "aa_intelligence_index:739d2cfaf8df873c",
     "board": "aa_intelligence_index",
     "model": "glm-5.3",
     "variant": "GLM-5.3 (max)",
@@ -6863,7 +6863,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.3",
       "boardId": "aa_intelligence_index",
@@ -6889,7 +6889,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:068000f1e6765945",
+    "configuration_id": "aa_intelligence_index:acc68c04311b9912",
     "board": "aa_intelligence_index",
     "model": "grok-4.6",
     "variant": "Grok 4.6 (high)",
@@ -6905,7 +6905,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.6",
       "boardId": "aa_intelligence_index",
@@ -6931,7 +6931,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:48a02cde929cbb2d",
+    "configuration_id": "aa_intelligence_index:01bcb3465cf07502",
     "board": "aa_intelligence_index",
     "model": "grok-4.6",
     "variant": "Grok 4.6 (xhigh)",
@@ -6947,7 +6947,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.6",
       "boardId": "aa_intelligence_index",
@@ -6973,7 +6973,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:098a26deec3fda20",
+    "configuration_id": "aa_intelligence_index:d3d7ebdbb590175b",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (xhigh)",
@@ -6989,7 +6989,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -7015,7 +7015,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a4f2418bd37d8340",
+    "configuration_id": "aa_intelligence_index:d4a953acf7835647",
     "board": "aa_intelligence_index",
     "model": "kimi-k3",
     "variant": "Kimi K3 (max)",
@@ -7031,7 +7031,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k3",
       "boardId": "aa_intelligence_index",
@@ -7057,7 +7057,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:9b0d21f417836365",
+    "configuration_id": "aa_intelligence_index:bdec4d791d519c18",
     "board": "aa_intelligence_index",
     "model": "grok-4.6",
     "variant": "Grok 4.6 (medium)",
@@ -7073,7 +7073,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.6",
       "boardId": "aa_intelligence_index",
@@ -7099,7 +7099,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:128c5f4f4a5cf8c9",
+    "configuration_id": "aa_intelligence_index:b9c82b8d8f4a23b7",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (high)",
@@ -7115,7 +7115,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -7141,7 +7141,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:481a015169c1026f",
+    "configuration_id": "aa_intelligence_index:6c0097eeafbe5085",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (max)",
@@ -7157,7 +7157,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -7183,7 +7183,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:355a4f41b3af2cce",
+    "configuration_id": "aa_intelligence_index:cd2b13b2c47a5c1a",
     "board": "aa_intelligence_index",
     "model": "claude-opus-4.8",
     "variant": "Claude Opus 4.8 (max)",
@@ -7199,7 +7199,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-4.8",
       "boardId": "aa_intelligence_index",
@@ -7225,7 +7225,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:3d0dee2c225eb302",
+    "configuration_id": "aa_intelligence_index:e0842c02783dbc63",
     "board": "aa_intelligence_index",
     "model": "glm-5.3-flash",
     "variant": "GLM-5.3-Flash",
@@ -7241,7 +7241,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.3-flash",
       "boardId": "aa_intelligence_index",
@@ -7267,7 +7267,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:af79359134a6edfb",
+    "configuration_id": "aa_intelligence_index:7b131d47c8e8bf5c",
     "board": "aa_intelligence_index",
     "model": "gemini-3.8-flash",
     "variant": "Gemini 3.8 Flash (high)",
@@ -7283,7 +7283,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.8-flash",
       "boardId": "aa_intelligence_index",
@@ -7309,7 +7309,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:aca83f6ee971a14c",
+    "configuration_id": "aa_intelligence_index:1469dbaaadcbbf08",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-max",
     "variant": "Qwen3.8 Max (0902)",
@@ -7325,7 +7325,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-max",
       "boardId": "aa_intelligence_index",
@@ -7351,7 +7351,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1489926a6b3bd96c",
+    "configuration_id": "aa_intelligence_index:54ee1fcbe20018e0",
     "board": "aa_intelligence_index",
     "model": "gemini-3.8-flash",
     "variant": "Gemini 3.8 Flash (medium)",
@@ -7367,7 +7367,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.8-flash",
       "boardId": "aa_intelligence_index",
@@ -7393,7 +7393,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:22a0c572eaf055ac",
+    "configuration_id": "aa_intelligence_index:9f8d8dc1ecab9287",
     "board": "aa_intelligence_index",
     "model": "muse-spark-1.2",
     "variant": "Muse Spark 1.2 (xhigh)",
@@ -7409,7 +7409,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.2",
       "boardId": "aa_intelligence_index",
@@ -7435,7 +7435,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:3551946a1d985863",
+    "configuration_id": "aa_intelligence_index:673c48118f4fbf66",
     "board": "aa_intelligence_index",
     "model": "claude-opus-5",
     "variant": "Claude Opus 5 (low)",
@@ -7451,7 +7451,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-opus-5",
       "boardId": "aa_intelligence_index",
@@ -7477,7 +7477,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:5777e78fe1ffef00",
+    "configuration_id": "aa_intelligence_index:9a5aa792ff7d4c5e",
     "board": "aa_intelligence_index",
     "model": "gemini-3.7-flash",
     "variant": "Gemini 3.7 Flash (medium) [AA estimate]",
@@ -7493,7 +7493,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.7-flash",
       "boardId": "aa_intelligence_index",
@@ -7520,7 +7520,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:686da9c4fda56c83",
+    "configuration_id": "aa_intelligence_index:26cfbbd61fb867db",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (medium)",
@@ -7536,7 +7536,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -7562,7 +7562,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:d35e5b9cdd363654",
+    "configuration_id": "aa_intelligence_index:e9e2283182db7390",
     "board": "aa_intelligence_index",
     "model": "gemini-3.7-flash",
     "variant": "Gemini 3.7 Flash (high)",
@@ -7578,7 +7578,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.7-flash",
       "boardId": "aa_intelligence_index",
@@ -7604,7 +7604,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:23e0939b3a100a37",
+    "configuration_id": "aa_intelligence_index:23496a7696ac0f78",
     "board": "aa_intelligence_index",
     "model": "grok-4.5",
     "variant": "Grok 4.5 (high)",
@@ -7620,7 +7620,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.5",
       "boardId": "aa_intelligence_index",
@@ -7646,7 +7646,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:e9c8af0db3fe0568",
+    "configuration_id": "aa_intelligence_index:49a255b8c4e350a9",
     "board": "aa_intelligence_index",
     "model": "glm-5.2",
     "variant": "GLM-5.2 (max)",
@@ -7662,7 +7662,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.2",
       "boardId": "aa_intelligence_index",
@@ -7689,7 +7689,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:2c0cf18e4820c2d5",
+    "configuration_id": "aa_intelligence_index:ea5f7bbc023302d8",
     "board": "aa_intelligence_index",
     "model": "gpt-5.5",
     "variant": "GPT-5.5 (xhigh)",
@@ -7705,7 +7705,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_intelligence_index",
@@ -7731,7 +7731,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:f6a61995ed3b9284",
+    "configuration_id": "aa_intelligence_index:cc93695b65678cb1",
     "board": "aa_intelligence_index",
     "model": "claude-sonnet-5",
     "variant": "Claude Sonnet 5 (max)",
@@ -7747,7 +7747,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-sonnet-5",
       "boardId": "aa_intelligence_index",
@@ -7773,7 +7773,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:59339c5555858a5d",
+    "configuration_id": "aa_intelligence_index:85e4ada9c0cce2ee",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (xhigh)",
@@ -7789,7 +7789,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -7815,7 +7815,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:4984562b30a3893d",
+    "configuration_id": "aa_intelligence_index:1b86ab52d42bbc64",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (max)",
@@ -7831,7 +7831,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -7857,7 +7857,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:ab6b2f1563460a3b",
+    "configuration_id": "aa_intelligence_index:24e88a49008c1ed7",
     "board": "aa_intelligence_index",
     "model": "gpt-5.5",
     "variant": "GPT-5.5 (high)",
@@ -7873,7 +7873,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_intelligence_index",
@@ -7899,7 +7899,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:2ea8a3c3ab5a3e10",
+    "configuration_id": "aa_intelligence_index:d9100c14ba21726b",
     "board": "aa_intelligence_index",
     "model": "gemini-3.7-flash",
     "variant": "Gemini 3.7 Flash (low) [AA estimate]",
@@ -7915,7 +7915,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.7-flash",
       "boardId": "aa_intelligence_index",
@@ -7942,7 +7942,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6274aea540e6ee47",
+    "configuration_id": "aa_intelligence_index:a3d669a0e0f436e9",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-pro",
     "variant": "DeepSeek V4 Pro 0813 (max)",
@@ -7958,7 +7958,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_intelligence_index",
@@ -7984,7 +7984,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:988624f743c882b0",
+    "configuration_id": "aa_intelligence_index:8eac12fcbf4647c1",
     "board": "aa_intelligence_index",
     "model": "grok-4.6",
     "variant": "Grok 4.6 (low)",
@@ -8000,7 +8000,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.6",
       "boardId": "aa_intelligence_index",
@@ -8026,7 +8026,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:cc835ad8c8519c2c",
+    "configuration_id": "aa_intelligence_index:3edc9c35441326ad",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-flash-vision-exp",
     "variant": "DeepSeek V4 Flash Vision (max)",
@@ -8042,7 +8042,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash-vision-exp",
       "boardId": "aa_intelligence_index",
@@ -8068,7 +8068,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a2ff6e9578493048",
+    "configuration_id": "aa_intelligence_index:0e7cd02a3220b211",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (xhigh)",
@@ -8084,7 +8084,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -8110,7 +8110,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:63d77e51f2a23aa3",
+    "configuration_id": "aa_intelligence_index:e4c9625526be4524",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-flash",
     "variant": "DeepSeek V4 Flash 0731 (max)",
@@ -8126,7 +8126,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash",
       "boardId": "aa_intelligence_index",
@@ -8152,7 +8152,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:8b8463d08755c265",
+    "configuration_id": "aa_intelligence_index:a3ed14f4fd958906",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (high)",
@@ -8168,7 +8168,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -8194,32 +8194,32 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:64043d072d7e11d3",
+    "configuration_id": "aa_intelligence_index:5f485b46813b64fd",
     "board": "aa_intelligence_index",
     "model": "kimi-k3",
-    "variant": "Kimi K3 (low) [AA estimate]",
-    "score_is_estimated": true,
+    "variant": "Kimi K3 (low)",
+    "score_is_estimated": false,
     "score_is_proxy": false,
     "agent_harness": null,
     "reasoning_effort": "low",
     "service_mode": null,
-    "score": 34.4555282989717,
+    "score": 30.0666987529068,
     "score_low": null,
     "score_high": null,
     "mean_cost_usd_per_task": null,
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "checked_at": "2026-10-20",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k3",
       "boardId": "aa_intelligence_index",
       "variantLabel": "Kimi K3 (low)",
-      "score": 34.4555282989717,
+      "score": 30.0666987529068,
       "secondary": {
         "costPerTaskUsd": null,
-        "scoreRoundedDisplay": 34,
-        "intelligenceIndexIsEstimated": true,
+        "scoreRoundedDisplay": 30,
+        "intelligenceIndexIsEstimated": false,
         "slug": "kimi-k3-low",
         "shortName": "Kimi K3 (low)",
         "releaseDate": "2026-07-16",
@@ -8232,12 +8232,13 @@
         "hle": 0.249768303985171
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25",
-      "note": "Marked intelligenceIndexIsEstimated=true in AA embedded payload; retained as estimate, not treated as fully measured."
+      "checkedAt": "2026-10-20",
+      "note": "Marked intelligenceIndexIsEstimated=true in AA embedded payload; retained as estimate, not treated as fully measured.",
+      "observedAt": "2026-10-20"
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:d70d45731291b95b",
+    "configuration_id": "aa_intelligence_index:d99c2233ce76ee8e",
     "board": "aa_intelligence_index",
     "model": "gpt-5.5",
     "variant": "GPT-5.5 (medium)",
@@ -8253,7 +8254,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_intelligence_index",
@@ -8279,7 +8280,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:502710341b85a9ae",
+    "configuration_id": "aa_intelligence_index:a81cb54ebd4f313f",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-27b",
     "variant": "Qwen3.8 27B (xhigh)",
@@ -8288,19 +8289,19 @@
     "agent_harness": null,
     "reasoning_effort": "xhigh",
     "service_mode": null,
-    "score": 33.6962858057476,
+    "score": 33.6762858057476,
     "score_low": null,
     "score_high": null,
     "mean_cost_usd_per_task": null,
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "checked_at": "2026-10-20",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-27b",
       "boardId": "aa_intelligence_index",
       "variantLabel": "Qwen3.8 27B (xhigh)",
-      "score": 33.6962858057476,
+      "score": 33.6762858057476,
       "secondary": {
         "costPerTaskUsd": 0.8202,
         "scoreRoundedDisplay": 34,
@@ -8317,11 +8318,12 @@
         "hle": 0.33920296570899
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:9b2e93156558af27",
+    "configuration_id": "aa_intelligence_index:4eac743af77e9f52",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (low)",
@@ -8337,7 +8339,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -8363,7 +8365,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:323f1ca98824003c",
+    "configuration_id": "aa_intelligence_index:aa19ae5291bf5df0",
     "board": "aa_intelligence_index",
     "model": "gemini-3.8-flash",
     "variant": "Gemini 3.8 Flash (low)",
@@ -8379,7 +8381,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.8-flash",
       "boardId": "aa_intelligence_index",
@@ -8405,7 +8407,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:0bfdd2c1580bf6c8",
+    "configuration_id": "aa_intelligence_index:f54c062b3822557b",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (high)",
@@ -8421,7 +8423,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -8448,7 +8450,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:063eaf664f9f535f",
+    "configuration_id": "aa_intelligence_index:9ef03b4fd488b0b4",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (medium)",
@@ -8464,7 +8466,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -8491,7 +8493,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:277b3151061cc926",
+    "configuration_id": "aa_intelligence_index:e16bc7ea69d34cee",
     "board": "aa_intelligence_index",
     "model": "kimi-k2.6",
     "variant": "Kimi K2.6",
@@ -8507,7 +8509,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k2.6",
       "boardId": "aa_intelligence_index",
@@ -8534,7 +8536,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:28529edb0f5cbbd7",
+    "configuration_id": "aa_intelligence_index:c5114a4af7ad3043",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-pro",
     "variant": "DeepSeek V4 Pro (max)",
@@ -8550,7 +8552,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_intelligence_index",
@@ -8576,7 +8578,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:577fbaabe64a7664",
+    "configuration_id": "aa_intelligence_index:71035348a2bfd55a",
     "board": "aa_intelligence_index",
     "model": "gpt-5.5",
     "variant": "GPT-5.5 (low) [AA estimate]",
@@ -8592,7 +8594,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_intelligence_index",
@@ -8619,7 +8621,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:4d705f1075ecf1d9",
+    "configuration_id": "aa_intelligence_index:e700ca45db0b1453",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-27b",
     "variant": "Qwen3.8 27B (medium)",
@@ -8635,7 +8637,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-27b",
       "boardId": "aa_intelligence_index",
@@ -8662,7 +8664,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:42ba94d44056a2dc",
+    "configuration_id": "aa_intelligence_index:353f3a0ff9780b85",
     "board": "aa_intelligence_index",
     "model": "gemini-3.1-pro",
     "variant": "Gemini 3.1 Pro Preview",
@@ -8678,7 +8680,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gemini-3.1-pro",
       "boardId": "aa_intelligence_index",
@@ -8704,7 +8706,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:74b7208bbf608c96",
+    "configuration_id": "aa_intelligence_index:113887a562371977",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-pro",
     "variant": "DeepSeek V4 Pro (high) [AA estimate]",
@@ -8720,7 +8722,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_intelligence_index",
@@ -8747,7 +8749,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:4c5442ae93fe17f5",
+    "configuration_id": "aa_intelligence_index:56b93e043bdb1e5b",
     "board": "aa_intelligence_index",
     "model": "qwen3.7-max",
     "variant": "Qwen3.7 Max",
@@ -8763,7 +8765,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.7-max",
       "boardId": "aa_intelligence_index",
@@ -8789,7 +8791,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:5f3157b19c060478",
+    "configuration_id": "aa_intelligence_index:a588fe929e63e7cc",
     "board": "aa_intelligence_index",
     "model": "minimax-m3",
     "variant": "MiniMax-M3",
@@ -8805,7 +8807,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "minimax-m3",
       "boardId": "aa_intelligence_index",
@@ -8831,7 +8833,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:80f972b88b5126eb",
+    "configuration_id": "aa_intelligence_index:816a70f6eb2e2019",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-27b",
     "variant": "Qwen3.8 27B (low)",
@@ -8847,7 +8849,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-27b",
       "boardId": "aa_intelligence_index",
@@ -8874,7 +8876,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:be48ca71f2c3cc65",
+    "configuration_id": "aa_intelligence_index:5f3986a3a69ccd54",
     "board": "aa_intelligence_index",
     "model": "claude-sonnet-5",
     "variant": "Claude Sonnet 5 (Non-reasoning) [AA estimate]",
@@ -8890,7 +8892,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-sonnet-5",
       "boardId": "aa_intelligence_index",
@@ -8917,7 +8919,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:d3482249592f106e",
+    "configuration_id": "aa_intelligence_index:ed48cd6b36f88418",
     "board": "aa_intelligence_index",
     "model": "claude-sonnet-5",
     "variant": "Claude Sonnet 5 (medium)",
@@ -8933,7 +8935,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-sonnet-5",
       "boardId": "aa_intelligence_index",
@@ -8959,7 +8961,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1497565d7932913e",
+    "configuration_id": "aa_intelligence_index:96b2294a04ff067c",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-sol",
     "variant": "GPT-5.6 Sol (Non-reasoning) [AA estimate]",
@@ -8975,7 +8977,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-sol",
       "boardId": "aa_intelligence_index",
@@ -9002,7 +9004,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6942b2b26166ebb6",
+    "configuration_id": "aa_intelligence_index:8a04960aa46c8b49",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (low)",
@@ -9018,7 +9020,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -9045,7 +9047,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:087e9691d21cff4f",
+    "configuration_id": "aa_intelligence_index:4438b2c43a37464f",
     "board": "aa_intelligence_index",
     "model": "glm-5.1",
     "variant": "GLM-5.1",
@@ -9061,7 +9063,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.1",
       "boardId": "aa_intelligence_index",
@@ -9088,7 +9090,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:697dc1584061ce98",
+    "configuration_id": "aa_intelligence_index:81027d0932567dfa",
     "board": "aa_intelligence_index",
     "model": "qwen3.6-plus",
     "variant": "Qwen3.6 Plus [AA estimate]",
@@ -9104,7 +9106,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.6-plus",
       "boardId": "aa_intelligence_index",
@@ -9131,7 +9133,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:c7be0a34df2361dc",
+    "configuration_id": "aa_intelligence_index:a1b6f519d2c8dc01",
     "board": "aa_intelligence_index",
     "model": "mimo-v2.5-pro",
     "variant": "MiMo-V2.5-Pro",
@@ -9147,7 +9149,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "mimo-v2.5-pro",
       "boardId": "aa_intelligence_index",
@@ -9173,7 +9175,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:972d35c2a3220471",
+    "configuration_id": "aa_intelligence_index:3f661c811c1f048c",
     "board": "aa_intelligence_index",
     "model": "kimi-k2.7-code",
     "variant": "Kimi K2.7 Code",
@@ -9189,7 +9191,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k2.7-code",
       "boardId": "aa_intelligence_index",
@@ -9215,32 +9217,32 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:9377bb6498be316c",
+    "configuration_id": "aa_intelligence_index:e408154d2ba3fc0e",
     "board": "aa_intelligence_index",
     "model": "inkling-small",
-    "variant": "Inkling Small [AA estimate]",
-    "score_is_estimated": true,
+    "variant": "Inkling Small",
+    "score_is_estimated": false,
     "score_is_proxy": false,
     "agent_harness": null,
     "reasoning_effort": null,
     "service_mode": null,
-    "score": 27.7806153423596,
+    "score": 25.6582584411942,
     "score_low": null,
     "score_high": null,
     "mean_cost_usd_per_task": null,
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "checked_at": "2026-10-20",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "inkling-small",
       "boardId": "aa_intelligence_index",
       "variantLabel": "Inkling Small",
-      "score": 27.7806153423596,
+      "score": 25.6582584411942,
       "secondary": {
         "costPerTaskUsd": 0.0895,
-        "scoreRoundedDisplay": 28,
-        "intelligenceIndexIsEstimated": true,
+        "scoreRoundedDisplay": 26,
+        "intelligenceIndexIsEstimated": false,
         "slug": "inkling-small",
         "shortName": "Inkling Small",
         "releaseDate": "2026-07-30",
@@ -9253,11 +9255,12 @@
         "hle": 0.333178869323448
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:3ef6cf006b88a1cd",
+    "configuration_id": "aa_intelligence_index:09eb6e3c36146f25",
     "board": "aa_intelligence_index",
     "model": "qwen3.7-plus",
     "variant": "Qwen3.7 Plus",
@@ -9273,7 +9276,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.7-plus",
       "boardId": "aa_intelligence_index",
@@ -9299,7 +9302,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:ea11d3b2c924d55c",
+    "configuration_id": "aa_intelligence_index:ac212df9f0c87863",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (medium)",
@@ -9315,7 +9318,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -9342,7 +9345,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:f2ce0a467d3d5206",
+    "configuration_id": "aa_intelligence_index:45ce2c1fa4b7416c",
     "board": "aa_intelligence_index",
     "model": "hy3",
     "variant": "Hy3",
@@ -9358,7 +9361,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "hy3",
       "boardId": "aa_intelligence_index",
@@ -9384,7 +9387,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:b2ea70bec62cdd4c",
+    "configuration_id": "aa_intelligence_index:100aff9dfe38e978",
     "board": "aa_intelligence_index",
     "model": "inkling",
     "variant": "Inkling",
@@ -9400,7 +9403,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "inkling",
       "boardId": "aa_intelligence_index",
@@ -9426,7 +9429,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:d140b8d027f3e583",
+    "configuration_id": "aa_intelligence_index:63f22c617bfd79c9",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-flash",
     "variant": "DeepSeek V4 Flash (high) [AA estimate]",
@@ -9442,7 +9445,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash",
       "boardId": "aa_intelligence_index",
@@ -9468,7 +9471,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:52e3d760d0d565f3",
+    "configuration_id": "aa_intelligence_index:0c01470ce5ceabcd",
     "board": "aa_intelligence_index",
     "model": "claude-sonnet-5",
     "variant": "Claude Sonnet 5 (low)",
@@ -9484,7 +9487,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "claude-sonnet-5",
       "boardId": "aa_intelligence_index",
@@ -9510,7 +9513,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:0702f161fdac135d",
+    "configuration_id": "aa_intelligence_index:edb29be0d7d5756e",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-flash",
     "variant": "DeepSeek V4 Flash (max)",
@@ -9526,7 +9529,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash",
       "boardId": "aa_intelligence_index",
@@ -9552,7 +9555,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:f68c9a2b977434db",
+    "configuration_id": "aa_intelligence_index:0e79e2e8e0b07de7",
     "board": "aa_intelligence_index",
     "model": "glm-5.1",
     "variant": "GLM-5.1 (Non-reasoning) [AA estimate]",
@@ -9568,7 +9571,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.1",
       "boardId": "aa_intelligence_index",
@@ -9595,7 +9598,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:dcbc01bb2bfdff7b",
+    "configuration_id": "aa_intelligence_index:8d895b8c81b6a465",
     "board": "aa_intelligence_index",
     "model": "kimi-k2.6",
     "variant": "Kimi K2.6 (Non-reasoning) [AA estimate]",
@@ -9611,7 +9614,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k2.6",
       "boardId": "aa_intelligence_index",
@@ -9638,7 +9641,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:dae475160aaf159d",
+    "configuration_id": "aa_intelligence_index:b1425be0d97e5c8f",
     "board": "aa_intelligence_index",
     "model": "nemotron-3-ultra",
     "variant": "Nemotron 3 Ultra",
@@ -9654,7 +9657,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "nemotron-3-ultra",
       "boardId": "aa_intelligence_index",
@@ -9680,7 +9683,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6e644086720c76fb",
+    "configuration_id": "aa_intelligence_index:e2610e8e9f8f5387",
     "board": "aa_intelligence_index",
     "model": "minimax-m2.7",
     "variant": "MiniMax-M2.7",
@@ -9696,7 +9699,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "minimax-m2.7",
       "boardId": "aa_intelligence_index",
@@ -9722,7 +9725,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6f68fff9d8d4d50a",
+    "configuration_id": "aa_intelligence_index:908e47f87000466b",
     "board": "aa_intelligence_index",
     "model": "gpt-5.5",
     "variant": "GPT-5.5 (Non-reasoning) [AA estimate]",
@@ -9738,7 +9741,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.5",
       "boardId": "aa_intelligence_index",
@@ -9765,7 +9768,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:729f04ecc9f39a78",
+    "configuration_id": "aa_intelligence_index:54164555cdafa6aa",
     "board": "aa_intelligence_index",
     "model": "minimax-m2.5",
     "variant": "MiniMax-M2.5 [AA estimate]",
@@ -9781,7 +9784,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "minimax-m2.5",
       "boardId": "aa_intelligence_index",
@@ -9808,7 +9811,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:d980d7f6c116aa18",
+    "configuration_id": "aa_intelligence_index:346971f040bf44cb",
     "board": "aa_intelligence_index",
     "model": "glm-5.2",
     "variant": "GLM-5.2 (Non-reasoning) [AA estimate]",
@@ -9824,7 +9827,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.2",
       "boardId": "aa_intelligence_index",
@@ -9851,7 +9854,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:e55541dfa8915670",
+    "configuration_id": "aa_intelligence_index:935e4b4f447651d5",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-27b",
     "variant": "Qwen3.8 27B",
@@ -9867,7 +9870,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-27b",
       "boardId": "aa_intelligence_index",
@@ -9894,7 +9897,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:73a4decd4bbbe544",
+    "configuration_id": "aa_intelligence_index:53ad61eb2f6a63dd",
     "board": "aa_intelligence_index",
     "model": "mimo-v2.5",
     "variant": "MiMo-V2.5 [AA estimate]",
@@ -9910,7 +9913,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "mimo-v2.5",
       "boardId": "aa_intelligence_index",
@@ -9936,7 +9939,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:f9795b01ada9c983",
+    "configuration_id": "aa_intelligence_index:ab2c985da90b2c7a",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-terra",
     "variant": "GPT-5.6 Terra (Non-reasoning)",
@@ -9952,7 +9955,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-terra",
       "boardId": "aa_intelligence_index",
@@ -9979,7 +9982,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1ac748bac9693c4c",
+    "configuration_id": "aa_intelligence_index:39ba30f3ee9cefea",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (low)",
@@ -9995,7 +9998,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -10022,7 +10025,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:cb620b7efa22ce97",
+    "configuration_id": "aa_intelligence_index:0203758c17c7d2a9",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-pro",
     "variant": "DeepSeek V4 Pro (Non-reasoning) [AA estimate]",
@@ -10038,7 +10041,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-pro",
       "boardId": "aa_intelligence_index",
@@ -10065,7 +10068,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:4dd1b2f7a637eab9",
+    "configuration_id": "aa_intelligence_index:8308390c72a8c067",
     "board": "aa_intelligence_index",
     "model": "longcat-2.0",
     "variant": "LongCat 2.0",
@@ -10081,7 +10084,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "longcat-2.0",
       "boardId": "aa_intelligence_index",
@@ -10107,7 +10110,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:2e122ea83becd164",
+    "configuration_id": "aa_intelligence_index:01df56f64235bce8",
     "board": "aa_intelligence_index",
     "model": "step-3.7-flash",
     "variant": "Step 3.7 Flash [AA estimate]",
@@ -10123,7 +10126,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "step-3.7-flash",
       "boardId": "aa_intelligence_index",
@@ -10150,7 +10153,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6dd7b6515ef6c58d",
+    "configuration_id": "aa_intelligence_index:089b006ab2bcb6e3",
     "board": "aa_intelligence_index",
     "model": "mimo-v2.5-pro",
     "variant": "MiMo-V2.5-Pro (Non-reasoning) [AA estimate]",
@@ -10166,7 +10169,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "mimo-v2.5-pro",
       "boardId": "aa_intelligence_index",
@@ -10193,7 +10196,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:e5613085ab1a7a3f",
+    "configuration_id": "aa_intelligence_index:b4d4fd0fafb0afd8",
     "board": "aa_intelligence_index",
     "model": "step-3.5-flash",
     "variant": "Step 3.5 Flash 2603 [AA estimate]",
@@ -10209,7 +10212,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "step-3.5-flash",
       "boardId": "aa_intelligence_index",
@@ -10236,7 +10239,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1a5f165c13daf680",
+    "configuration_id": "aa_intelligence_index:2d4580f0803ada46",
     "board": "aa_intelligence_index",
     "model": "gpt-5.6-luna",
     "variant": "GPT-5.6 Luna (Non-reasoning)",
@@ -10252,7 +10255,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-5.6-luna",
       "boardId": "aa_intelligence_index",
@@ -10279,7 +10282,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a1df696fe6fdce48",
+    "configuration_id": "aa_intelligence_index:5946ae4fd4834d8b",
     "board": "aa_intelligence_index",
     "model": "step-3.5-flash",
     "variant": "Step 3.5 Flash [AA estimate]",
@@ -10295,7 +10298,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "step-3.5-flash",
       "boardId": "aa_intelligence_index",
@@ -10322,7 +10325,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:da05e067e5128818",
+    "configuration_id": "aa_intelligence_index:138221313f3b90c1",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4.1-flash",
     "variant": "DeepSeek V4.1 Flash (max)",
@@ -10338,7 +10341,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4.1-flash",
       "boardId": "aa_intelligence_index",
@@ -10361,7 +10364,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:fcd5c36a82dd33cd",
+    "configuration_id": "aa_intelligence_index:71390716e02234db",
     "board": "aa_intelligence_index",
     "model": "mimo-v2.6-pro",
     "variant": "MiMo-V2.6-Pro",
@@ -10377,7 +10380,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "mimo-v2.6-pro",
       "boardId": "aa_intelligence_index",
@@ -10400,7 +10403,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a2d46e6413e69b35",
+    "configuration_id": "aa_intelligence_index:440abd4e0f691b88",
     "board": "aa_intelligence_index",
     "model": "grok-4.7",
     "variant": "Grok 4.7 (xhigh)",
@@ -10416,7 +10419,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "grok-4.7",
       "boardId": "aa_intelligence_index",
@@ -10439,7 +10442,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:2fdb268ffa30531c",
+    "configuration_id": "aa_intelligence_index:9a030b6f1180253c",
     "board": "aa_intelligence_index",
     "model": "gpt-6-luna",
     "variant": "GPT-6 Luna (max)",
@@ -10448,22 +10451,22 @@
     "agent_harness": null,
     "reasoning_effort": "max",
     "service_mode": null,
-    "score": 37.2559686869738,
+    "score": 38.1245186869738,
     "score_low": null,
     "score_high": null,
     "mean_cost_usd_per_task": null,
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "checked_at": "2026-10-20",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "gpt-6-luna",
       "boardId": "aa_intelligence_index",
       "variantLabel": "GPT-6 Luna (max)",
-      "score": 37.2559686869738,
+      "score": 38.1245186869738,
       "secondary": {
         "costPerTaskUsd": null,
-        "scoreRoundedDisplay": 37,
+        "scoreRoundedDisplay": 38,
         "intelligenceIndexIsEstimated": false,
         "slug": "gpt-6-luna",
         "shortName": "GPT-6 Luna (max)",
@@ -10474,11 +10477,12 @@
         "effort": "max"
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:878e0ba1606d08b6",
+    "configuration_id": "aa_intelligence_index:638758d395476c21",
     "board": "aa_intelligence_index",
     "model": "step-5-preview",
     "variant": "Step 5 Preview",
@@ -10494,7 +10498,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "step-5-preview",
       "boardId": "aa_intelligence_index",
@@ -10517,7 +10521,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:34ed8de1747e2198",
+    "configuration_id": "aa_intelligence_index:15fe9537e52afd42",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-max-0902",
     "variant": "Qwen3.8 Max (0902)",
@@ -10533,7 +10537,7 @@
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-max-0902",
       "boardId": "aa_intelligence_index",
@@ -10556,7 +10560,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:927df4e45724a2b2",
+    "configuration_id": "aa_intelligence_index:d3ee6d337a4c1751",
     "board": "aa_intelligence_index",
     "model": "glm-5.3-flashx",
     "variant": "glm-5.3-flashx [proxy]",
@@ -10572,7 +10576,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.3-flashx",
       "boardId": "aa_intelligence_index",
@@ -10609,7 +10613,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:9e5674a6c6079dd5",
+    "configuration_id": "aa_intelligence_index:25547281e1f1d352",
     "board": "aa_intelligence_index",
     "model": "muse-spark-1.3-contributor",
     "variant": "muse-spark-1.3-contributor [proxy]",
@@ -10625,7 +10629,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.3-contributor",
       "boardId": "aa_intelligence_index",
@@ -10661,7 +10665,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:1aadd335a23027ea",
+    "configuration_id": "aa_intelligence_index:5197ff1d728893e9",
     "board": "aa_intelligence_index",
     "model": "muse-spark-1.2-contributor",
     "variant": "muse-spark-1.2-contributor [proxy]",
@@ -10677,7 +10681,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "muse-spark-1.2-contributor",
       "boardId": "aa_intelligence_index",
@@ -10713,7 +10717,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:a96a4e2df6ccbfaf",
+    "configuration_id": "aa_intelligence_index:9f1122d121190b0d",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4-flash-fast",
     "variant": "deepseek-v4-flash-fast [proxy]",
@@ -10729,7 +10733,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4-flash-fast",
       "boardId": "aa_intelligence_index",
@@ -10765,7 +10769,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:2748009f1a5f4fd3",
+    "configuration_id": "aa_intelligence_index:9b69e5abb9b3e508",
     "board": "aa_intelligence_index",
     "model": "kimi-k2.7-code-highspeed",
     "variant": "kimi-k2.7-code-highspeed [proxy]",
@@ -10781,7 +10785,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "kimi-k2.7-code-highspeed",
       "boardId": "aa_intelligence_index",
@@ -10817,7 +10821,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:528ff637182a02ad",
+    "configuration_id": "aa_intelligence_index:89f7926e681a928e",
     "board": "aa_intelligence_index",
     "model": "glm-5.2-fast",
     "variant": "glm-5.2-fast [proxy]",
@@ -10833,7 +10837,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "glm-5.2-fast",
       "boardId": "aa_intelligence_index",
@@ -10869,7 +10873,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:e7a8cd24f57c6467",
+    "configuration_id": "aa_intelligence_index:41a8d65743bd6031",
     "board": "aa_intelligence_index",
     "model": "mimo-v2.6-flash",
     "variant": "mimo-v2.6-flash [proxy]",
@@ -10885,7 +10889,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "mimo-v2.6-flash",
       "boardId": "aa_intelligence_index",
@@ -10921,7 +10925,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:ca3ea193f77bf06d",
+    "configuration_id": "aa_intelligence_index:2741bd5011937eb9",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-flash",
     "variant": "qwen3.8-flash [proxy]",
@@ -10937,7 +10941,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-flash",
       "boardId": "aa_intelligence_index",
@@ -10972,7 +10976,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:6f9460fc6b028c5c",
+    "configuration_id": "aa_intelligence_index:b4f32fde230dc2d5",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-omni-flash",
     "variant": "qwen3.8-omni-flash [proxy]",
@@ -10988,7 +10992,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "qwen3.8-omni-flash",
       "boardId": "aa_intelligence_index",
@@ -11023,7 +11027,7 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:fbb0d8f1acc0a998",
+    "configuration_id": "aa_intelligence_index:a81bfcd58ef12b2c",
     "board": "aa_intelligence_index",
     "model": "hy4-preview",
     "variant": "hy4-preview [proxy]",
@@ -11039,7 +11043,7 @@
     "median_cost_usd_per_task": null,
     "source": "proxy: see estimate.basis",
     "checked_at": "2026-09-25",
-    "archive": "scores-aa-round4-2026-09-25.json",
+    "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "hy4-preview",
       "boardId": "aa_intelligence_index",

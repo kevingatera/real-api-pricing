@@ -22,6 +22,7 @@ SCORE_FILES = (
     "scores-aa-coding-agent-round1-2026-09-06.json",
     "scores-aa-round3-2026-09-09.json",
     "scores-aa-round4-2026-09-25.json",
+    "scores-aa-round5-2026-10-20.json",
 )
 
 

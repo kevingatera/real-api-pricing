@@ -22,7 +22,7 @@ Each chart uses scores from its named leaderboard only. Code Arena here specific
 
 AA Intelligence now uses **Intelligence Index v4.3.2** (the v4.3 methodology, announced September 7, 2026, re-read from the public payload on 2026-09-25; the page label is v4.3.2 rather than v4.3); AA Coding Agent remains **v1.4**. The new intelligence methodology replaces the old snapshot as a whole: lower numerical scores are not evidence of model regression across index versions. All configurations within the selected snapshot are retained, including explicitly marked AA estimates. Historical evidence stays in `data/research/`.
 
-Snapshot: 2026-09-25 (the AA Intelligence board was re-read on 2026-09-25; Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots). Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
+Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (four re-scored configurations and 33 newly listed configurations appended; nothing dropped; the rest of the board stays at its 2026-09-25 values, see [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)). Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
 
 | Coverage | Rows |
 |---|---:|
