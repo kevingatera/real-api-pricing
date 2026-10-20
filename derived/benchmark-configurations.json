@@ -10325,42 +10325,48 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:138221313f3b90c1",
+    "configuration_id": "aa_intelligence_index:85190f16197c2ab5",
     "board": "aa_intelligence_index",
     "model": "deepseek-v4.1-flash",
-    "variant": "DeepSeek V4.1 Flash (max)",
+    "variant": "DeepSeek V4.1 Flash 1017 (max)",
     "score_is_estimated": false,
     "score_is_proxy": false,
     "agent_harness": null,
     "reasoning_effort": "max",
     "service_mode": null,
-    "score": 39.456167472527,
+    "score": 45.0965048681912,
     "score_low": null,
     "score_high": null,
     "mean_cost_usd_per_task": null,
     "median_cost_usd_per_task": null,
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "checked_at": "2026-09-25",
+    "checked_at": "2026-10-20",
     "archive": "scores-aa-round5-2026-10-20.json",
     "raw_record": {
       "model": "deepseek-v4.1-flash",
       "boardId": "aa_intelligence_index",
-      "variantLabel": "DeepSeek V4.1 Flash (max)",
-      "score": 39.456167472527,
+      "variantLabel": "DeepSeek V4.1 Flash 1017 (max)",
+      "score": 45.0965048681912,
       "secondary": {
         "costPerTaskUsd": null,
-        "scoreRoundedDisplay": 39,
+        "scoreRoundedDisplay": 45,
         "intelligenceIndexIsEstimated": false,
-        "slug": "deepseek-v4-1-flash",
-        "shortName": "DeepSeek V4.1 Flash (max)",
+        "slug": "deepseek-v4-1-flash-1017",
+        "shortName": "DeepSeek V4.1 Flash 1017 (max)",
         "releaseDate": null,
         "isReasoning": true,
         "deprecated": false,
         "modelCreatorName": "DeepSeek",
-        "effort": "max effort"
+        "effort": "max effort",
+        "remappedFrom": {
+          "slug": "deepseek-v4-1-flash",
+          "score": 39.456167472527,
+          "observedAt": null
+        }
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   },
   {
@@ -10873,58 +10879,6 @@
     }
   },
   {
-    "configuration_id": "aa_intelligence_index:41a8d65743bd6031",
-    "board": "aa_intelligence_index",
-    "model": "mimo-v2.6-flash",
-    "variant": "mimo-v2.6-flash [proxy]",
-    "score_is_estimated": true,
-    "score_is_proxy": true,
-    "agent_harness": null,
-    "reasoning_effort": null,
-    "service_mode": null,
-    "score": 44.3,
-    "score_low": null,
-    "score_high": null,
-    "mean_cost_usd_per_task": null,
-    "median_cost_usd_per_task": null,
-    "source": "proxy: see estimate.basis",
-    "checked_at": "2026-09-25",
-    "archive": "scores-aa-round5-2026-10-20.json",
-    "raw_record": {
-      "model": "mimo-v2.6-flash",
-      "boardId": "aa_intelligence_index",
-      "variantLabel": "mimo-v2.6-flash [proxy]",
-      "score": 44.3,
-      "estimated": true,
-      "secondary": {
-        "scoreRoundedDisplay": 44,
-        "intelligenceIndexIsEstimated": true,
-        "proxy": true,
-        "slug": "proxy:mimo-v2.6-flash",
-        "shortName": "mimo-v2.6-flash [proxy]",
-        "releaseDate": null,
-        "isReasoning": null,
-        "deprecated": false,
-        "modelCreatorName": null,
-        "effort": null,
-        "estimate": {
-          "method": "Two independent within-family readings, averaged: (1) the vendor's own DeepSWE v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its non-Pro sibling, giving 44.88. Midpoint adopted.",
-          "basis": [
-            "https://yfarmx.com/ai/llms/mimo-v2-6/",
-            "https://cheapestinference.com/blog/mimo-v2-6/",
-            "https://rankllms.com/models/mimo-v2-6-flash/"
-          ],
-          "band": 2.5,
-          "anchor_slugs": "mimo-v2-6-pro",
-          "note": "Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the same tier. AA has not scored the Flash configuration.",
-          "estimated_at": "2026-09-25"
-        }
-      },
-      "source": "proxy: see estimate.basis",
-      "checkedAt": "2026-09-25"
-    }
-  },
-  {
     "configuration_id": "aa_intelligence_index:2741bd5011937eb9",
     "board": "aa_intelligence_index",
     "model": "qwen3.8-flash",
@@ -11075,6 +11029,50 @@
       },
       "source": "proxy: see estimate.basis",
       "checkedAt": "2026-09-25"
+    }
+  },
+  {
+    "configuration_id": "aa_intelligence_index:43ceaf944e254366",
+    "board": "aa_intelligence_index",
+    "model": "mimo-v2.6-flash",
+    "variant": "MiMo-V2.6-Flash",
+    "score_is_estimated": false,
+    "score_is_proxy": false,
+    "agent_harness": null,
+    "reasoning_effort": null,
+    "service_mode": null,
+    "score": 37.8843590141754,
+    "score_low": null,
+    "score_high": null,
+    "mean_cost_usd_per_task": null,
+    "median_cost_usd_per_task": null,
+    "source": "https://artificialanalysis.ai/leaderboards/models",
+    "checked_at": "2026-10-20",
+    "archive": "scores-aa-round5-2026-10-20.json",
+    "raw_record": {
+      "model": "mimo-v2.6-flash",
+      "boardId": "aa_intelligence_index",
+      "variantLabel": "MiMo-V2.6-Flash",
+      "score": 37.8843590141754,
+      "secondary": {
+        "costPerTaskUsd": null,
+        "scoreRoundedDisplay": 38,
+        "intelligenceIndexIsEstimated": false,
+        "slug": "mimo-v2-6-flash",
+        "shortName": "MiMo-V2.6-Flash",
+        "releaseDate": null,
+        "isReasoning": true,
+        "deprecated": false,
+        "modelCreatorName": "Xiaomi",
+        "effort": "default",
+        "replaces": {
+          "proxy": "proxy:mimo-v2.6-flash",
+          "proxyScore": 44.3
+        }
+      },
+      "source": "https://artificialanalysis.ai/leaderboards/models",
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   }
 ]

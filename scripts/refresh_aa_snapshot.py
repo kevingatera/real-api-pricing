@@ -83,8 +83,9 @@ for s in prev["scores"]:
 # slug -> (plan model id, effort note). Only added when the slug is genuinely new to the
 # snapshot; a model with no row in build_adopted simply produces no chart point.
 ADDITIONS = {
-    "deepseek-v4-1-flash": ("deepseek-v4.1-flash", "max effort"),
+    "deepseek-v4-1-flash-1017": ("deepseek-v4.1-flash", "max effort"),
     "mimo-v2-6-pro": ("mimo-v2.6-pro", "default"),
+    "mimo-v2-6-flash": ("mimo-v2.6-flash", "default"),
     "grok-4-7": ("grok-4.7", "xhigh"),
     "gpt-6-luna": ("gpt-6-luna", "max"),
     "step-5": ("step-5-preview", "preview"),

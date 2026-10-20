@@ -3,8 +3,8 @@
 WHY THIS FILE EXISTS
 --------------------
 AA's public payload carries no Intelligence Index for a handful of models the plans
-serve (MiMo-V2.6-Flash, GLM-5.3-FlashX, Qwen3.8-Flash, Qwen3.8-Omni-Flash, Hy4-preview,
-plus several serving variants). Without a number those rows cannot appear on the
+serve (GLM-5.3-FlashX, Qwen3.8-Flash, Qwen3.8-Omni-Flash, Hy4-preview, plus several serving
+variants). MiMo-V2.6-Flash was a proxy until AA published a measured configuration on 2026-10-20. Without a number those rows cannot appear on the
 intelligence charts at all.
 
 A single-benchmark bridge was measured and REJECTED: fitting intelligenceIndex ~ GPQA
@@ -61,17 +61,6 @@ SAME_WEIGHTS = [
 
 # B. vendor-anchored, family slope --------------------------------------------------------
 VENDOR_ANCHORED = [
-    dict(model="mimo-v2.6-flash", value=44.30, band=2.5,
-         anchor="mimo-v2-6-pro",
-         method="Two independent within-family readings, averaged: (1) the vendor's own DeepSWE "
-                "v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, "
-                "giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its "
-                "non-Pro sibling, giving 44.88. Midpoint adopted.",
-         note="Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the "
-              "same tier. AA has not scored the Flash configuration.",
-         basis=["https://yfarmx.com/ai/llms/mimo-v2-6/",
-                "https://cheapestinference.com/blog/mimo-v2-6/",
-                "https://rankllms.com/models/mimo-v2-6-flash/"]),
     dict(model="qwen3.8-flash", value=39.70, band=5.0,
          anchor="qwen3-8-27b + qwen3-8-max",
          method="Within-family calibration on AA's own GPQA for two Qwen 3.8 points "

@@ -22,7 +22,7 @@ GLM Coding Plan 现已改用智谱官方周积分和缓存/输入/输出三段�
 
 AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Coding Agent 仍为 **v1.4**。智力榜按新版整榜替换，不能把跨版本分数降低解释为模型能力退步。保留选定快照内的全部配置，并明确标注 AA 估计值；历史证据继续保存在 `data/research/`。
 
-快照日期：2026-09-25，并于 2026-10-20 对 AA 智力榜做增量更新（4 个配置重新打分、新增 33 个配置，未删除任何记录；其余记录保持 2026-09-25 数值，见 [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)）。（Code Arena、Agent Arena 与 AA 编程 Agent 榜分别沿用 2026-09-05 / 2026-09-01 / 2026-09-09 快照）。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
+快照日期：2026-09-25，并于 2026-10-20 对 AA 智力榜做增量更新（4 个配置重新打分、2 处映射更新、新增 33 个配置，未删除任何记录；其余记录保持 2026-09-25 数值，见 [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)）。（Code Arena、Agent Arena 与 AA 编程 Agent 榜分别沿用 2026-09-05 / 2026-09-01 / 2026-09-09 快照）。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
 
 | 覆盖范围 | 行数 |
 |---|---:|
@@ -31,11 +31,11 @@ AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Codin
 | 按量 API 基准点 | 11 |
 | OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 51 / 20 |
 | Code Arena / Agent Arena 有分点 | 138 / 142 |
-| AA 智力榜 / AA 编程 Agent 榜有分点 | 179 / 73（含10条标注代理估计后为 194 / 73） |
+| AA 智力榜 / AA 编程 Agent 榜有分点 | 181 / 73（含9条标注代理估计后为 194 / 73） |
 
 ### 代理估计值（明确标注，绝不隐式）
 
-有十个套餐点是 AA 尚未评测的配置。它们既不留空，也不冒充实测值：标定过程写在
+有九个代理估计配置，对应十三个套餐点，这些套餐点所用的配置 AA 尚未评测。MiMo-V2.6-Flash 原为代理值 44.30，AA 于 2026-10-20 发布实测配置（37.88）后已改为实测。它们既不留空，也不冒充实测值：标定过程写在
 `scripts/proxy_estimates.py`，快照存入 `estimatedRecords` 字段，图表在图例上标注
 `[代理]`（英文 `[proxy]`），因此代理值不会与 AA 实测值或 AA 自己发布的估计值
 （`[AA estimate]`）混淆。
@@ -45,8 +45,7 @@ AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Codin
 - **同权重服务变体（±1.5）**——六行（GLM-5.3-FlashX、Muse Spark contributor 档、DeepSeek V4
   Flash Fast、Kimi K2.7 Code HighSpeed、GLM-5.2 Fast）。服务商说明它们是同一模型的高速或分档
   服务，直接继承基础配置的 AA 分。
-- **同厂商锚点（±2.5 至 ±5）**——四行（MiMo-V2.6-Flash、Qwen3.8-Flash、Qwen3.8-Omni-Flash、
-  Hy4-preview）。厂商表中同时含缺失模型与 AA 已评测的同族模型，用 AA 自己的 GPQA 标定族内斜率
+- **同厂商锚点（±2.5 至 ±5）**——三条（Qwen3.8-Flash、Qwen3.8-Omni-Flash、Hy4-preview）。厂商表中同时含缺失模型与 AA 已评测的同族模型，用 AA 自己的 GPQA 标定族内斜率
   后推算。该区间内 GPQA 已饱和，故带宽较大。
 
 全局“基准→指数”回归经过实测后弃用：在现代模型上 R² 仅 0.44，p90 残差约 10 分，宽于决定前沿的

@@ -22,7 +22,7 @@ Each chart uses scores from its named leaderboard only. Code Arena here specific
 
 AA Intelligence now uses **Intelligence Index v4.3.2** (the v4.3 methodology, announced September 7, 2026, re-read from the public payload on 2026-09-25; the page label is v4.3.2 rather than v4.3); AA Coding Agent remains **v1.4**. The new intelligence methodology replaces the old snapshot as a whole: lower numerical scores are not evidence of model regression across index versions. All configurations within the selected snapshot are retained, including explicitly marked AA estimates. Historical evidence stays in `data/research/`.
 
-Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (four re-scored configurations and 33 newly listed configurations appended; nothing dropped; the rest of the board stays at its 2026-09-25 values, see [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)). Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
+Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (four re-scored configurations, two mapping changes, and 33 newly listed configurations appended; nothing dropped; the rest of the board stays at its 2026-09-25 values, see [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)). Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
 
 | Coverage | Rows |
 |---|---:|
@@ -31,11 +31,11 @@ Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (fou
 | Metered API baselines | 11 |
 | OpenCode Go / Command Code GOAT / Ollama models | 33 / 51 / 20 |
 | Code Arena / Agent Arena scored points | 138 / 142 |
-| AA Intelligence / AA Coding Agent scored points | 179 / 73 (194 / 73 including 10 marked proxy estimates) |
+| AA Intelligence / AA Coding Agent scored points | 181 / 73 (194 / 73 including 9 marked proxy estimates) |
 
 ### Proxy estimates (marked, never silent)
 
-Ten plan rows are served by configurations AA has not scored. They are not left blank and they
+Nine estimated configurations stand in for thirteen plan rows served by configurations AA has not scored. MiMo-V2.6-Flash was one of them (44.30) until AA published a measured configuration on 2026-10-20 (37.88); its row is now measured. They are not left blank and they
 are not presented as measurements: `scripts/proxy_estimates.py` carries the calibration for each
 one, the snapshot stores it in an `estimatedRecords` lane, and the charts label the rows
 `[proxy]` (zh `[代理]`) so a proxy can never be confused with an AA measurement or with AA's own
@@ -47,8 +47,8 @@ Two methods are used, in descending confidence:
   tiers, DeepSeek V4 Flash Fast, Kimi K2.7 Code HighSpeed, GLM-5.2 Fast). The provider describes
   them as the same model served faster or priced as a tier; the base configuration's AA score is
   inherited unchanged.
-- **Same-vendor anchor (±2.5 to ±5)** — four rows (MiMo-V2.6-Flash, Qwen3.8-Flash,
-  Qwen3.8-Omni-Flash, Hy4-preview). The vendor's own table contains both the missing model and a
+- **Same-vendor anchor (±2.5 to ±5)** — three estimates (Qwen3.8-Flash, Qwen3.8-Omni-Flash,
+  Hy4-preview). The vendor's own table contains both the missing model and a
   sibling AA has scored; the family slope calibrated on AA's own GPQA carries the new model.
   Bands are wide because GPQA saturates in this range.
 

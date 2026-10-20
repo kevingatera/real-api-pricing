@@ -1,7 +1,7 @@
 {
   "collectedAt": "2026-10-20",
   "revises": "scores-aa-round4-2026-09-25.json",
-  "revisionNote": "Additive revision of the AA Intelligence board on 2026-10-20 (read from the public page payload, 273 configurations). Four mapped values changed and are re-scored; 33 configurations the page now reports are appended with observedAt; nothing is dropped. The 433 records the page no longer embeds are KEPT with their 2026-09-25 values (70 of them back mapped rows). The board is therefore a mixed-date snapshot: per-record observedAt or checkedAt gives the observation date, and unmarked records are as of 2026-09-25.",
+  "revisionNote": "Additive revision of the AA Intelligence board on 2026-10-20 (read from the public page payload, 273 configurations). Four mapped values changed and are re-scored; 33 configurations the page now reports are appended with observedAt; nothing is dropped. The 433 records the page no longer embeds are KEPT with their 2026-09-25 values (70 of them back mapped rows). The board is therefore a mixed-date snapshot: per-record observedAt or checkedAt gives the observation date, and unmarked records are as of 2026-09-25. Mapping update the same day: deepseek-v4.1-flash is re-pointed from deepseek-v4-1-flash to deepseek-v4-1-flash-1017 (45.0965); the mimo-v2.6-flash proxy (44.30) is replaced by the measured mimo-v2-6-flash configuration (37.8844). Recorded in mappingChanges.",
   "extraction": {
     "method": "read the model payload embedded in artificialanalysis.ai/leaderboards/models (initialModels RSC chunk)",
     "readAt": "2026-10-20",
@@ -5556,22 +5556,28 @@
     {
       "model": "deepseek-v4.1-flash",
       "boardId": "aa_intelligence_index",
-      "variantLabel": "DeepSeek V4.1 Flash (max)",
-      "score": 39.456167472527,
+      "variantLabel": "DeepSeek V4.1 Flash 1017 (max)",
+      "score": 45.0965048681912,
       "secondary": {
         "costPerTaskUsd": null,
-        "scoreRoundedDisplay": 39,
+        "scoreRoundedDisplay": 45,
         "intelligenceIndexIsEstimated": false,
-        "slug": "deepseek-v4-1-flash",
-        "shortName": "DeepSeek V4.1 Flash (max)",
+        "slug": "deepseek-v4-1-flash-1017",
+        "shortName": "DeepSeek V4.1 Flash 1017 (max)",
         "releaseDate": null,
         "isReasoning": true,
         "deprecated": false,
         "modelCreatorName": "DeepSeek",
-        "effort": "max effort"
+        "effort": "max effort",
+        "remappedFrom": {
+          "slug": "deepseek-v4-1-flash",
+          "score": 39.456167472527,
+          "observedAt": null
+        }
       },
       "source": "https://artificialanalysis.ai/leaderboards/models",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     },
     {
       "model": "mimo-v2.6-pro",
@@ -5874,39 +5880,6 @@
       "checkedAt": "2026-09-25"
     },
     {
-      "model": "mimo-v2.6-flash",
-      "boardId": "aa_intelligence_index",
-      "variantLabel": "mimo-v2.6-flash [proxy]",
-      "score": 44.3,
-      "estimated": true,
-      "secondary": {
-        "scoreRoundedDisplay": 44,
-        "intelligenceIndexIsEstimated": true,
-        "proxy": true,
-        "slug": "proxy:mimo-v2.6-flash",
-        "shortName": "mimo-v2.6-flash [proxy]",
-        "releaseDate": null,
-        "isReasoning": null,
-        "deprecated": false,
-        "modelCreatorName": null,
-        "effort": null,
-        "estimate": {
-          "method": "Two independent within-family readings, averaged: (1) the vendor's own DeepSWE v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its non-Pro sibling, giving 44.88. Midpoint adopted.",
-          "basis": [
-            "https://yfarmx.com/ai/llms/mimo-v2-6/",
-            "https://cheapestinference.com/blog/mimo-v2-6/",
-            "https://rankllms.com/models/mimo-v2-6-flash/"
-          ],
-          "band": 2.5,
-          "anchor_slugs": "mimo-v2-6-pro",
-          "note": "Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the same tier. AA has not scored the Flash configuration.",
-          "estimated_at": "2026-09-25"
-        }
-      },
-      "source": "proxy: see estimate.basis",
-      "checkedAt": "2026-09-25"
-    },
-    {
       "model": "qwen3.8-flash",
       "boardId": "aa_intelligence_index",
       "variantLabel": "qwen3.8-flash [proxy]",
@@ -6001,6 +5974,31 @@
       },
       "source": "proxy: see estimate.basis",
       "checkedAt": "2026-09-25"
+    },
+    {
+      "model": "mimo-v2.6-flash",
+      "boardId": "aa_intelligence_index",
+      "variantLabel": "MiMo-V2.6-Flash",
+      "score": 37.8843590141754,
+      "secondary": {
+        "costPerTaskUsd": null,
+        "scoreRoundedDisplay": 38,
+        "intelligenceIndexIsEstimated": false,
+        "slug": "mimo-v2-6-flash",
+        "shortName": "MiMo-V2.6-Flash",
+        "releaseDate": null,
+        "isReasoning": true,
+        "deprecated": false,
+        "modelCreatorName": "Xiaomi",
+        "effort": "default",
+        "replaces": {
+          "proxy": "proxy:mimo-v2.6-flash",
+          "proxyScore": 44.3
+        }
+      },
+      "source": "https://artificialanalysis.ai/leaderboards/models",
+      "checkedAt": "2026-10-20",
+      "observedAt": "2026-10-20"
     }
   ],
   "rawRecords": {
@@ -52134,26 +52132,6 @@
           "estimated_at": "2026-09-25"
         }
       },
-      "proxy:mimo-v2.6-flash": {
-        "slug": "proxy:mimo-v2.6-flash",
-        "name": "mimo-v2.6-flash",
-        "shortName": "mimo-v2.6-flash [proxy]",
-        "intelligenceIndex": 44.3,
-        "intelligenceIndexIsEstimated": true,
-        "proxy": true,
-        "estimate": {
-          "method": "Two independent within-family readings, averaged: (1) the vendor's own DeepSWE v1.1 table puts Flash at 67.9 against Pro's 71.9, and AA scores Pro at 46.3242, giving 43.75; (2) the MiMo V2.5 pair in the same payload has Pro at 1.032x its non-Pro sibling, giving 44.88. Midpoint adopted.",
-          "basis": [
-            "https://yfarmx.com/ai/llms/mimo-v2-6/",
-            "https://cheapestinference.com/blog/mimo-v2-6/",
-            "https://rankllms.com/models/mimo-v2-6-flash/"
-          ],
-          "band": 2.5,
-          "anchor_slugs": "mimo-v2-6-pro",
-          "note": "Vendor tables describe Flash as trailing Pro on agentic tasks while staying in the same tier. AA has not scored the Flash configuration.",
-          "estimated_at": "2026-09-25"
-        }
-      },
       "proxy:qwen3.8-flash": {
         "slug": "proxy:qwen3.8-flash",
         "name": "qwen3.8-flash",
@@ -52220,7 +52198,6 @@
     "deepseek-v4-flash-fast",
     "kimi-k2.7-code-highspeed",
     "glm-5.2-fast",
-    "mimo-v2.6-flash",
     "qwen3.8-flash",
     "qwen3.8-omni-flash",
     "hy4-preview"
@@ -52320,5 +52297,33 @@
   },
   "carriedDates": [
     "2026-09-25"
+  ],
+  "mappingChanges": [
+    {
+      "model": "deepseek-v4.1-flash",
+      "from": {
+        "slug": "deepseek-v4-1-flash",
+        "score": 39.456167472527
+      },
+      "to": {
+        "slug": "deepseek-v4-1-flash-1017",
+        "score": 45.0965048681912
+      },
+      "reason": "served version is DeepSeek-V4.1-Flash-1017 (2026-10-17); AA lists it as this configuration",
+      "observedAt": "2026-10-20"
+    },
+    {
+      "model": "mimo-v2.6-flash",
+      "from": {
+        "proxy": "proxy:mimo-v2.6-flash",
+        "score": 44.3
+      },
+      "to": {
+        "slug": "mimo-v2-6-flash",
+        "score": 37.8843590141754
+      },
+      "reason": "AA now publishes a measured configuration; proxy retired",
+      "observedAt": "2026-10-20"
+    }
   ]
 }
