@@ -245,7 +245,8 @@
       "solar-mini4"
     ],
     "configurations_dropped_from_page": 433,
-    "decision": "Board NOT replaced. A whole-board replacement from this page would drop 433 raw records and break 70 mapped rows. The 2026-09-25 snapshot is kept unchanged."
+    "decision": "Board NOT replaced. A whole-board replacement from this page would drop 433 raw records and break 70 mapped rows. The 2026-09-25 snapshot is kept unchanged.",
+    "decisionSuperseded": "Superseded on 2026-10-20 by an additive revision: four mapped values re-scored and 33 new configurations appended; 433 absent records kept. See data/research/scores-aa-round5-2026-10-20.json."
   },
   "notable_models": [
     {
@@ -527,7 +528,7 @@
     }
   ],
   "model_policy": {
-    "deepseek-v4.1-flash": "CommandCode 'latest' id changed around 2026-10-17. model-policy.json still carries served_version_date 2026-09-10 and a hermes_context_compression validation from that version. The AA page now lists a new configuration deepseek-v4-1-flash-1017 (not mapped to any row). Left unchanged: approval and the 90-day age gate must be re-validated (benchmark_compression_models.py) before changing them.",
+    "deepseek-v4.1-flash": "Superseded: re-validated 2026-10-20 on the CommandCode route (87.2, 0 redaction violations, 0 length stops) and served_version_date set to 2026-10-17. See data/research/deepseek-v41-flash-cc-revalidation-2026-10-20.json.",
     "gpt-6.1-sol": "No repo row, no model-policy entry, and no price source adopted. Present in the CommandCode and relay catalogs; AA page has a gpt-6-1-sol family."
   },
   "catalog_models_without_repo_row": [
