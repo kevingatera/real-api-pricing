@@ -56,15 +56,7 @@
       "quality": "本机反推",
       "adopted": true,
       "inference": {
-        "weekStartDays": ["2026-07-25", "2026-07-26"],
-        "usedFraction": 0.84,
-        "usedTokens": 243739068,
-        "dayTokens": {
-          "2026-07-25": 151560340,
-          "2026-07-26": 92178728,
-          "2026-07-30_same_week_extra": 24053589
-        },
-        "sameWeekLaterPct": 0.92,
+        "method": "Back-calculated from observed weekly usage on a personal account. Raw counts, dates and the observed usage fraction are redacted for publication; the derived capacity and sensitivity below are kept.",
         "sensitivity": {
           "if80pctWeeklyYi": 3.05,
           "if80pctMonthlyYi": 12.19,
