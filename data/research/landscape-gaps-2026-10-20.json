@@ -1,0 +1,782 @@
+{
+  "snapshot": "2026-10-20",
+  "purpose": "Model-landscape check for the refresh. Lists what the live catalogs and vendor pages show, what was added with sourced values, and what is missing. No price, allowance or score was invented.",
+  "sources": [
+    {
+      "id": "commandcode_models",
+      "url": "https://api.commandcode.ai/provider/v1/models",
+      "read": "2026-10-20",
+      "models": 96,
+      "note": "ids only; no prices or allowances in this payload"
+    },
+    {
+      "id": "commandcode_goat_plan",
+      "url": "https://commandcode.ai/docs/plans/goat",
+      "read": "2026-10-20",
+      "note": "Every model + New models tables; source of the six added GOAT rows"
+    },
+    {
+      "id": "aa_leaderboard_page",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "read": "2026-10-20",
+      "configurations_in_page_payload": 273,
+      "note": "page payload now carries 273 configurations vs 673 read on 2026-09-25; see aa_page_divergence"
+    },
+    {
+      "id": "relay_catalog",
+      "label": "private OpenAI-compatible relay catalog (host omitted)",
+      "read": "2026-10-20",
+      "models": 46,
+      "note": "ids only; prefix stripped"
+    }
+  ],
+  "added_rows": [
+    {
+      "plan": "Command Code GOAT",
+      "model": "qwen3.8-max-prime",
+      "price_in_out_cache_read": [
+        4.0,
+        12.0,
+        0.5
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": "cache write $5 not in the standard workload"
+    },
+    {
+      "plan": "Command Code GOAT",
+      "model": "qwen3.8-omni-flash",
+      "price_in_out_cache_read": [
+        0.15,
+        0.47,
+        0.016
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": "inherits the existing [proxy] AA estimate for this model (score_is_proxy=true)"
+    },
+    {
+      "plan": "Command Code GOAT",
+      "model": "minimax-m3.1-flash",
+      "price_in_out_cache_read": [
+        0.15,
+        0.6,
+        0.015
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": ""
+    },
+    {
+      "plan": "Command Code GOAT",
+      "model": "ornith-1.5-122b",
+      "price_in_out_cache_read": [
+        0.16,
+        0.64,
+        0.02
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": "vendor left as 'other' (maker not stated on the pages read)"
+    },
+    {
+      "plan": "Command Code GOAT",
+      "model": "muse-spark-open",
+      "price_in_out_cache_read": [
+        1.25,
+        4.25,
+        0.15
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": ""
+    },
+    {
+      "plan": "Command Code GOAT",
+      "model": "nemotron-3.5-super-vl",
+      "price_in_out_cache_read": [
+        0.2,
+        0.5,
+        0.04
+      ],
+      "monthly_credits_usd": 20,
+      "source": "GOAT page, New models table",
+      "note": "vendor mapped to NVIDIA"
+    }
+  ],
+  "not_added": [
+    {
+      "model": "jev",
+      "and": "jev-1.14.0",
+      "reason": "GOAT page lists input $0.042 and output $0.00; a zero output price is not credible as a sourced value, so not adopted"
+    }
+  ],
+  "aa_page_divergence": {
+    "page_configurations": 273,
+    "snapshot_2026_09_25_configurations": 673,
+    "mapped_rows_checked": 106,
+    "mapped_slugs_absent_from_page": [
+      "claude-fable-5",
+      "claude-opus-4-8",
+      "claude-opus-5",
+      "claude-opus-5-high",
+      "claude-opus-5-low",
+      "claude-opus-5-medium",
+      "claude-opus-5-xhigh",
+      "claude-sonnet-5",
+      "claude-sonnet-5-low",
+      "claude-sonnet-5-medium",
+      "claude-sonnet-5-non-reasoning",
+      "deepseek-v4-1-flash",
+      "deepseek-v4-flash",
+      "deepseek-v4-flash-0420",
+      "deepseek-v4-flash-0420-high",
+      "deepseek-v4-pro-0424",
+      "deepseek-v4-pro-0424-high",
+      "deepseek-v4-pro-0424-non-reasoning",
+      "gemini-3-7-flash",
+      "gemini-3-7-flash-low",
+      "gemini-3-7-flash-medium",
+      "glm-5-1",
+      "glm-5-1-non-reasoning",
+      "glm-5-2",
+      "glm-5-2-non-reasoning",
+      "gpt-5-5",
+      "gpt-5-5-high",
+      "gpt-5-5-low",
+      "gpt-5-5-medium",
+      "gpt-5-5-non-reasoning",
+      "gpt-5-6-luna",
+      "gpt-5-6-luna-high",
+      "gpt-5-6-luna-low",
+      "gpt-5-6-luna-medium",
+      "gpt-5-6-luna-non-reasoning",
+      "gpt-5-6-luna-xhigh",
+      "gpt-5-6-sol",
+      "gpt-5-6-sol-high",
+      "gpt-5-6-sol-low",
+      "gpt-5-6-sol-medium",
+      "gpt-5-6-sol-non-reasoning",
+      "gpt-5-6-sol-xhigh",
+      "grok-4-5",
+      "grok-4-6",
+      "grok-4-6-low",
+      "grok-4-6-medium",
+      "grok-4-6-xhigh",
+      "kimi-k2-6",
+      "kimi-k2-6-non-reasoning",
+      "mimo-v2-5-0424",
+      "mimo-v2-5-pro",
+      "mimo-v2-5-pro-non-reasoning",
+      "minimax-m2-5",
+      "minimax-m2-7",
+      "muse-spark-1-2",
+      "proxy:deepseek-v4-flash-fast",
+      "proxy:glm-5.2-fast",
+      "proxy:glm-5.3-flashx",
+      "proxy:hy4-preview",
+      "proxy:kimi-k2.7-code-highspeed",
+      "proxy:mimo-v2.6-flash",
+      "proxy:muse-spark-1.2-contributor",
+      "proxy:muse-spark-1.3-contributor",
+      "proxy:qwen3.8-flash",
+      "proxy:qwen3.8-omni-flash",
+      "qwen3-6-plus",
+      "qwen3-7-max",
+      "step-3-5-flash",
+      "step-3-5-flash-0202",
+      "step-3-7-flash"
+    ],
+    "mapped_slugs_with_changed_value": [
+      {
+        "slug": "kimi-k3-low",
+        "was": 34.46,
+        "now": 30.07
+      },
+      {
+        "slug": "qwen3-8-27b",
+        "was": 33.7,
+        "now": 33.68
+      },
+      {
+        "slug": "inkling-small",
+        "was": 27.78,
+        "now": 25.66
+      },
+      {
+        "slug": "gpt-6-luna",
+        "was": 37.26,
+        "now": 38.12
+      }
+    ],
+    "new_configurations_on_page": [
+      "agnes-2-5-pro-beta",
+      "claude-haiku-5-5",
+      "claude-haiku-5-5-high",
+      "claude-haiku-5-5-low",
+      "claude-haiku-5-5-medium",
+      "claude-haiku-5-5-xhigh",
+      "claude-sonnet-5-5",
+      "claude-sonnet-5-5-high",
+      "claude-sonnet-5-5-low",
+      "claude-sonnet-5-5-medium",
+      "claude-sonnet-5-5-xhigh",
+      "deepseek-v4-1-flash-1017",
+      "deepseek-v4-pro-non-reasoning",
+      "gemini-4-argon",
+      "gpt-6-1-sol",
+      "gpt-6-1-sol-high",
+      "gpt-6-1-sol-low",
+      "gpt-6-1-sol-medium",
+      "gpt-6-1-sol-xhigh",
+      "gpt-6-sol-daybreak-blue",
+      "grok-4-7-low",
+      "jt-4-1-flash-236b-a21b-non-reasoning",
+      "ling-3-1-flash",
+      "mimo-v2-6-flash",
+      "minimax-m3-1-flash",
+      "mistral-large-4",
+      "muse-spark-open",
+      "muse-wonder",
+      "muse-wonder-full",
+      "nemotron-3-5-bolt-74b-a9b",
+      "nemotron-3-5-super-vl",
+      "reflection-beam",
+      "solar-mini4"
+    ],
+    "configurations_dropped_from_page": 433,
+    "decision": "Board NOT replaced. A whole-board replacement from this page would drop 433 raw records and break 70 mapped rows. The 2026-09-25 snapshot is kept unchanged."
+  },
+  "notable_models": [
+    {
+      "repo_model": "deepseek-v4.1-flash",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 39.456167472527,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": true,
+      "query": "deepseek/deepseek-v4.1-flash",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": false
+    },
+    {
+      "repo_model": "deepseek-v4-pro",
+      "adopted_rows": 6,
+      "plans": [
+        "Command Code GOAT",
+        "DeepSeek V4 Pro API 忙时",
+        "DeepSeek V4 Pro API 闲时",
+        "Ollama Max",
+        "Ollama Pro",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 35.9967791278402,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1582,
+      "model_policy_entry": false,
+      "query": "deepseek-v4-pro",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "glm-5.3-flash",
+      "adopted_rows": 22,
+      "plans": [
+        "Command Code GOAT",
+        "GLM Coding Lite (新客 ¥118) 中间值",
+        "GLM Coding Lite (新客 ¥118) 忙时",
+        "GLM Coding Lite (新客 ¥118) 闲时",
+        "GLM Coding Lite (老客 ¥49) 中间值",
+        "GLM Coding Lite (老客 ¥49) 忙时",
+        "GLM Coding Lite (老客 ¥49) 闲时",
+        "GLM Coding Max (新客 ¥1078) 中间值",
+        "GLM Coding Max (新客 ¥1078) 忙时",
+        "GLM Coding Max (新客 ¥1078) 闲时",
+        "GLM Coding Max (老客 ¥469) 中间值",
+        "GLM Coding Max (老客 ¥469) 忙时",
+        "GLM Coding Max (老客 ¥469) 闲时",
+        "GLM Coding Pro (新客 ¥538) 中间值",
+        "GLM Coding Pro (新客 ¥538) 忙时",
+        "GLM Coding Pro (新客 ¥538) 闲时",
+        "GLM Coding Pro (老客 ¥149) 中间值",
+        "GLM Coding Pro (老客 ¥149) 忙时",
+        "GLM Coding Pro (老客 ¥149) 闲时",
+        "Ollama Max",
+        "Ollama Pro",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 41.807466113455,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1605,
+      "model_policy_entry": true,
+      "query": "glm-5.3-flash",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": null,
+      "adopted_rows": 0,
+      "plans": [],
+      "aa_intelligence_score": null,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "gpt-6.1-sol",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "gpt-6-luna",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 37.2559686869738,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "gpt-6-luna",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "kimi-k3",
+      "adopted_rows": 7,
+      "plans": [
+        "Command Code GOAT",
+        "Kimi 会员 199",
+        "Kimi 会员 699",
+        "Kimi 会员 99",
+        "Ollama Max",
+        "Ollama Pro",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 43.5938229518782,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1674,
+      "model_policy_entry": false,
+      "query": "kimi-k3",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "qwen3.8-max",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 45.4152084980521,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "qwen3.8-max",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "qwen3.8-flash",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 39.7,
+      "aa_score_is_proxy": true,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "qwen3.8-flash",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": false
+    },
+    {
+      "repo_model": "mimo-v2.6-pro",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 46.3242065310383,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "mimo-v2.6-pro",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "mimo-v2.6-flash",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 44.3,
+      "aa_score_is_proxy": true,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "mimo-v2.6-flash",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "minimax-m3",
+      "adopted_rows": 10,
+      "plans": [
+        "Command Code GOAT",
+        "MiniMax Token Plan Max",
+        "MiniMax Token Plan Max (Global)",
+        "MiniMax Token Plan Plus",
+        "MiniMax Token Plan Plus (Global)",
+        "MiniMax Token Plan Ultra",
+        "MiniMax Token Plan Ultra (Global)",
+        "Ollama Max",
+        "Ollama Pro",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 29.2202932236316,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1487,
+      "model_policy_entry": false,
+      "query": "minimax-m3",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "grok-4.7",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 46.4465506302286,
+      "aa_score_is_proxy": false,
+      "arena_code_score": null,
+      "model_policy_entry": false,
+      "query": "grok-4.7",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": true
+    },
+    {
+      "repo_model": "claude-opus-5",
+      "adopted_rows": 3,
+      "plans": [
+        "Claude Max 20x (9/14+)",
+        "Claude Max 5x (9/14+)",
+        "Claude Opus 5 API"
+      ],
+      "aa_intelligence_score": 50.7771115797629,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1688,
+      "model_policy_entry": false,
+      "query": "claude-opus-5",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": false
+    },
+    {
+      "repo_model": "claude-sonnet-5",
+      "adopted_rows": 4,
+      "plans": [
+        "Claude Max 20x (9/14+)",
+        "Claude Max 5x (9/14+)",
+        "Claude Pro",
+        "Claude Sonnet 5 API"
+      ],
+      "aa_intelligence_score": 38.1638712882576,
+      "aa_score_is_proxy": false,
+      "arena_code_score": 1537,
+      "model_policy_entry": false,
+      "query": "claude-sonnet-5",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": false
+    },
+    {
+      "repo_model": "hy4-preview",
+      "adopted_rows": 2,
+      "plans": [
+        "Command Code GOAT",
+        "OpenCode Go"
+      ],
+      "aa_intelligence_score": 27.5,
+      "aa_score_is_proxy": true,
+      "arena_code_score": 1621,
+      "model_policy_entry": false,
+      "query": "hy4-preview",
+      "in_commandcode_catalog": true,
+      "in_relay_catalog": true,
+      "aa_page_config_present": false
+    }
+  ],
+  "model_policy": {
+    "deepseek-v4.1-flash": "CommandCode 'latest' id changed around 2026-10-17. model-policy.json still carries served_version_date 2026-09-10 and a hermes_context_compression validation from that version. The AA page now lists a new configuration deepseek-v4-1-flash-1017 (not mapped to any row). Left unchanged: approval and the 90-day age gate must be re-validated (benchmark_compression_models.py) before changing them.",
+    "gpt-6.1-sol": "No repo row, no model-policy entry, and no price source adopted. Present in the CommandCode and relay catalogs; AA page has a gpt-6-1-sol family."
+  },
+  "catalog_models_without_repo_row": [
+    {
+      "source": "commandcode_models",
+      "id": "claude-sonnet-5-5",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-sonnet-4-6",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-fable-5-1",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-opus-5-5",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-opus-4-7",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-haiku-5-5",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "claude-haiku-4-5-20251001",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-6-astra",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-6.1-sol",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-6-sol",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-5.4",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-5.3-codex",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "gpt-5.4-mini",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "deepseek/deepseek-v4.1-flash-fast",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "moonshotai/Kimi-K2.5",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "zai-org/GLM-5",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "Qwen/Qwen3.7-Flash",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "Qwen/Qwen3.6-Max-Preview",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "tencent/hy3-paid",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "google/gemini-4-argon",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "google/gemini-3.6-flash",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "google/gemini-3.5-flash",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "google/gemini-3.5-flash-lite",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "google/gemini-3.1-flash-lite",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "sakana/fugu-ultra",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "stealth/glyph-cluster:free",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "reflection/beam:free",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "poolside/laguna-s-2.1-free",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "inclusionai/ling-3.1-flash",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "commandcode_models",
+      "id": "meta/muse-spark-1.1",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "meta/muse-wonder-1.0",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "commandcode_models",
+      "id": "mistral/mistral-large-4",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "relay_catalog",
+      "id": "space-bunny",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "relay_catalog",
+      "id": "gpt-6.1-sol",
+      "repo_model": null,
+      "aa_page_config": true
+    },
+    {
+      "source": "relay_catalog",
+      "id": "kimi-k3-256k",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "relay_catalog",
+      "id": "muse-spark-1.1",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "relay_catalog",
+      "id": "longcat-2.5-preview-free",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "relay_catalog",
+      "id": "deepseek-flash",
+      "repo_model": null,
+      "aa_page_config": false
+    },
+    {
+      "source": "relay_catalog",
+      "id": "kimi-k2.8-preview",
+      "repo_model": null,
+      "aa_page_config": false
+    }
+  ],
+  "catalog_models_with_repo_row_count": 101
+}
