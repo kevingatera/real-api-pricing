@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-10-20",
   "models": {
     "deepseek-v4.1-flash": {
       "context_tokens": 1000000,
-      "served_version_date": "2026-09-10",
+      "served_version_date": "2026-10-17",
       "freshness_source": "https://api-docs.deepseek.com/updates/",
       "context_source": "https://api-docs.deepseek.com/quick_start/pricing/",
-      "note": "The canonical API model ID is deepseek-flash. OpenCode Go exposes that canonical ID and lists 1M-context typical traffic assumptions.",
+      "note": "Canonical API ID deepseek-flash (OpenCode Go). Served version DeepSeek-V4.1-Flash-1017 from 2026-10-17 (DeepSeek updates log). Re-validated 2026-10-20 on the CommandCode latest route; the 2026-09-10 OpenCode Go validation is kept as previous_validation. Route ZDR and capacity gates still apply per route; CommandCode was recorded as not selectable for private compression on 2026-09-10.",
       "provider_names": {"opencode_go": "DeepSeek V4.1 Flash"},
       "provider_model_ids": {"opencode_go": "deepseek-flash", "command_code_goat": "deepseek/deepseek-v4.1-flash"},
       "use_cases": {
@@ -15,12 +15,30 @@
           "selection_score": 87.2,
           "selection_score_scale": "hermes_checkpoint_v1",
           "validation": {
-            "checked_at": "2026-09-10",
+            "checked_at": "2026-10-20",
+            "route": "command_code_goat",
+            "served_version": "DeepSeek-V4.1-Flash-1017",
             "fact_retention_percent": 96.0,
             "redaction_violations": 0,
             "length_stops": 0,
-            "mean_latency_seconds": 6.18,
-            "runner": "scripts/benchmark_compression_models.py"
+            "mean_latency_seconds": 6.475,
+            "runner": "scripts/benchmark_compression_models.py",
+            "evidence": "data/research/deepseek-v41-flash-cc-revalidation-2026-10-20.json"
+          },
+          "previous_validation": {
+            "checked_at": "2026-09-10",
+            "route": "opencode_go",
+            "served_version_date": "2026-09-10",
+            "selection_score": 87.2,
+            "validation": {
+              "checked_at": "2026-09-10",
+              "fact_retention_percent": 96.0,
+              "redaction_violations": 0,
+              "length_stops": 0,
+              "mean_latency_seconds": 6.18,
+              "runner": "scripts/benchmark_compression_models.py"
+            },
+            "evidence": "data/research/deepseek-v41-flash-round1-2026-09-10.json"
           }
         }
       }
