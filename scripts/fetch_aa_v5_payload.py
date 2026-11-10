@@ -13,7 +13,8 @@ Usage:
 The slugs read from model pages are every AA slug the persisted configuration map (plus
 MAP_ADDITIONS) and older measured snapshots name, every proxy anchor in proxy_estimates.py,
 and any --slugs given. Requests are sequential with a one-second pause. A page that cannot be
-read after three tries fails the run rather than producing a payload with a gap.
+read after three tries fails the run rather than producing a payload with a gap; a 404 is
+recorded in modelPagesWithoutRecord.
 """
 from __future__ import annotations
 
@@ -22,6 +23,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -147,13 +149,21 @@ def main() -> int:
             try:
                 _, page = read(MODEL_PAGE.format(slug))
                 break
+            except urllib.error.HTTPError as exc:
+                if exc.code == 404:
+                    # AA has no page for this slug: a real absence, recorded below. The builder still
+                    # refuses the payload if the prior v5 snapshot had data for it.
+                    page = ""
+                    break
+                print(f"{slug}: attempt {attempt + 1}: {exc}", file=sys.stderr)
+                time.sleep(5.0)
             except OSError as exc:
                 print(f"{slug}: attempt {attempt + 1}: {exc}", file=sys.stderr)
                 time.sleep(5.0)
         if page is None:
             failed.append(slug)
             continue
-        record = page_record(page, slug)
+        record = page_record(page, slug) if page else None
         if record is None:
             missing.append(slug)
         elif slug not in records or len(record["benchmarks"]) > len(records[slug]["benchmarks"]):
