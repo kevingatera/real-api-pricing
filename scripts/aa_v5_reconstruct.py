@@ -8,7 +8,7 @@ configurations the plans serve have some of the nine plus AA's older benchmarks,
 v5 score.
 
 On the configurations AA did score, v5 is almost exactly a fixed linear combination of the
-nine evaluations (R2 0.999, worst error 1.8 points on 103 configurations, 2026-11-09). So a
+nine evaluations (R2 0.999, worst error 2.0 points on 109 configurations, 2026-11-09). So a
 missing configuration can be rebuilt from AA's own numbers:
 
   1. Each missing evaluation is imputed by a ridge least-squares fit on the configuration's
@@ -16,7 +16,8 @@ missing configuration can be rebuilt from AA's own numbers:
   2. The fitted v5 combination is applied to the measured plus imputed evaluations.
 
 The error band is measured, not assumed: every scored configuration is re-estimated with
-the same evaluations hidden that the target is missing (leave-one-out), and the band is
+the same evaluations hidden that the target is missing and with both fits redone without
+it (leave-one-out), and the band is
 the 90th percentile of the absolute error. A reconstruction needs at least MIN_PRESENT
 measured v5 evaluations; with fewer the band exceeds 7 points, close to the single-benchmark
 bridge proxy_estimates.py rejects, so those configurations stay unscored.
@@ -47,12 +48,24 @@ class Reconstructor:
                       and all(c in r.get("benchmarks", {}) for c in COMPONENTS)]
         if len(self.train) < MIN_TRAIN:
             raise ValueError(f"only {len(self.train)} fully scored configurations; need {MIN_TRAIN}")
-        X = np.array([[v[c] for c in COMPONENTS] + [1.0] for v, _ in self.train])
-        y = np.array([s for _, s in self.train])
-        self.weights, *_ = np.linalg.lstsq(X, y, rcond=None)
-        resid = y - X @ self.weights
-        self.r2 = float(1 - resid.var() / y.var())
+        self._X = np.array([[v[c] for c in COMPONENTS] + [1.0] for v, _ in self.train])
+        self._y = np.array([s for _, s in self.train])
+        self.weights, *_ = np.linalg.lstsq(self._X, self._y, rcond=None)
+        resid = self._y - self._X @ self.weights
+        self.r2 = float(1 - resid.var() / self._y.var())
         self.max_error = float(abs(resid).max())
+        self._fold_weights = None
+
+    def _fold(self, i: int):
+        """Combination weights fitted without scored configuration i, for honest leave-one-out."""
+        if self._fold_weights is None:
+            keep = np.ones(len(self.train), dtype=bool)
+            self._fold_weights = []
+            for j in range(len(self.train)):
+                keep[j] = False
+                self._fold_weights.append(np.linalg.lstsq(self._X[keep], self._y[keep], rcond=None)[0])
+                keep[j] = True
+        return self._fold_weights[i]
 
     def _impute(self, target: str, vec: dict, train: list) -> float | None:
         preds = sorted(k for k in vec if k != target
@@ -68,8 +81,9 @@ class Reconstructor:
         w = np.linalg.solve(X.T @ X + RIDGE * len(rows) * np.eye(X.shape[1]), X.T @ y)
         return float(np.array([vec[p] for p in preds] + [1.0]) @ w)
 
-    def estimate(self, vec: dict, train: list | None = None) -> float | None:
+    def estimate(self, vec: dict, train: list | None = None, weights=None) -> float | None:
         train = self.train if train is None else train
+        weights = self.weights if weights is None else weights
         if sum(1 for c in COMPONENTS if c in vec) < MIN_PRESENT:
             return None
         full = dict(vec)
@@ -79,15 +93,17 @@ class Reconstructor:
                 if value is None:
                     return None
                 full[c] = value
-        return float(np.array([full[c] for c in COMPONENTS] + [1.0]) @ self.weights)
+        return float(np.array([full[c] for c in COMPONENTS] + [1.0]) @ weights)
 
     def band(self, vec: dict) -> dict | None:
-        """Leave-one-out error with the target's missing evaluations hidden on every scored configuration."""
+        """Leave-one-out error with the target's missing evaluations hidden on every scored configuration.
+
+        Both stages (imputation and combination) are refitted without the held-out configuration."""
         missing = [c for c in COMPONENTS if c not in vec]
         errors = []
         for i, (v, y) in enumerate(self.train):
             masked = {k: x for k, x in v.items() if k not in missing and (k in vec or k in COMPONENTS)}
-            est = self.estimate(masked, self.train[:i] + self.train[i + 1:])
+            est = self.estimate(masked, self.train[:i] + self.train[i + 1:], self._fold(i))
             if est is not None:
                 errors.append(abs(est - y))
         if len(errors) < MIN_TRAIN:

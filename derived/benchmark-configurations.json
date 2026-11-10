@@ -2026,8 +2026,8 @@
             "https://artificialanalysis.ai/models/claude-fable-5",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "claude-fable-5"
@@ -2093,8 +2093,8 @@
             "https://artificialanalysis.ai/models/claude-opus-4-8",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "claude-opus-4-8"
@@ -2198,7 +2198,7 @@
             "https://artificialanalysis.ai/models/claude-sonnet-5",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 4.35,
+          "band": 4.38,
           "median_error": 1.48,
           "validated_on": 109,
           "anchor_slugs": [
@@ -2266,7 +2266,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.6,
-          "median_error": 2.37,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "claude-sonnet-5-low"
@@ -2333,7 +2333,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.6,
-          "median_error": 2.37,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "claude-sonnet-5-medium"
@@ -2400,7 +2400,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.47,
-          "median_error": 2.41,
+          "median_error": 2.4,
           "validated_on": 109,
           "anchor_slugs": [
             "deepseek-v4-flash"
@@ -2467,7 +2467,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.47,
-          "median_error": 2.41,
+          "median_error": 2.4,
           "validated_on": 109,
           "anchor_slugs": [
             "deepseek-v4-flash-0420"
@@ -2534,7 +2534,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.47,
-          "median_error": 2.41,
+          "median_error": 2.4,
           "validated_on": 109,
           "anchor_slugs": [
             "deepseek-v4-flash-0420-high"
@@ -2601,7 +2601,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 2.77,
-          "median_error": 1.17,
+          "median_error": 1.19,
           "validated_on": 109,
           "anchor_slugs": [
             "deepseek-v4-flash-vision"
@@ -2811,7 +2811,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gemini-3-7-flash"
@@ -2992,7 +2992,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.47,
-          "median_error": 2.41,
+          "median_error": 2.4,
           "validated_on": 109,
           "anchor_slugs": [
             "glm-5-1"
@@ -3058,8 +3058,8 @@
             "https://artificialanalysis.ai/models/glm-5-2",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 2.87,
-          "median_error": 1.07,
+          "band": 2.88,
+          "median_error": 1.08,
           "validated_on": 109,
           "anchor_slugs": [
             "glm-5-2"
@@ -3202,7 +3202,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-5"
@@ -3269,7 +3269,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-5-high"
@@ -3336,7 +3336,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-5-medium"
@@ -3440,8 +3440,8 @@
             "https://artificialanalysis.ai/models/gpt-5-6-sol",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 2.07,
-          "median_error": 0.83,
+          "band": 2.05,
+          "median_error": 0.89,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-6-sol"
@@ -3508,7 +3508,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-6-sol-high"
@@ -3575,7 +3575,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-6-sol-low"
@@ -3642,7 +3642,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-6-sol-medium"
@@ -3709,7 +3709,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "gpt-5-6-sol-xhigh"
@@ -3852,7 +3852,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "grok-4-5"
@@ -3994,8 +3994,8 @@
             "https://artificialanalysis.ai/models/hy3",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 2.88,
-          "median_error": 1.15,
+          "band": 2.89,
+          "median_error": 1.12,
           "validated_on": 109,
           "anchor_slugs": [
             "hy3"
@@ -4138,7 +4138,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.79,
-          "median_error": 2.15,
+          "median_error": 2.18,
           "validated_on": 109,
           "anchor_slugs": [
             "kimi-k2-6"
@@ -4204,7 +4204,7 @@
             "https://artificialanalysis.ai/models/kimi-k2-7-code",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 3.11,
+          "band": 3.14,
           "median_error": 0.97,
           "validated_on": 109,
           "anchor_slugs": [
@@ -4309,8 +4309,8 @@
             "https://artificialanalysis.ai/models/longcat-2-0",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 2.88,
-          "median_error": 1.15,
+          "band": 2.89,
+          "median_error": 1.12,
           "validated_on": 109,
           "anchor_slugs": [
             "longcat-2-0"
@@ -4377,7 +4377,7 @@
             "scripts/aa_v5_reconstruct.py"
           ],
           "band": 5.58,
-          "median_error": 1.97,
+          "median_error": 2.03,
           "validated_on": 109,
           "anchor_slugs": [
             "mimo-v2-5-0424"
@@ -4443,8 +4443,8 @@
             "https://artificialanalysis.ai/models/mimo-v2-5-pro",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "mimo-v2-5-pro"
@@ -4586,8 +4586,8 @@
             "https://artificialanalysis.ai/models/minimax-m2-7",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "minimax-m2-7"
@@ -4691,8 +4691,8 @@
             "https://artificialanalysis.ai/models/muse-spark-1-2",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "muse-spark-1-2"
@@ -4834,8 +4834,8 @@
             "https://artificialanalysis.ai/models/qwen3-7-max",
             "scripts/aa_v5_reconstruct.py"
           ],
-          "band": 5.69,
-          "median_error": 2.35,
+          "band": 5.7,
+          "median_error": 2.36,
           "validated_on": 109,
           "anchor_slugs": [
             "qwen3-7-max"
@@ -5338,7 +5338,7 @@
           "basis": [
             "https://commandcode.ai/docs/plans/goat"
           ],
-          "band": 7.19,
+          "band": 7.2,
           "anchor_slugs": [
             "muse-spark-1-2"
           ],
@@ -5442,7 +5442,7 @@
           "basis": [
             "https://commandcode.ai/docs/plans/goat"
           ],
-          "band": 4.61,
+          "band": 4.64,
           "anchor_slugs": [
             "kimi-k2-7-code"
           ],
@@ -5494,7 +5494,7 @@
           "basis": [
             "https://commandcode.ai/docs/plans/goat"
           ],
-          "band": 4.37,
+          "band": 4.38,
           "anchor_slugs": [
             "glm-5-2"
           ],

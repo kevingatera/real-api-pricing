@@ -17,8 +17,9 @@ The plan-to-configuration map is kept in the snapshot ("configurationMap") so a 
 repeats the same choices. On the first v5 build it comes from the v4.3.2 snapshot's rows. A new
 mapping is a human decision: add it to MAP_ADDITIONS. The coding-agent board is carried forward.
 
-With --if-changed, nothing is written when every AA row and the not-estimated list match the
-prior v5 snapshot. --summary writes a JSON description of the build for the weekly job.
+With --if-changed, nothing is written when every AA row (ignoring dates), the configuration map
+and the not-estimated list match the prior v5 snapshot. The build refuses a payload that lost a
+mapped configuration or one of its evaluations since the prior v5 snapshot. --summary writes a JSON description of the build for the weekly job.
 
 Usage:
   python scripts/build_aa_v5_snapshot.py --payload _build/aa-v5/payload.json --date 2026-11-09
@@ -68,6 +69,31 @@ def configuration_map(prior: dict) -> list[dict]:
     return sorted(out, key=lambda e: (e["model"], e["slug"]))
 
 
+def check_payload(prior: dict, records: dict, mapping: list, version: str) -> None:
+    """Refuse a payload that lost a mapped configuration or one of its evaluations since the prior v5 build.
+
+    A timeout or page-layout change in the fetch looks the same as AA dropping data. Either way a
+    person should look before scores disappear from the board.
+    """
+    prior_version = next(b["name"] for b in prior["boards"] if b["boardId"] == BOARD).rsplit("v", 1)[-1]
+    if prior_version.split(".")[0] != version.split(".")[0]:
+        return
+    before = {r["slug"]: r for r in prior["rawRecords"][BOARD]}
+    problems = []
+    for slug in sorted({e["slug"] for e in mapping} & set(before)):
+        if slug not in records:
+            problems.append(f"{slug}: no record in this payload")
+            continue
+        lost = sorted(set(before[slug].get("benchmarks", {})) - set(records[slug].get("benchmarks", {})))
+        if lost:
+            problems.append(f"{slug}: lost {', '.join(lost)}")
+        if number(before[slug].get("intelligenceIndex")) is not None and number(records[slug].get("intelligenceIndex")) is None:
+            problems.append(f"{slug}: lost its v5 score")
+    if problems:
+        raise SystemExit("payload is missing data the prior v5 snapshot had; check the fetch before rebuilding:\n  "
+                         + "\n  ".join(problems))
+
+
 def label(record: dict) -> str:
     return record.get("shortName") or record.get("name")
 
@@ -112,6 +138,7 @@ def build(payload: dict, date: str) -> tuple[str, dict, dict]:
     prior_name, prior = prior_snapshot()
     recon = Reconstructor(payload["records"])
     mapping = configuration_map(prior)
+    check_payload(prior, records, mapping, version)
 
     by_model: dict[str, list[dict]] = {}
     for e in mapping:
@@ -163,7 +190,10 @@ def build(payload: dict, date: str) -> tuple[str, dict, dict]:
             not_estimated.append({"model": model, "reason": "AA has no v5 score and too few v5 evaluations for "
                                                             "any mapped configuration"})
 
+    covered = {r["model"] for r in scores}
     for e in SAME_WEIGHTS:
+        if e["model"] in covered:
+            continue
         anchor = records.get(e["anchor"], {})
         value, band, how = None, e["band"], None
         if number(anchor.get("intelligenceIndex")) is not None:
@@ -182,7 +212,10 @@ def build(payload: dict, date: str) -> tuple[str, dict, dict]:
         scores.append(row(e["model"], record, None, date, proxy=True))
 
     v5_vendor = {e["model"] for e in VENDOR_ANCHORED_V5}
+    covered = {r["model"] for r in scores}
     for e in VENDOR_ANCHORED_V5:
+        if e["model"] in covered:
+            continue
         record = proxy_record("proxy:" + e["model"], e["model"], e["value"], {
             "method": e["method"], "basis": e["basis"], "band": e["band"], "anchor_slugs": e["anchor"],
             "note": e["note"], "estimated_at": date})
@@ -192,6 +225,9 @@ def build(payload: dict, date: str) -> tuple[str, dict, dict]:
                                                       "see proxy_estimates.VENDOR_ANCHORED_V5"}
                       for e in VENDOR_ANCHORED if e["model"] not in v5_vendor]
     not_estimated += [{"model": e["model"], "reason": e["reason"]} for e in UNSCORED]
+    scored, seen = {r["model"] for r in scores}, set()
+    not_estimated = [e for e in not_estimated
+                     if e["model"] not in scored and not (e["model"] in seen or seen.add(e["model"]))]
 
     coding_rows = [r for r in prior["scores"] if r["boardId"] == CODING_BOARD]
     measured_count = sum(1 for r in scores if not r["secondary"].get("proxy"))
@@ -253,6 +289,14 @@ def build(payload: dict, date: str) -> tuple[str, dict, dict]:
     return name, out, summarize(prior_name, prior, out, records, mapping, version)
 
 
+def semantic(r: dict) -> str:
+    """A row without its observation dates, for deciding whether a rebuild changed anything."""
+    r = json.loads(json.dumps(r))
+    r.pop("checkedAt", None)
+    r["secondary"].get("estimate", {}).pop("estimated_at", None)
+    return json.dumps(r, sort_keys=True)
+
+
 def summarize(prior_name: str, prior: dict, out: dict, records: dict, mapping: list, version: str) -> dict:
     def keyed(archive):
         return {(r["model"], r["secondary"]["slug"].removeprefix("proxy:")): r for r in archive["scores"]
@@ -267,7 +311,8 @@ def summarize(prior_name: str, prior: dict, out: dict, records: dict, mapping: l
                           if number(r.get("intelligenceIndex")) is not None and r["slug"] not in mapped
                           and r["slug"] not in {x["slug"] for x in prior["rawRecords"][BOARD]})
     same_version = prior_version.split(".")[0] == version.split(".")[0]
-    changed = (not same_version or set(before) != set(after) or bool(moved)
+    changed = (not same_version or {k: semantic(r) for k, r in before.items()} != {k: semantic(r) for k, r in after.items()}
+               or prior.get("configurationMap") != out["configurationMap"]
                or prior.get("notEstimated") != out["notEstimated"])
     return {
         "changed": changed,

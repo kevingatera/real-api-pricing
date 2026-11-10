@@ -10,9 +10,10 @@ aa_v5_reconstruct.py needs, so a snapshot built from this payload is self-contai
 Usage:
   python scripts/fetch_aa_v5_payload.py --out _build/aa-v5/payload.json [--slugs extra-slug ...]
 
-The slugs read from model pages are every AA slug the current score snapshots map, every
-proxy anchor in proxy_estimates.py, and any --slugs given. Requests are sequential with a
-one-second pause.
+The slugs read from model pages are every AA slug the persisted configuration map (plus
+MAP_ADDITIONS) and older measured snapshots name, every proxy anchor in proxy_estimates.py,
+and any --slugs given. Requests are sequential with a one-second pause. A page that cannot be
+read after three tries fails the run rather than producing a payload with a gap.
 """
 from __future__ import annotations
 
@@ -28,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from compute import SCORE_FILES  # noqa: E402
 from proxy_estimates import SAME_WEIGHTS  # noqa: E402
+from build_aa_v5_snapshot import configuration_map, prior_snapshot  # noqa: E402
 
 LEADERBOARD = "https://artificialanalysis.ai/leaderboards/models"
 MODEL_PAGE = "https://artificialanalysis.ai/models/{}"
@@ -114,7 +116,8 @@ def page_record(body: str, slug: str) -> dict | None:
 
 
 def mapped_slugs() -> set[str]:
-    slugs = set()
+    """Every configuration the next build maps: the persisted map plus MAP_ADDITIONS, and older measured rows."""
+    slugs = {e["slug"] for e in configuration_map(prior_snapshot()[1])}
     for name in SCORE_FILES:
         archive = json.loads((ROOT / "data/research" / name).read_text(encoding="utf-8"))
         for row in archive.get("scores", []):
@@ -137,14 +140,20 @@ def main() -> int:
     models, _ = DECODER.raw_decode(body[body.index("[", key):])
     records = {m["slug"]: leaderboard_record(m) for m in models if m.get("slug")}
     wanted = sorted(mapped_slugs() | {e["anchor"] for e in SAME_WEIGHTS} | set(args.slugs))
-    missing = []
+    missing, failed = [], []
     for n, slug in enumerate(wanted, 1):
-        try:
-            _, page = read(MODEL_PAGE.format(slug))
-            record = page_record(page, slug)
-        except OSError as exc:
-            record = None
-            print(f"{slug}: {exc}", file=sys.stderr)
+        page = None
+        for attempt in range(3):
+            try:
+                _, page = read(MODEL_PAGE.format(slug))
+                break
+            except OSError as exc:
+                print(f"{slug}: attempt {attempt + 1}: {exc}", file=sys.stderr)
+                time.sleep(5.0)
+        if page is None:
+            failed.append(slug)
+            continue
+        record = page_record(page, slug)
         if record is None:
             missing.append(slug)
         elif slug not in records or len(record["benchmarks"]) > len(records[slug]["benchmarks"]):
@@ -153,6 +162,9 @@ def main() -> int:
         print(f"[{n}/{len(wanted)}] {slug}", file=sys.stderr)
         time.sleep(1.0)
 
+    if failed:
+        # A page that could not be read is not evidence that AA dropped the configuration.
+        raise SystemExit(f"could not read {len(failed)} model page(s): {', '.join(failed)}")
     out = {
         "readAt": time.strftime("%Y-%m-%d"),
         "indexVersion": version_of(html),
