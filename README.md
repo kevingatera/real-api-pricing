@@ -20,9 +20,9 @@ Each chart uses scores from its named leaderboard only. Code Arena here specific
 
 ## Data snapshot
 
-AA Intelligence now uses **Intelligence Index v4.3.2** (the v4.3 methodology, announced September 7, 2026, re-read from the public payload on 2026-09-25; the page label is v4.3.2 rather than v4.3); AA Coding Agent remains **v1.4**. The new intelligence methodology replaces the old snapshot as a whole: lower numerical scores are not evidence of model regression across index versions. All configurations within the selected snapshot are retained, including explicitly marked AA estimates. Historical evidence stays in `data/research/`.
+AA Intelligence now uses **Intelligence Index v5.0.1** (read 2026-11-09); AA Coding Agent remains **v1.4**. v5 combines nine evaluations (AA-Briefcase, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, Omniscience, GDP.pdf, HLE Diamond, CritPt v2 Hard, Terminal-Bench Science) and is on a new scale: across configurations scored on both versions, v5 is 0.23 to 1.08 times the v4.3.2 value. The v5 board replaces the v4.3.2 board as a whole, so lower numbers are not evidence of regression. Historical evidence, including every v4.3.2 snapshot, stays in `data/research/`.
 
-Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (four re-scored configurations, two mapping changes, and 33 newly listed configurations appended; nothing dropped; the rest of the board stays at its 2026-09-25 values, see [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)). Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
+Snapshot: 2026-11-09 for AA Intelligence ([scores-aa-v5-2026-11-09.json](data/research/scores-aa-v5-2026-11-09.json)). The AA leaderboard page now embeds only the configurations AA features, so each mapped configuration is also read from its own AA model page (`scripts/fetch_aa_v5_payload.py`). Code Arena, Agent Arena and AA Coding Agent are unchanged from their 2026-09-05 / 2026-09-01 / 2026-09-09 snapshots. Each row is one **plan × actual served model**; allowances of different models under the same plan are alternatives and must not be added together.
 
 | Coverage | Rows |
 |---|---:|
@@ -31,33 +31,18 @@ Snapshot: 2026-09-25, with an additive AA Intelligence update on 2026-10-20 (fou
 | Metered API baselines | 11 |
 | OpenCode Go / Command Code GOAT / Ollama models | 33 / 51 / 20 |
 | Code Arena / Agent Arena scored points | 138 / 142 |
-| AA Intelligence / AA Coding Agent scored points | 181 / 73 (194 / 73 including 9 marked proxy estimates) |
+| AA Intelligence / AA Coding Agent scored points | 111 / 73 (184 / 73 including 73 marked proxy estimates) |
 
 ### Proxy estimates (marked, never silent)
 
-Nine estimated configurations stand in for thirteen plan rows served by configurations AA has not scored. MiMo-V2.6-Flash was one of them (44.30) until AA published a measured configuration on 2026-10-20 (37.88); its row is now measured. They are not left blank and they
-are not presented as measurements: `scripts/proxy_estimates.py` carries the calibration for each
-one, the snapshot stores it in an `estimatedRecords` lane, and the charts label the rows
-`[proxy]` (zh `[代理]`) so a proxy can never be confused with an AA measurement or with AA's own
-published estimates (`[AA estimate]`).
+AA publishes a v5 score only for configurations it has run all nine evaluations on, and it has not re-run many configurations the plans serve. 38 estimated configurations stand in for them; 73 of the 184 AA points use one. They are not presented as measurements: the snapshot stores each in an `estimatedRecords` lane with its method, inputs and band, and the charts label the rows `[proxy]` (zh `[代理]`) so a proxy can never be confused with an AA measurement or with AA's own published estimates (`[AA estimate]`). A plan model with any AA-measured v5 configuration uses only its measured configurations.
 
-Two methods are used, in descending confidence:
+Two methods are used:
 
-- **Same-weights serving variant (±1.5)** — six rows (GLM-5.3-FlashX, the Muse Spark contributor
-  tiers, DeepSeek V4 Flash Fast, Kimi K2.7 Code HighSpeed, GLM-5.2 Fast). The provider describes
-  them as the same model served faster or priced as a tier; the base configuration's AA score is
-  inherited unchanged.
-- **Same-vendor anchor (±2.5 to ±5)** — three estimates (Qwen3.8-Flash, Qwen3.8-Omni-Flash,
-  Hy4-preview). The vendor's own table contains both the missing model and a
-  sibling AA has scored; the family slope calibrated on AA's own GPQA carries the new model.
-  Bands are wide because GPQA saturates in this range.
+- **v5 component reconstruction (±2.0 to ±5.8)**: 32 configurations of 22 plan models (`scripts/aa_v5_reconstruct.py`). On the 109 configurations AA scored with all nine evaluations, v5 is almost exactly a fixed linear combination of its nine evaluations (R² 0.999, worst error 2.0 points). For a configuration AA ran at least four of the nine on, the missing evaluations are imputed from its other AA benchmarks and the combination is applied. Each band is the measured 90th-percentile error when the same evaluations are hidden on every scored configuration and both fits are redone without it. With three or fewer measured evaluations the error exceeds 7 points, so those configurations are not estimated. `verify_aa_snapshot.py` repeats every reconstruction from the snapshot's own raw records.
+- **Same-weights serving variant (±1.5, wider when the anchor is reconstructed)**: six rows (GLM-5.3-FlashX, the Muse Spark contributor tiers, DeepSeek V4 Flash Fast, Kimi K2.7 Code HighSpeed, GLM-5.2 Fast). The provider describes them as the same model served faster or priced as a tier; they inherit the base configuration's v5 value, and its band when that value is itself reconstructed.
 
-A single global benchmark-to-index regression was measured and rejected: fitted on the modern
-records it explains under half the variance (R² 0.44) with a p90 residual near 10 AA points,
-wider than the gaps that decide the frontier. `omen-alpha` and `composer-2.5` are deliberately
-unscored on this board (no vendor table, no family anchor; Composer 2.5 is scored on the coding
-agent board instead). `scripts/checks/verify_aa_snapshot.py` fails the build if a proxy row loses
-its estimate flags, its method, its source basis or its band.
+The v4.3.2 same-vendor anchors (Qwen3.8-Flash, Qwen3.8-Omni-Flash, Hy4-preview) were not carried to v5: their anchors either lack a v5 score or give an implausible slope (see `scripts/proxy_estimates.py`). MiniMax M2.5, Qwen3.6 Plus, Step 3.5 Flash and Step 3.7 Flash have no v5 score and too few v5 evaluations, so they have no AA point. `omen-alpha` and `composer-2.5` stay deliberately unscored on this board. A single global benchmark-to-index regression was measured and rejected (R² 0.44, p90 residual near 10 points). `scripts/checks/verify_aa_snapshot.py` fails the build if a proxy row loses its estimate flags, its method, its source basis or its band.
 
 **Download the data:** [adopted values (CSV)](data/adopted.csv) · [computed points (CSV)](derived/points.csv) · [computed points (JSON)](derived/points.json) · [data notes and score coverage](data/README.md) · [dated evidence](data/research/)
 

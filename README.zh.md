@@ -20,9 +20,9 @@ GLM Coding Plan 现已改用智谱官方周积分和缓存/输入/输出三段�
 
 ## 数据快照
 
-AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Coding Agent 仍为 **v1.4**。智力榜按新版整榜替换，不能把跨版本分数降低解释为模型能力退步。保留选定快照内的全部配置，并明确标注 AA 估计值；历史证据继续保存在 `data/research/`。
+AA 智力榜改用 **Intelligence Index v5.0.1**（2026-11-09 读取），AA Coding Agent 仍为 **v1.4**。v5 由九项评测组成（AA-Briefcase、AutomationBench-AA、Terminal-Bench 4.0、FrontierCode 2.0、Omniscience、GDP.pdf、HLE Diamond、CritPt v2 Hard、Terminal-Bench Science），分值尺度与 v4.3.2 不同：两版都有分的配置中，v5 为 v4.3.2 的 0.23 至 1.08 倍。v5 榜整榜替换 v4.3.2 榜，不能把跨版本分数降低解释为模型能力退步。全部 v4.3.2 快照等历史证据继续保存在 `data/research/`。
 
-快照日期：2026-09-25，并于 2026-10-20 对 AA 智力榜做增量更新（4 个配置重新打分、2 处映射更新、新增 33 个配置，未删除任何记录；其余记录保持 2026-09-25 数值，见 [scores-aa-round5-2026-10-20.json](data/research/scores-aa-round5-2026-10-20.json)）。（Code Arena、Agent Arena 与 AA 编程 Agent 榜分别沿用 2026-09-05 / 2026-09-01 / 2026-09-09 快照）。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
+快照日期：AA 智力榜为 2026-11-09（见 [scores-aa-v5-2026-11-09.json](data/research/scores-aa-v5-2026-11-09.json)）。AA 排行页现在只内嵌其主推配置，因此每个已映射配置还会从其 AA 模型页单独读取（`scripts/fetch_aa_v5_payload.py`）。（Code Arena、Agent Arena 与 AA 编程 Agent 榜分别沿用 2026-09-05 / 2026-09-01 / 2026-09-09 快照）。每行代表一个**套餐 × 实际服务模型**；同一套餐下不同模型的额度是替代关系，不能相加。
 
 | 覆盖范围 | 行数 |
 |---|---:|
@@ -31,29 +31,18 @@ AA 智力榜改用 **Intelligence Index v4.3**（2026-09-07 发布），AA Codin
 | 按量 API 基准点 | 11 |
 | OpenCode Go / Command Code GOAT / Ollama 模型 | 33 / 51 / 20 |
 | Code Arena / Agent Arena 有分点 | 138 / 142 |
-| AA 智力榜 / AA 编程 Agent 榜有分点 | 181 / 73（含9条标注代理估计后为 194 / 73） |
+| AA 智力榜 / AA 编程 Agent 榜有分点 | 111 / 73（含73个标注代理估计的点后为 184 / 73） |
 
 ### 代理估计值（明确标注，绝不隐式）
 
-有九个代理估计配置，对应十三个套餐点，这些套餐点所用的配置 AA 尚未评测。MiMo-V2.6-Flash 原为代理值 44.30，AA 于 2026-10-20 发布实测配置（37.88）后已改为实测。它们既不留空，也不冒充实测值：标定过程写在
-`scripts/proxy_estimates.py`，快照存入 `estimatedRecords` 字段，图表在图例上标注
-`[代理]`（英文 `[proxy]`），因此代理值不会与 AA 实测值或 AA 自己发布的估计值
-（`[AA estimate]`）混淆。
+AA 只为九项评测全部跑完的配置发布 v5 分数，许多套餐所用配置尚未重测。由 38 个估计配置代替，184 个 AA 点中有 73 个使用估计值。它们不冒充实测值：快照在 `estimatedRecords` 中保存每条的方法、输入和带宽，图中标注 `[代理]`（英文 `[proxy]`），不会与 AA 实测值或 AA 自己发布的估计值（`[AA estimate]`）混淆。某套餐模型只要有任一 AA 实测 v5 配置，就只使用实测配置。
 
-按可信度分两类：
+使用两种方法：
 
-- **同权重服务变体（±1.5）**——六行（GLM-5.3-FlashX、Muse Spark contributor 档、DeepSeek V4
-  Flash Fast、Kimi K2.7 Code HighSpeed、GLM-5.2 Fast）。服务商说明它们是同一模型的高速或分档
-  服务，直接继承基础配置的 AA 分。
-- **同厂商锚点（±2.5 至 ±5）**——三条（Qwen3.8-Flash、Qwen3.8-Omni-Flash、Hy4-preview）。厂商表中同时含缺失模型与 AA 已评测的同族模型，用 AA 自己的 GPQA 标定族内斜率
-  后推算。该区间内 GPQA 已饱和，故带宽较大。
+- **v5 分项重建（±2.0 至 ±5.8）**——22 个套餐模型的 32 个配置（`scripts/aa_v5_reconstruct.py`）。在 AA 已评分且九项齐全的 109 个配置上，v5 几乎就是九项评测的固定线性组合（R² 0.999，最大误差 2.0 分）。对 AA 至少测了九项中四项的配置，用其其他 AA 基准补齐缺失项后套用该组合。带宽为在每个已评分配置上隐藏相同评测并在不含该配置的数据上重新拟合后实测误差的第 90 百分位。只测了三项或更少时误差超过 7 分，不做估计。`verify_aa_snapshot.py` 会用快照自身的原始记录重算每条重建值。
+- **同权重服务变体（±1.5，锚点为重建值时更宽）**——六条（GLM-5.3-FlashX、Muse Spark 贡献者档、DeepSeek V4 Flash Fast、Kimi K2.7 Code HighSpeed、GLM-5.2 Fast）。厂商说明它们是同一模型的提速或定价档，继承基础配置的 v5 值；若该值本身为重建值，也继承其带宽。
 
-全局“基准→指数”回归经过实测后弃用：在现代模型上 R² 仅 0.44，p90 残差约 10 分，宽于决定前沿的
-差距。`omen-alpha` 与 `composer-2.5` 在本榜故意留空（无厂商表、无同族锚点；Composer 2.5 在编程
-Agent 榜已有分）。若某条代理行丢失估计标记、方法、来源依据或带宽，
-`scripts/checks/verify_aa_snapshot.py` 会直接让构建失败。
-
-**下载数据：** [采用值 CSV](data/adopted.csv) · [完整计算结果 CSV](derived/points.csv) · [完整计算结果 JSON](derived/points.json) · [数据说明及缺分清单](data/README.md) · [分日期原始证据](data/research/)
+v4.3.2 的同厂商锚点估计（Qwen3.8-Flash、Qwen3.8-Omni-Flash、Hy4-preview）未延续到 v5：锚点没有 v5 分，或得出的斜率不合理（见 `scripts/proxy_estimates.py`）。MiniMax M2.5、Qwen3.6 Plus、Step 3.5 Flash、Step 3.7 Flash 没有 v5 分且 v5 评测过少，因此没有 AA 点。`omen-alpha` 与 `composer-2.5` 在本榜仍刻意不打分。单一全局基准到指数的回归已测试并否决（R² 0.44，p90 残差约 10 分）。若某条代理行丢失估计标记、方法、来源依据或带宽，`scripts/checks/verify_aa_snapshot.py` 会使构建失败。
 
 ## 月额度总览
 
