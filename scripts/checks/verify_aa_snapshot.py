@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
+from aa_v5_reconstruct import Reconstructor
 from compute import SCORE_FILES, current_score_records
 
 archives = [(name, json.loads((ROOT / "data/research" / name).read_text(encoding="utf-8")))
@@ -12,6 +13,8 @@ archives = [(name, json.loads((ROOT / "data/research" / name).read_text(encoding
 raw_archives = {name: archive for name, archive in archives if "rawRecords" in archive}
 count = 0
 proxy_count = 0
+reconstructed_count = 0
+reconstructors = {}
 for name, row in current_score_records(archives):
     if name not in raw_archives:
         continue
@@ -34,6 +37,17 @@ for name, row in current_score_records(archives):
         assert detail["band"] > 0, ("proxy band must be positive", row["model"])
         assert str(row["variantLabel"]).endswith("[proxy]"), (
             "proxy label must be explicit", row["variantLabel"])
+        if detail["method"].startswith("v5 component reconstruction"):
+            # Repeat the estimate from the snapshot's own raw records; nothing outside the file is needed.
+            snapshot = raw_archives[name]
+            if name not in reconstructors:
+                reconstructors[name] = Reconstructor(snapshot["rawRecords"][row["boardId"]])
+            source = next(r for r in snapshot["rawRecords"][row["boardId"]] if r["slug"] == detail["anchor_slugs"][0])
+            assert source.get("intelligenceIndex") is None, ("reconstructed a configuration AA scored", row["model"])
+            again = reconstructors[name].reconstruct(source)
+            assert again and abs(again["value"] - row["score"]) <= 0.0001, ("reconstruction does not repeat", row["model"])
+            assert abs(again["band"] - detail["band"]) <= 0.01, ("reconstruction band does not repeat", row["model"])
+            reconstructed_count += 1
         proxy_count += 1
         continue
     assert not secondary_row.get("intelligenceIndexIsEstimated") or row["boardId"] != "aa_intelligence_index" or True
@@ -58,4 +72,5 @@ for name, row in current_score_records(archives):
 assert count, "No current AA raw snapshot checked"
 assert proxy_count, "No proxy estimate rows were checked"
 print(f"PASS: {count} AA configurations match raw scores, variants, harnesses and estimate flags; "
-      f"{proxy_count} proxy estimate(s) resolve against estimatedRecords with method, basis and band")
+      f"{proxy_count} proxy estimate(s) resolve against estimatedRecords with method, basis and band; "
+      f"{reconstructed_count} v5 reconstruction(s) repeat from the snapshot's raw records")

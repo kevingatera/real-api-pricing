@@ -1,6 +1,6 @@
 # Data / 数据
 
-Nine AA Intelligence values are marked proxy estimates (see the README section "Proxy estimates"); estimates live in the snapshot's estimatedRecords lane with their method, source basis and band, and the charts label them [proxy]. Current snapshot: 2026-09-25 for the AA Intelligence board, with an additive update on 2026-10-20 (`scores-aa-round5-2026-10-20.json`; changed and new records carry observation dates) (Code Arena, Agent Arena and AA Coding Agent keep their earlier snapshots). The adopted dataset contains 206 plan × model rows: 195 subscription rows and 11 metered API rows. This covers the project's adopted sample, not every plan or model on the market.
+38 AA Intelligence configurations are marked proxy estimates (see the README section "Proxy estimates"); estimates live in the snapshot's estimatedRecords lane with their method, inputs and band, and the charts label them [proxy]. Current snapshot: 2026-11-09 for the AA Intelligence board, on Intelligence Index v5.0.1 (`scores-aa-v5-2026-11-09.json`; it replaces the v4.3.2 board as a whole and keeps the plan-to-configuration map in `configurationMap`) (Code Arena, Agent Arena and AA Coding Agent keep their earlier snapshots). The adopted dataset contains 206 plan × model rows: 195 subscription rows and 11 metered API rows. This covers the project's adopted sample, not every plan or model on the market.
 
 These files are the public redacted edition. Original local evidence is backed up outside Git; see [PUBLICATION.md](../PUBLICATION.md). 本目录为公开脱敏版，保留数值、来源与取舍记录，原件仅存于 Git 忽略的本地备份。
 

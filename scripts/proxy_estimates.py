@@ -12,6 +12,9 @@ across the payload's modern records gives R2 0.44 and a p90 residual near 10 AA 
 and it extrapolates nonsense below the fit's range. That is wider than the gaps that
 decide the frontier, so a global regression would rank models wrongly.
 
+On the Intelligence Index v5 board, configurations AA ran some of the nine v5 evaluations
+on are estimated by component reconstruction (aa_v5_reconstruct.py), not by this file.
+
 What is used instead, in descending confidence:
 
   A. SAME-WEIGHTS SERVING VARIANT (band +-1.5)
@@ -86,6 +89,20 @@ VENDOR_ANCHORED = [
          basis=["https://emergent.sh/learn/hy3-preview-vs-hy4-preview",
                 "https://aitoolsreview.co.uk/insights/tencent-hy4-preview"]),
 ]
+
+# B (v5). vendor-anchored estimates on the Intelligence Index v5 scale ----------------------
+# The VENDOR_ANCHORED values above are on the v4.3.2 scale and are kept as the record of that
+# board. build_aa_v5_snapshot.py reads only this list, and lists every VENDOR_ANCHORED model
+# missing from it as not estimated.
+#
+# Reviewed 2026-11-09, none carried to v5:
+#   qwen3.8-flash, qwen3.8-omni-flash: AA v5 gives qwen3-8-27b 20.11 and qwen3-8-max 33.65, a
+#     slope near 5.8 index points per GPQA point. Qwen's own table (qwen.ai blog, Qwen3.8 Omni
+#     Flash) puts Flash 2.5 GPQA points above 27B, which would place Flash near 34.7, above
+#     Max. The calibration is too unstable to publish.
+#   hy4-preview: the old anchors (hy3, hy3-preview) have no AA v5 score. Tencent describes Hy4
+#     as superseding the preview with further training, so Hy4's score cannot be inherited.
+VENDOR_ANCHORED_V5 = []
 
 # C. deliberately NOT estimated -----------------------------------------------------------
 UNSCORED = [

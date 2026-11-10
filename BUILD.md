@@ -9,6 +9,7 @@ Run from the repository root, in order:
 python scripts/build_adopted.py
 python scripts/compute.py
 python scripts/checks/verify_benchmark_configs.py
+python scripts/checks/verify_aa_snapshot.py
 python scripts/plot_svg.py
 node scripts/render_svg.cjs
 python scripts/build_html.py
@@ -22,6 +23,17 @@ python scripts/checks/verify_personal_selector.py
 ```
 
 On Windows, set `PYTHONIOENCODING=utf-8` if the console cannot print Chinese filenames. `plot_static.py` is a compatibility entry point for `plot_svg.py`.
+
+## Refreshing the AA Intelligence board
+
+The board is on Intelligence Index v5. To refresh it, read AA, rebuild the snapshot, then run the build chain above:
+
+```sh
+python scripts/fetch_aa_v5_payload.py --out _build/aa-v5/payload.json
+python scripts/build_aa_v5_snapshot.py --payload _build/aa-v5/payload.json --date YYYY-MM-DD --if-changed
+```
+
+The builder writes `data/research/scores-aa-v5-<date>.json` and registers it in `scripts/compute.py` only when an AA row changed. It keeps the plan-to-configuration map in the snapshot; a new mapping is a human decision, added to `MAP_ADDITIONS` in the builder. If AA moves to another major index version, the builder refuses the payload: a new scale needs its own migration. The Hermes weekly job runs these two commands and opens a pull request.
 
 ## Layout
 
