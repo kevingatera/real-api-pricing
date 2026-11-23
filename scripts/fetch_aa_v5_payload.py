@@ -52,6 +52,11 @@ PAGE_FIELDS = {
     "hle": "humanitys-last-exam", "ifbench": "ifbench", "mlcrOverall": "mlcr-aa", "mmmuPro": "mmmu-pro",
     "scicode": "scicode", "tau2": "tau2-bench", "tauBanking": "tau3-banking", "terminalBench21": "terminalbench-2-1",
     "terminalbenchHard": "terminalbench-hard",
+    # Read from model pages since the leaderboard stopped embedding these models (2026-11-23);
+    # values checked equal to the leaderboard's slug-keyed scores in the prior v5 snapshot.
+    "omniscienceAccuracy": "omniscience-accuracy", "harveyLab": "harvey-lab-aa",
+    "healthbench": "healthbench", "healthbenchProfessional": "healthbench-professional",
+    "vialsScore": "vials-aa", "aa3dElo": "aa-3d", "code2videoElo": "code2video-aa", "itBenchSre": "itbench-aa",
 }
 IDENTITY = ("slug", "name", "shortName", "intelligenceIndex", "intelligenceIndexIsEstimated", "isReasoning",
             "isOpenWeights", "deprecated", "modelCreatorName", "price1mInputTokens", "price1mOutputTokens",
@@ -62,9 +67,25 @@ def number(value):
     return value if isinstance(value, (int, float)) and not isinstance(value, bool) else None
 
 
+class _FollowPermanentRedirects(urllib.request.HTTPRedirectHandler):
+    """Follow 308 like 307. Python before 3.11 refuses 308, and Artificial Analysis now answers
+    per-effort model URLs (claude-opus-5-high) with a 308 to the model's shared page, which
+    still carries every effort's record under its own slug (2026-11-23)."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if code == 308:
+            code = 307
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+    http_error_308 = urllib.request.HTTPRedirectHandler.http_error_302
+
+
+_OPENER = urllib.request.build_opener(_FollowPermanentRedirects)
+
+
 def read(url: str) -> tuple[str, str]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
-    with urllib.request.urlopen(request, timeout=90) as response:
+    with _OPENER.open(request, timeout=90) as response:
         html = response.read().decode("utf-8", errors="replace")
     body = "".join(json.loads('"' + piece + '"') for piece in PUSH_RE.findall(html))
     return html, body
@@ -107,6 +128,9 @@ def page_record(body: str, slug: str) -> dict | None:
     if best is None:
         return None
     benchmarks = {s: best[f] for f, s in PAGE_FIELDS.items() if number(best.get(f)) is not None}
+    # The leaderboard publishes the complement of the page's hallucination rate.
+    if number(best.get("omniscienceHallucinationRate")) is not None:
+        benchmarks["omniscience-non-hallucination"] = 1 - best["omniscienceHallucinationRate"]
     elo = ((best.get("briefcaseBreakdown") or {}).get("overall") or {}).get("elo")
     if number(elo) is not None:
         benchmarks["aa-briefcase"] = elo
